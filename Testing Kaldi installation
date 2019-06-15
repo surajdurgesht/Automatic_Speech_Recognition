@@ -1,0 +1,18 @@
+To make sure our install worked well, we can take advantage of the examples provided in the kaldi/egs/ directory:
+
+cd ../egs/
+cat README.txt
+cd yesno/
+cat README.txt 
+tree              // sudo apt install tree
+
+Data Prep & Training & Testing: The run.sh Script
+
+cd s5/
+./run.sh
+tree ./conf/
+tree ./input/
+tree ./local/
+tree ./data/
+tree ./exp/
+tree ./mfcc/
