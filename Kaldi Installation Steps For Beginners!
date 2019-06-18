@@ -14,6 +14,7 @@ _Author : Suraj Durgesht_
     sudo apt-get install libatlas-*
     sudo apt-get install zlib1g-dev
     sudo apt-get install g++-multilib
+    sudo apt-get install flac
 
 4. Installation via GitHub
       git clone https://github.com/kaldi-asr/kaldi.git
