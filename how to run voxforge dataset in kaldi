@@ -1,1 +1,25 @@
+VoxForge Acoustic Models with Open Source Speech Recognition Engines.  
+We will start with a download that uses the Julius Speech Recognition Engine.   
+
+These downloads contain everything you need to get Julius working:
+
+Julius Speech Recognition Engine executables;
+VoxForge Acoustic Model files; and
+VoxForge sample Grammar files.
+
+http://www.voxforge.org/home/downloads
+
+NOTE: You will want to download the data set first, before executing this script.
+       This can be done for example by:
+       
+       1. Setting the variable DATA_ROOT in path.sh to point to a
+          directory with enough free space (at least 21GB currently (2019))
+          
+       2. VoxForge data will be stored in:
+          e.g., export DATA_ROOT="$KALDI_ROOT/egs/voxforge/s5/voxforge"
+         You need to set \"DATA_ROOT\" variable in path.sh to point to the directory to host VoxForge's data
+       
+       3. Running "./getdata.sh"
+       
+       3. Running "./run.sh"
 
