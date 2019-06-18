@@ -7,3 +7,11 @@ The LibriSpeech corpus is a large (1000 hour) corpus of English read speech
  as a speech recognition corpus by Vassil Panayotov.
 
  The recipe is in s5/
+
+1.  Set this to somewhere where you want to put your data, or where
+    someone else has already put it.  You'll want to change this
+    if you're not on the CLSP grid.
+
+    data=/home/iiit-dharwad/kaldi/egs/librispeech/s5/local
+    
+2.  Running "./run.sh"
