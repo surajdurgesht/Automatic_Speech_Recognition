@@ -1,0 +1,537 @@
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~/kaldi/egs/librispeech/s5$ sudo au
+[sudo] password for iiit-dharwad: 
+sudo: au: command not found
+root@iiitdharwad-ThinkCentre-M920t:/home/iiit-dharwad/kaldi/egs/librispeech/s5# ls
+cmd.sh  conf  data  local  path.sh  RESULTS  rnnlm  run.sh  steps  utils
+root@iiitdharwad-ThinkCentre-M920t:/home/iiit-dharwad/kaldi/egs/librispeech/s5# ./run.sh 
+arpa-to-const-arpa --bos-symbol=200005 --eos-symbol=200006 --unk-symbol=3 'gunzip -c data/local/lm/lm_tglarge.arpa.gz | utils/map_arpa_lm.pl data/lang_nosp_test_tglarge/words.txt|' data/lang_nosp_test_tglarge/G.carpa 
+LOG (arpa-to-const-arpa[5.5.380~1-0552e]:BuildConstArpaLm():const-arpa-lm.cc:1078) Reading gunzip -c data/local/lm/lm_tglarge.arpa.gz | utils/map_arpa_lm.pl data/lang_nosp_test_tglarge/words.txt|
+utils/map_arpa_lm.pl: Processing "\data\"
+utils/map_arpa_lm.pl: Processing "\1-grams:\"
+LOG (arpa-to-const-arpa[5.5.380~1-0552e]:Read():arpa-file-parser.cc:94) Reading \data\ section.
+LOG (arpa-to-const-arpa[5.5.380~1-0552e]:Read():arpa-file-parser.cc:149) Reading \1-grams: section.
+utils/map_arpa_lm.pl: Processing "\2-grams:\"
+LOG (arpa-to-const-arpa[5.5.380~1-0552e]:Read():arpa-file-parser.cc:149) Reading \2-grams: section.
+utils/map_arpa_lm.pl: Processing "\3-grams:\"
+LOG (arpa-to-const-arpa[5.5.380~1-0552e]:Read():arpa-file-parser.cc:149) Reading \3-grams: section.
+arpa-to-const-arpa --bos-symbol=200005 --eos-symbol=200006 --unk-symbol=3 'gunzip -c data/local/lm/lm_fglarge.arpa.gz | utils/map_arpa_lm.pl data/lang_nosp_test_fglarge/words.txt|' data/lang_nosp_test_fglarge/G.carpa 
+LOG (arpa-to-const-arpa[5.5.380~1-0552e]:BuildConstArpaLm():const-arpa-lm.cc:1078) Reading gunzip -c data/local/lm/lm_fglarge.arpa.gz | utils/map_arpa_lm.pl data/lang_nosp_test_fglarge/words.txt|
+utils/map_arpa_lm.pl: Processing "\data\"
+utils/map_arpa_lm.pl: Processing "\1-grams:\"
+LOG (arpa-to-const-arpa[5.5.380~1-0552e]:Read():arpa-file-parser.cc:94) Reading \data\ section.
+LOG (arpa-to-const-arpa[5.5.380~1-0552e]:Read():arpa-file-parser.cc:149) Reading \1-grams: section.
+utils/map_arpa_lm.pl: Processing "\2-grams:\"
+LOG (arpa-to-const-arpa[5.5.380~1-0552e]:Read():arpa-file-parser.cc:149) Reading \2-grams: section.
+utils/map_arpa_lm.pl: Processing "\3-grams:\"
+LOG (arpa-to-const-arpa[5.5.380~1-0552e]:Read():arpa-file-parser.cc:149) Reading \3-grams: section.
+utils/map_arpa_lm.pl: Processing "\4-grams:\"
+LOG (arpa-to-const-arpa[5.5.380~1-0552e]:Read():arpa-file-parser.cc:149) Reading \4-grams: section.
+std::bad_alloc
+root@iiitdharwad-ThinkCentre-M920t:/home/iiit-dharwad/kaldi/egs/librispeech/s5# ./run.sh 
+arpa-to-const-arpa --bos-symbol=200005 --eos-symbol=200006 --unk-symbol=3 'gunzip -c data/local/lm/lm_tglarge.arpa.gz | utils/map_arpa_lm.pl data/lang_nosp_test_tglarge/words.txt|' data/lang_nosp_test_tglarge/G.carpa 
+LOG (arpa-to-const-arpa[5.5.380~1445-0552e]:BuildConstArpaLm():const-arpa-lm.cc:1078) Reading gunzip -c data/local/lm/lm_tglarge.arpa.gz | utils/map_arpa_lm.pl data/lang_nosp_test_tglarge/words.txt|
+utils/map_arpa_lm.pl: Processing "\data\"
+utils/map_arpa_lm.pl: Processing "\1-grams:\"
+LOG (arpa-to-const-arpa[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:94) Reading \data\ section.
+LOG (arpa-to-const-arpa[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:149) Reading \1-grams: section.
+utils/map_arpa_lm.pl: Processing "\2-grams:\"
+LOG (arpa-to-const-arpa[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:149) Reading \2-grams: section.
+^C
+root@iiitdharwad-ThinkCentre-M920t:/home/iiit-dharwad/kaldi/egs/librispeech/s5# ./run.sh 
+utils/data/get_utt2dur.sh: segments file does not exist so getting durations from wave files
+utils/data/get_utt2dur.sh: could not get utterance lengths from sphere-file headers, using wav-to-duration
+utils/data/get_utt2dur.sh: computed data/dev_clean/utt2dur
+utils/validate_data_dir.sh: Successfully validated data-directory data/dev_clean
+local/data_prep.sh: successfully prepared data in data/dev_clean
+utils/data/get_utt2dur.sh: segments file does not exist so getting durations from wave files
+utils/data/get_utt2dur.sh: could not get utterance lengths from sphere-file headers, using wav-to-duration
+utils/data/get_utt2dur.sh: computed data/test_clean/utt2dur
+utils/validate_data_dir.sh: Successfully validated data-directory data/test_clean
+local/data_prep.sh: successfully prepared data in data/test_clean
+utils/data/get_utt2dur.sh: segments file does not exist so getting durations from wave files
+utils/data/get_utt2dur.sh: could not get utterance lengths from sphere-file headers, using wav-to-duration
+utils/data/get_utt2dur.sh: computed data/dev_other/utt2dur
+utils/validate_data_dir.sh: Successfully validated data-directory data/dev_other
+local/data_prep.sh: successfully prepared data in data/dev_other
+utils/data/get_utt2dur.sh: segments file does not exist so getting durations from wave files
+utils/data/get_utt2dur.sh: could not get utterance lengths from sphere-file headers, using wav-to-duration
+utils/data/get_utt2dur.sh: computed data/test_other/utt2dur
+utils/validate_data_dir.sh: Successfully validated data-directory data/test_other
+local/data_prep.sh: successfully prepared data in data/test_other
+utils/data/get_utt2dur.sh: segments file does not exist so getting durations from wave files
+utils/data/get_utt2dur.sh: could not get utterance lengths from sphere-file headers, using wav-to-duration
+utils/data/get_utt2dur.sh: computed data/train_clean_100/utt2dur
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_clean_100
+local/data_prep.sh: successfully prepared data in data/train_clean_100
+Preparing phone lists and clustering questions
+2 silence phones saved to: data/local/dict_nosp/silence_phones.txt
+1 optional silence saved to: data/local/dict_nosp/optional_silence.txt
+39 non-silence phones saved to: data/local/dict_nosp/nonsilence_phones.txt
+5 extra triphone clustering-related questions saved to: data/local/dict_nosp/extra_questions.txt
+Lexicon text file saved as: data/local/dict_nosp/lexicon.txt
+utils/prepare_lang.sh data/local/dict_nosp <UNK> data/local/lang_tmp_nosp data/lang_nosp
+Checking data/local/dict_nosp/silence_phones.txt ...
+--> reading data/local/dict_nosp/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/silence_phones.txt is OK
+
+Checking data/local/dict_nosp/optional_silence.txt ...
+--> reading data/local/dict_nosp/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/optional_silence.txt is OK
+
+Checking data/local/dict_nosp/nonsilence_phones.txt ...
+--> reading data/local/dict_nosp/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dict_nosp/lexicon.txt
+--> reading data/local/dict_nosp/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/lexicon.txt is OK
+
+Checking data/local/dict_nosp/lexiconp.txt
+--> reading data/local/dict_nosp/lexiconp.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/lexiconp.txt is OK
+
+Checking lexicon pair data/local/dict_nosp/lexicon.txt and data/local/dict_nosp/lexiconp.txt
+--> lexicon pair data/local/dict_nosp/lexicon.txt and data/local/dict_nosp/lexiconp.txt match
+
+Checking data/local/dict_nosp/extra_questions.txt ...
+--> reading data/local/dict_nosp/extra_questions.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/extra_questions.txt is OK
+--> SUCCESS [validating dictionary directory data/local/dict_nosp]
+
+fstaddselfloops data/lang_nosp/phones/wdisambig_phones.int data/lang_nosp/phones/wdisambig_words.int 
+prepare_lang.sh: validating output directory
+utils/validate_lang.pl data/lang_nosp
+Checking existence of separator file
+separator file data/lang_nosp/subword_separator.txt is empty or does not exist, deal in word case.
+Checking data/lang_nosp/phones.txt ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang_nosp/phones.txt is OK
+
+Checking words.txt: #0 ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang_nosp/words.txt is OK
+
+Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
+--> silence.txt and nonsilence.txt are disjoint
+--> silence.txt and disambig.txt are disjoint
+--> disambig.txt and nonsilence.txt are disjoint
+--> disjoint property is OK
+
+Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
+--> found no unexplainable phones in phones.txt
+
+Checking data/lang_nosp/phones/context_indep.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 10 entry/entries in data/lang_nosp/phones/context_indep.txt
+--> data/lang_nosp/phones/context_indep.int corresponds to data/lang_nosp/phones/context_indep.txt
+--> data/lang_nosp/phones/context_indep.csl corresponds to data/lang_nosp/phones/context_indep.txt
+--> data/lang_nosp/phones/context_indep.{txt, int, csl} are OK
+
+Checking data/lang_nosp/phones/nonsilence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 336 entry/entries in data/lang_nosp/phones/nonsilence.txt
+--> data/lang_nosp/phones/nonsilence.int corresponds to data/lang_nosp/phones/nonsilence.txt
+--> data/lang_nosp/phones/nonsilence.csl corresponds to data/lang_nosp/phones/nonsilence.txt
+--> data/lang_nosp/phones/nonsilence.{txt, int, csl} are OK
+
+Checking data/lang_nosp/phones/silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 10 entry/entries in data/lang_nosp/phones/silence.txt
+--> data/lang_nosp/phones/silence.int corresponds to data/lang_nosp/phones/silence.txt
+--> data/lang_nosp/phones/silence.csl corresponds to data/lang_nosp/phones/silence.txt
+--> data/lang_nosp/phones/silence.{txt, int, csl} are OK
+
+Checking data/lang_nosp/phones/optional_silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang_nosp/phones/optional_silence.txt
+--> data/lang_nosp/phones/optional_silence.int corresponds to data/lang_nosp/phones/optional_silence.txt
+--> data/lang_nosp/phones/optional_silence.csl corresponds to data/lang_nosp/phones/optional_silence.txt
+--> data/lang_nosp/phones/optional_silence.{txt, int, csl} are OK
+
+Checking data/lang_nosp/phones/disambig.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 17 entry/entries in data/lang_nosp/phones/disambig.txt
+--> data/lang_nosp/phones/disambig.int corresponds to data/lang_nosp/phones/disambig.txt
+--> data/lang_nosp/phones/disambig.csl corresponds to data/lang_nosp/phones/disambig.txt
+--> data/lang_nosp/phones/disambig.{txt, int, csl} are OK
+
+Checking data/lang_nosp/phones/roots.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 41 entry/entries in data/lang_nosp/phones/roots.txt
+--> data/lang_nosp/phones/roots.int corresponds to data/lang_nosp/phones/roots.txt
+--> data/lang_nosp/phones/roots.{txt, int} are OK
+
+Checking data/lang_nosp/phones/sets.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 41 entry/entries in data/lang_nosp/phones/sets.txt
+--> data/lang_nosp/phones/sets.int corresponds to data/lang_nosp/phones/sets.txt
+--> data/lang_nosp/phones/sets.{txt, int} are OK
+
+Checking data/lang_nosp/phones/extra_questions.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 14 entry/entries in data/lang_nosp/phones/extra_questions.txt
+--> data/lang_nosp/phones/extra_questions.int corresponds to data/lang_nosp/phones/extra_questions.txt
+--> data/lang_nosp/phones/extra_questions.{txt, int} are OK
+
+Checking data/lang_nosp/phones/word_boundary.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 346 entry/entries in data/lang_nosp/phones/word_boundary.txt
+--> data/lang_nosp/phones/word_boundary.int corresponds to data/lang_nosp/phones/word_boundary.txt
+--> data/lang_nosp/phones/word_boundary.{txt, int} are OK
+
+Checking optional_silence.txt ...
+--> reading data/lang_nosp/phones/optional_silence.txt
+--> data/lang_nosp/phones/optional_silence.txt is OK
+
+Checking disambiguation symbols: #0 and #1
+--> data/lang_nosp/phones/disambig.txt has "#0" and "#1"
+--> data/lang_nosp/phones/disambig.txt is OK
+
+Checking topo ...
+
+Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
+--> data/lang_nosp/phones/word_boundary.txt doesn't include disambiguation symbols
+--> data/lang_nosp/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
+--> data/lang_nosp/phones/word_boundary.txt is OK
+
+Checking word-level disambiguation symbols...
+--> data/lang_nosp/phones/wdisambig.txt exists (newer prepare_lang.sh)
+Checking word_boundary.int and disambig.int
+--> generating a 63 word/subword sequence
+--> resulting phone sequence from L.fst corresponds to the word sequence
+--> L.fst is OK
+--> generating a 91 word/subword sequence
+--> resulting phone sequence from L_disambig.fst corresponds to the word sequence
+--> L_disambig.fst is OK
+
+Checking data/lang_nosp/oov.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang_nosp/oov.txt
+--> data/lang_nosp/oov.int corresponds to data/lang_nosp/oov.txt
+--> data/lang_nosp/oov.{txt, int} are OK
+
+--> data/lang_nosp/L.fst is olabel sorted
+--> data/lang_nosp/L_disambig.fst is olabel sorted
+--> SUCCESS [validating lang directory data/lang_nosp]
+arpa2fst --disambig-symbol=#0 --read-symbol-table=data/lang_nosp_test_tgsmall/words.txt - data/lang_nosp_test_tgsmall/G.fst 
+LOG (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:94) Reading \data\ section.
+LOG (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:149) Reading \1-grams: section.
+LOG (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:149) Reading \2-grams: section.
+LOG (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:149) Reading \3-grams: section.
+LOG (arpa2fst[5.5.380~1445-0552e]:RemoveRedundantStates():arpa-lm-compiler.cc:359) Reduced num-states from 1183418 to 249533
+utils/validate_lang.pl data/lang_nosp_test_tgsmall
+Checking existence of separator file
+separator file data/lang_nosp_test_tgsmall/subword_separator.txt is empty or does not exist, deal in word case.
+Checking data/lang_nosp_test_tgsmall/phones.txt ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang_nosp_test_tgsmall/phones.txt is OK
+
+Checking words.txt: #0 ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang_nosp_test_tgsmall/words.txt is OK
+
+Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
+--> silence.txt and nonsilence.txt are disjoint
+--> silence.txt and disambig.txt are disjoint
+--> disambig.txt and nonsilence.txt are disjoint
+--> disjoint property is OK
+
+Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
+--> found no unexplainable phones in phones.txt
+
+Checking data/lang_nosp_test_tgsmall/phones/context_indep.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 10 entry/entries in data/lang_nosp_test_tgsmall/phones/context_indep.txt
+--> data/lang_nosp_test_tgsmall/phones/context_indep.int corresponds to data/lang_nosp_test_tgsmall/phones/context_indep.txt
+--> data/lang_nosp_test_tgsmall/phones/context_indep.csl corresponds to data/lang_nosp_test_tgsmall/phones/context_indep.txt
+--> data/lang_nosp_test_tgsmall/phones/context_indep.{txt, int, csl} are OK
+
+Checking data/lang_nosp_test_tgsmall/phones/nonsilence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 336 entry/entries in data/lang_nosp_test_tgsmall/phones/nonsilence.txt
+--> data/lang_nosp_test_tgsmall/phones/nonsilence.int corresponds to data/lang_nosp_test_tgsmall/phones/nonsilence.txt
+--> data/lang_nosp_test_tgsmall/phones/nonsilence.csl corresponds to data/lang_nosp_test_tgsmall/phones/nonsilence.txt
+--> data/lang_nosp_test_tgsmall/phones/nonsilence.{txt, int, csl} are OK
+
+Checking data/lang_nosp_test_tgsmall/phones/silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 10 entry/entries in data/lang_nosp_test_tgsmall/phones/silence.txt
+--> data/lang_nosp_test_tgsmall/phones/silence.int corresponds to data/lang_nosp_test_tgsmall/phones/silence.txt
+--> data/lang_nosp_test_tgsmall/phones/silence.csl corresponds to data/lang_nosp_test_tgsmall/phones/silence.txt
+--> data/lang_nosp_test_tgsmall/phones/silence.{txt, int, csl} are OK
+
+Checking data/lang_nosp_test_tgsmall/phones/optional_silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang_nosp_test_tgsmall/phones/optional_silence.txt
+--> data/lang_nosp_test_tgsmall/phones/optional_silence.int corresponds to data/lang_nosp_test_tgsmall/phones/optional_silence.txt
+--> data/lang_nosp_test_tgsmall/phones/optional_silence.csl corresponds to data/lang_nosp_test_tgsmall/phones/optional_silence.txt
+--> data/lang_nosp_test_tgsmall/phones/optional_silence.{txt, int, csl} are OK
+
+Checking data/lang_nosp_test_tgsmall/phones/disambig.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 17 entry/entries in data/lang_nosp_test_tgsmall/phones/disambig.txt
+--> data/lang_nosp_test_tgsmall/phones/disambig.int corresponds to data/lang_nosp_test_tgsmall/phones/disambig.txt
+--> data/lang_nosp_test_tgsmall/phones/disambig.csl corresponds to data/lang_nosp_test_tgsmall/phones/disambig.txt
+--> data/lang_nosp_test_tgsmall/phones/disambig.{txt, int, csl} are OK
+
+Checking data/lang_nosp_test_tgsmall/phones/roots.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 41 entry/entries in data/lang_nosp_test_tgsmall/phones/roots.txt
+--> data/lang_nosp_test_tgsmall/phones/roots.int corresponds to data/lang_nosp_test_tgsmall/phones/roots.txt
+--> data/lang_nosp_test_tgsmall/phones/roots.{txt, int} are OK
+
+Checking data/lang_nosp_test_tgsmall/phones/sets.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 41 entry/entries in data/lang_nosp_test_tgsmall/phones/sets.txt
+--> data/lang_nosp_test_tgsmall/phones/sets.int corresponds to data/lang_nosp_test_tgsmall/phones/sets.txt
+--> data/lang_nosp_test_tgsmall/phones/sets.{txt, int} are OK
+
+Checking data/lang_nosp_test_tgsmall/phones/extra_questions.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 14 entry/entries in data/lang_nosp_test_tgsmall/phones/extra_questions.txt
+--> data/lang_nosp_test_tgsmall/phones/extra_questions.int corresponds to data/lang_nosp_test_tgsmall/phones/extra_questions.txt
+--> data/lang_nosp_test_tgsmall/phones/extra_questions.{txt, int} are OK
+
+Checking data/lang_nosp_test_tgsmall/phones/word_boundary.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 346 entry/entries in data/lang_nosp_test_tgsmall/phones/word_boundary.txt
+--> data/lang_nosp_test_tgsmall/phones/word_boundary.int corresponds to data/lang_nosp_test_tgsmall/phones/word_boundary.txt
+--> data/lang_nosp_test_tgsmall/phones/word_boundary.{txt, int} are OK
+
+Checking optional_silence.txt ...
+--> reading data/lang_nosp_test_tgsmall/phones/optional_silence.txt
+--> data/lang_nosp_test_tgsmall/phones/optional_silence.txt is OK
+
+Checking disambiguation symbols: #0 and #1
+--> data/lang_nosp_test_tgsmall/phones/disambig.txt has "#0" and "#1"
+--> data/lang_nosp_test_tgsmall/phones/disambig.txt is OK
+
+Checking topo ...
+
+Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
+--> data/lang_nosp_test_tgsmall/phones/word_boundary.txt doesn't include disambiguation symbols
+--> data/lang_nosp_test_tgsmall/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
+--> data/lang_nosp_test_tgsmall/phones/word_boundary.txt is OK
+
+Checking word-level disambiguation symbols...
+--> data/lang_nosp_test_tgsmall/phones/wdisambig.txt exists (newer prepare_lang.sh)
+Checking word_boundary.int and disambig.int
+--> generating a 66 word/subword sequence
+--> resulting phone sequence from L.fst corresponds to the word sequence
+--> L.fst is OK
+--> generating a 61 word/subword sequence
+--> resulting phone sequence from L_disambig.fst corresponds to the word sequence
+--> L_disambig.fst is OK
+
+Checking data/lang_nosp_test_tgsmall/oov.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang_nosp_test_tgsmall/oov.txt
+--> data/lang_nosp_test_tgsmall/oov.int corresponds to data/lang_nosp_test_tgsmall/oov.txt
+--> data/lang_nosp_test_tgsmall/oov.{txt, int} are OK
+
+--> data/lang_nosp_test_tgsmall/L.fst is olabel sorted
+--> data/lang_nosp_test_tgsmall/L_disambig.fst is olabel sorted
+--> data/lang_nosp_test_tgsmall/G.fst is ilabel sorted
+--> data/lang_nosp_test_tgsmall/G.fst has 249533 states
+--> utils/lang/check_g_properties.pl successfully validated data/lang_nosp_test_tgsmall/G.fst
+--> utils/lang/check_g_properties.pl succeeded.
+--> SUCCESS [validating lang directory data/lang_nosp_test_tgsmall]
+arpa2fst --disambig-symbol=#0 --read-symbol-table=data/lang_nosp_test_tgmed/words.txt - data/lang_nosp_test_tgmed/G.fst 
+LOG (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:94) Reading \data\ section.
+LOG (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:149) Reading \1-grams: section.
+LOG (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:149) Reading \2-grams: section.
+LOG (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:149) Reading \3-grams: section.
+LOG (arpa2fst[5.5.380~1445-0552e]:RemoveRedundantStates():arpa-lm-compiler.cc:359) Reduced num-states from 2610890 to 597083
+utils/validate_lang.pl data/lang_nosp_test_tgmed
+Checking existence of separator file
+separator file data/lang_nosp_test_tgmed/subword_separator.txt is empty or does not exist, deal in word case.
+Checking data/lang_nosp_test_tgmed/phones.txt ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang_nosp_test_tgmed/phones.txt is OK
+
+Checking words.txt: #0 ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang_nosp_test_tgmed/words.txt is OK
+
+Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
+--> silence.txt and nonsilence.txt are disjoint
+--> silence.txt and disambig.txt are disjoint
+--> disambig.txt and nonsilence.txt are disjoint
+--> disjoint property is OK
+
+Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
+--> found no unexplainable phones in phones.txt
+
+Checking data/lang_nosp_test_tgmed/phones/context_indep.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 10 entry/entries in data/lang_nosp_test_tgmed/phones/context_indep.txt
+--> data/lang_nosp_test_tgmed/phones/context_indep.int corresponds to data/lang_nosp_test_tgmed/phones/context_indep.txt
+--> data/lang_nosp_test_tgmed/phones/context_indep.csl corresponds to data/lang_nosp_test_tgmed/phones/context_indep.txt
+--> data/lang_nosp_test_tgmed/phones/context_indep.{txt, int, csl} are OK
+
+Checking data/lang_nosp_test_tgmed/phones/nonsilence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 336 entry/entries in data/lang_nosp_test_tgmed/phones/nonsilence.txt
+--> data/lang_nosp_test_tgmed/phones/nonsilence.int corresponds to data/lang_nosp_test_tgmed/phones/nonsilence.txt
+--> data/lang_nosp_test_tgmed/phones/nonsilence.csl corresponds to data/lang_nosp_test_tgmed/phones/nonsilence.txt
+--> data/lang_nosp_test_tgmed/phones/nonsilence.{txt, int, csl} are OK
+
+Checking data/lang_nosp_test_tgmed/phones/silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 10 entry/entries in data/lang_nosp_test_tgmed/phones/silence.txt
+--> data/lang_nosp_test_tgmed/phones/silence.int corresponds to data/lang_nosp_test_tgmed/phones/silence.txt
+--> data/lang_nosp_test_tgmed/phones/silence.csl corresponds to data/lang_nosp_test_tgmed/phones/silence.txt
+--> data/lang_nosp_test_tgmed/phones/silence.{txt, int, csl} are OK
+
+Checking data/lang_nosp_test_tgmed/phones/optional_silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang_nosp_test_tgmed/phones/optional_silence.txt
+--> data/lang_nosp_test_tgmed/phones/optional_silence.int corresponds to data/lang_nosp_test_tgmed/phones/optional_silence.txt
+--> data/lang_nosp_test_tgmed/phones/optional_silence.csl corresponds to data/lang_nosp_test_tgmed/phones/optional_silence.txt
+--> data/lang_nosp_test_tgmed/phones/optional_silence.{txt, int, csl} are OK
+
+Checking data/lang_nosp_test_tgmed/phones/disambig.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 17 entry/entries in data/lang_nosp_test_tgmed/phones/disambig.txt
+--> data/lang_nosp_test_tgmed/phones/disambig.int corresponds to data/lang_nosp_test_tgmed/phones/disambig.txt
+--> data/lang_nosp_test_tgmed/phones/disambig.csl corresponds to data/lang_nosp_test_tgmed/phones/disambig.txt
+--> data/lang_nosp_test_tgmed/phones/disambig.{txt, int, csl} are OK
+
+Checking data/lang_nosp_test_tgmed/phones/roots.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 41 entry/entries in data/lang_nosp_test_tgmed/phones/roots.txt
+--> data/lang_nosp_test_tgmed/phones/roots.int corresponds to data/lang_nosp_test_tgmed/phones/roots.txt
+--> data/lang_nosp_test_tgmed/phones/roots.{txt, int} are OK
+
+Checking data/lang_nosp_test_tgmed/phones/sets.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 41 entry/entries in data/lang_nosp_test_tgmed/phones/sets.txt
+--> data/lang_nosp_test_tgmed/phones/sets.int corresponds to data/lang_nosp_test_tgmed/phones/sets.txt
+--> data/lang_nosp_test_tgmed/phones/sets.{txt, int} are OK
+
+Checking data/lang_nosp_test_tgmed/phones/extra_questions.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 14 entry/entries in data/lang_nosp_test_tgmed/phones/extra_questions.txt
+--> data/lang_nosp_test_tgmed/phones/extra_questions.int corresponds to data/lang_nosp_test_tgmed/phones/extra_questions.txt
+--> data/lang_nosp_test_tgmed/phones/extra_questions.{txt, int} are OK
+
+Checking data/lang_nosp_test_tgmed/phones/word_boundary.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 346 entry/entries in data/lang_nosp_test_tgmed/phones/word_boundary.txt
+--> data/lang_nosp_test_tgmed/phones/word_boundary.int corresponds to data/lang_nosp_test_tgmed/phones/word_boundary.txt
+--> data/lang_nosp_test_tgmed/phones/word_boundary.{txt, int} are OK
+
+Checking optional_silence.txt ...
+--> reading data/lang_nosp_test_tgmed/phones/optional_silence.txt
+--> data/lang_nosp_test_tgmed/phones/optional_silence.txt is OK
+
+Checking disambiguation symbols: #0 and #1
+--> data/lang_nosp_test_tgmed/phones/disambig.txt has "#0" and "#1"
+--> data/lang_nosp_test_tgmed/phones/disambig.txt is OK
+
+Checking topo ...
+
+Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
+--> data/lang_nosp_test_tgmed/phones/word_boundary.txt doesn't include disambiguation symbols
+--> data/lang_nosp_test_tgmed/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
+--> data/lang_nosp_test_tgmed/phones/word_boundary.txt is OK
+
+Checking word-level disambiguation symbols...
+--> data/lang_nosp_test_tgmed/phones/wdisambig.txt exists (newer prepare_lang.sh)
+Checking word_boundary.int and disambig.int
+--> generating a 100 word/subword sequence
+--> resulting phone sequence from L.fst corresponds to the word sequence
+--> L.fst is OK
+--> generating a 28 word/subword sequence
+--> resulting phone sequence from L_disambig.fst corresponds to the word sequence
+--> L_disambig.fst is OK
+
+Checking data/lang_nosp_test_tgmed/oov.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang_nosp_test_tgmed/oov.txt
+--> data/lang_nosp_test_tgmed/oov.int corresponds to data/lang_nosp_test_tgmed/oov.txt
+--> data/lang_nosp_test_tgmed/oov.{txt, int} are OK
+
+--> data/lang_nosp_test_tgmed/L.fst is olabel sorted
+--> data/lang_nosp_test_tgmed/L_disambig.fst is olabel sorted
+--> data/lang_nosp_test_tgmed/G.fst is ilabel sorted
+--> data/lang_nosp_test_tgmed/G.fst has 597083 states
+--> utils/lang/check_g_properties.pl successfully validated data/lang_nosp_test_tgmed/G.fst
+--> utils/lang/check_g_properties.pl succeeded.
+--> SUCCESS [validating lang directory data/lang_nosp_test_tgmed]
+Succeeded in formatting data.
+arpa-to-const-arpa --bos-symbol=200005 --eos-symbol=200006 --unk-symbol=3 'gunzip -c data/local/lm/lm_tglarge.arpa.gz | utils/map_arpa_lm.pl data/lang_nosp_test_tglarge/words.txt|' data/lang_nosp_test_tglarge/G.carpa 
+LOG (arpa-to-const-arpa[5.5.380~1445-0552e]:BuildConstArpaLm():const-arpa-lm.cc:1078) Reading gunzip -c data/local/lm/lm_tglarge.arpa.gz | utils/map_arpa_lm.pl data/lang_nosp_test_tglarge/words.txt|
+utils/map_arpa_lm.pl: Processing "\data\"
+utils/map_arpa_lm.pl: Processing "\1-grams:\"
+LOG (arpa-to-const-arpa[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:94) Reading \data\ section.
+LOG (arpa-to-const-arpa[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:149) Reading \1-grams: section.
+utils/map_arpa_lm.pl: Processing "\2-grams:\"
+LOG (arpa-to-const-arpa[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:149) Reading \2-grams: section.
+utils/map_arpa_lm.pl: Processing "\3-grams:\"
+LOG (arpa-to-const-arpa[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:149) Reading \3-grams: section.
+arpa-to-const-arpa --bos-symbol=200005 --eos-symbol=200006 --unk-symbol=3 'gunzip -c data/local/lm/lm_fglarge.arpa.gz | utils/map_arpa_lm.pl data/lang_nosp_test_fglarge/words.txt|' data/lang_nosp_test_fglarge/G.carpa 
+LOG (arpa-to-const-arpa[5.5.380~1445-0552e]:BuildConstArpaLm():const-arpa-lm.cc:1078) Reading gunzip -c data/local/lm/lm_fglarge.arpa.gz | utils/map_arpa_lm.pl data/lang_nosp_test_fglarge/words.txt|
+utils/map_arpa_lm.pl: Processing "\data\"
+utils/map_arpa_lm.pl: Processing "\1-grams:\"
+LOG (arpa-to-const-arpa[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:94) Reading \data\ section.
+LOG (arpa-to-const-arpa[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:149) Reading \1-grams: section.
+utils/map_arpa_lm.pl: Processing "\2-grams:\"
+LOG (arpa-to-const-arpa[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:149) Reading \2-grams: section.
+utils/map_arpa_lm.pl: Processing "\3-grams:\"
+LOG (arpa-to-const-arpa[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:149) Reading \3-grams: section.
+utils/map_arpa_lm.pl: Processing "\4-grams:\"
+LOG (arpa-to-const-arpa[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:149) Reading \4-grams: section.
+utils/build_const_arpa_lm.sh: line 47:  8837 Killed                  arpa-to-const-arpa --bos-symbol=$bos --eos-symbol=$eos --unk-symbol=$unk "gunzip -c $arpa_lm | utils/map_arpa_lm.pl $new_lang/words.txt|" $new_lang/G.carpa
+root@iiitdharwad-ThinkCentre-M920t:/home/iiit-dharwad/kaldi/egs/librispeech/s5#
