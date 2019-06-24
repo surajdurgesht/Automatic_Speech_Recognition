@@ -1,0 +1,1971 @@
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~/kaldi/egs/vystadial_en/s5$ ls
+cmd.sh  common  env_voip_en.sh  local  path.sh  RESULTS  run.sh  steps  utils
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~/kaldi/egs/vystadial_en/s5$ ./env_voip_en.sh 
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~/kaldi/egs/vystadial_en/s5$ ./path.sh 
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~/kaldi/egs/vystadial_en/s5$ ./cmd.sh
+bash: ./cmd.sh: Permission denied
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~/kaldi/egs/vystadial_en/s5$ clear
+
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~/kaldi/egs/vystadial_en/s5$ ./run.sh 
+4406 (process ID) old priority 0, new priority 19
+ Copy the configuration files to /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp directory.
+--2019-06-23 21:22:10--  https://lindat.mff.cuni.cz/repository/xmlui/bitstream/handle/11858/00-097C-0000-0023-4671-4/data_voip_en.tgz
+Resolving lindat.mff.cuni.cz (lindat.mff.cuni.cz)... 195.113.20.140
+Connecting to lindat.mff.cuni.cz (lindat.mff.cuni.cz)|195.113.20.140|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2793418303 (2.6G) [application/x-gzip]
+Saving to: '/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/data/data_voip_en.tgz'
+
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/data/da 100%[=====================================================================================================================>]   2.60G  1.04MB/s    in 44m 22s 
+
+2019-06-23 22:06:57 (1.00 MB/s) - '/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/data/data_voip_en.tgz' saved [2793418303/2793418303]
+
+Data successfully downloaded
+Checking if data extracted correctly
+It seams that data are extracted correctly
+~/kaldi/egs/vystadial_en/s5/data ~/kaldi/egs/vystadial_en/s5
+~/kaldi/egs/vystadial_en/s5
+LMs build0 build2  test_sets dev test
+=== Starting initial Vystadial data preparation ...
+--- Making test/train data split from /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/data taking every 1 recording...
+Set 1:1 relation for spk2utt: spk in dev test AND train, sort in place
+--- Distributing the file lists to train and (dev test x build0 build2) directories ...
+=== Preparing the LM ...
+=== Building LM of order 0...
+Zerogram build0 LM is build from text: /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/test/trans.txt
+=== Building zerogram build0 from . ...
+=== Building LM of order 2...
+LM build2 is build from text: /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/train/trans.txt
+*** LMs preparation finished!
+=== Preparing the vocabulary ...
+
+Building dictionary from train data
+
+Removing from vocabulary _NOISE_, and  all '_' words from vocab-full.txt
+*** Vocabulary preparation finished!
+Removing from vocabulary _NOISE_, and  all '_' words from vocab-test.txt
+--- Downloading CMU dictionary ...
+A    common/cmudict.0.7a
+Export complete.
+
+If common/cmudict.ext exists, add extra pronunciation to dictionary
+
+--- Striping stress and pronunciation variant markers from cmudict ...
+133541 forms processed
+123926 baseforms, 9283 variants and 332 duplicates found.
+variant distribution:
+2	8591
+3	527
+4	165
+--- Searching for OOV words ...
+0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/dict/vocab-oov.txt
+1119 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/dict/lexicon.txt
+--- Prepare nonsilence phone lists ...
+--- Adding silence phones to lexicon ...
+--- Sorting lexicon in place...
+--- Prepare silence phone lists ...
+*** Creating phone lists finished!
+utils/prepare_lang.sh /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/dict _SIL_ /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/lang /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang
+Checking /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/dict/silence_phones.txt ...
+--> reading /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/dict/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/dict/silence_phones.txt is OK
+
+Checking /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/dict/optional_silence.txt ...
+--> reading /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/dict/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/dict/optional_silence.txt is OK
+
+Checking /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/dict/nonsilence_phones.txt ...
+--> reading /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/dict/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/dict/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/dict/lexicon.txt
+--> reading /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/dict/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/dict/lexicon.txt is OK
+
+Checking /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/dict/extra_questions.txt ...
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/dict/extra_questions.txt is empty (this is OK)
+--> SUCCESS [validating dictionary directory /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/dict]
+
+**Creating /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/dict/lexiconp.txt from /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/dict/lexicon.txt
+fstaddselfloops /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/wdisambig_phones.int /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/wdisambig_words.int 
+prepare_lang.sh: validating output directory
+utils/validate_lang.pl /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang
+Checking existence of separator file
+separator file /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/subword_separator.txt is empty or does not exist, deal in word case.
+Checking /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones.txt ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones.txt is OK
+
+Checking words.txt: #0 ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/words.txt is OK
+
+Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
+--> silence.txt and nonsilence.txt are disjoint
+--> silence.txt and disambig.txt are disjoint
+--> disambig.txt and nonsilence.txt are disjoint
+--> disjoint property is OK
+
+Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
+--> found no unexplainable phones in phones.txt
+
+Checking /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/context_indep.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 25 entry/entries in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/context_indep.txt
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/context_indep.int corresponds to /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/context_indep.txt
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/context_indep.csl corresponds to /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/context_indep.txt
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/context_indep.{txt, int, csl} are OK
+
+Checking /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/nonsilence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 156 entry/entries in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/nonsilence.txt
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/nonsilence.int corresponds to /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/nonsilence.txt
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/nonsilence.csl corresponds to /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/nonsilence.txt
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/nonsilence.{txt, int, csl} are OK
+
+Checking /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 25 entry/entries in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/silence.txt
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/silence.int corresponds to /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/silence.txt
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/silence.csl corresponds to /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/silence.txt
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/silence.{txt, int, csl} are OK
+
+Checking /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/optional_silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/optional_silence.txt
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/optional_silence.int corresponds to /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/optional_silence.txt
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/optional_silence.csl corresponds to /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/optional_silence.txt
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/optional_silence.{txt, int, csl} are OK
+
+Checking /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/disambig.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 5 entry/entries in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/disambig.txt
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/disambig.int corresponds to /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/disambig.txt
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/disambig.csl corresponds to /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/disambig.txt
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/disambig.{txt, int, csl} are OK
+
+Checking /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/roots.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 44 entry/entries in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/roots.txt
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/roots.int corresponds to /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/roots.txt
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/roots.{txt, int} are OK
+
+Checking /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/sets.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 44 entry/entries in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/sets.txt
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/sets.int corresponds to /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/sets.txt
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/sets.{txt, int} are OK
+
+Checking /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/extra_questions.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 9 entry/entries in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/extra_questions.txt
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/extra_questions.int corresponds to /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/extra_questions.txt
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/extra_questions.{txt, int} are OK
+
+Checking /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/word_boundary.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 181 entry/entries in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/word_boundary.txt
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/word_boundary.int corresponds to /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/word_boundary.txt
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/word_boundary.{txt, int} are OK
+
+Checking optional_silence.txt ...
+--> reading /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/optional_silence.txt
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/optional_silence.txt is OK
+
+Checking disambiguation symbols: #0 and #1
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/disambig.txt has "#0" and "#1"
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/disambig.txt is OK
+
+Checking topo ...
+
+Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/word_boundary.txt doesn't include disambiguation symbols
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/word_boundary.txt is OK
+
+Checking word-level disambiguation symbols...
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/phones/wdisambig.txt exists (newer prepare_lang.sh)
+Checking word_boundary.int and disambig.int
+--> generating a 81 word/subword sequence
+--> resulting phone sequence from L.fst corresponds to the word sequence
+--> L.fst is OK
+--> generating a 71 word/subword sequence
+--> resulting phone sequence from L_disambig.fst corresponds to the word sequence
+--> L_disambig.fst is OK
+
+Checking /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/oov.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/oov.txt
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/oov.int corresponds to /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/oov.txt
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/oov.{txt, int} are OK
+
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/L.fst is olabel sorted
+--> /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang/L_disambig.fst is olabel sorted
+--> SUCCESS [validating lang directory /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang]
+===test_sets Formating data ...
+--- Preparing the grammar transducer (G.fst) from /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/lm/build0 in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build0 ...
+arpa2fst --disambig-symbol=#0 --read-symbol-table=/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build0/words.txt - /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build0/G.fst 
+LOG (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:94) Reading \data\ section.
+LOG (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:149) Reading \1-grams: section.
+WARNING (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:219) line 40 [-2.480007	BARN] skipped: word 'BARN' not in symbol table
+WARNING (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:219) line 55 [-2.480007	CHARGED] skipped: word 'CHARGED' not in symbol table
+WARNING (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:219) line 73 [-2.480007	CURT] skipped: word 'CURT' not in symbol table
+WARNING (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:219) line 75 [-2.480007	DESTINY] skipped: word 'DESTINY' not in symbol table
+WARNING (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:219) line 84 [-2.480007	DU] skipped: word 'DU' not in symbol table
+WARNING (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:219) line 101 [-2.480007	FULL] skipped: word 'FULL' not in symbol table
+WARNING (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:219) line 110 [-2.480007	GOSH] skipped: word 'GOSH' not in symbol table
+WARNING (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:219) line 122 [-2.480007	HONEY] skipped: word 'HONEY' not in symbol table
+WARNING (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:219) line 165 [-2.480007	MOD] skipped: word 'MOD' not in symbol table
+WARNING (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:219) line 213 [-2.480007	REGENT] skipped: word 'REGENT' not in symbol table
+WARNING (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:219) line 224 [-2.480007	SANDWICHES] skipped: word 'SANDWICHES' not in symbol table
+WARNING (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:219) line 245 [-2.480007	SUBMARINE] skipped: word 'SUBMARINE' not in symbol table
+WARNING (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:219) line 251 [-2.480007	TECHNIQUE] skipped: word 'TECHNIQUE' not in symbol table
+WARNING (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:219) line 278 [-2.480007	UNIT] skipped: word 'UNIT' not in symbol table
+WARNING (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:219) line 283 [-2.480007	VIN] skipped: word 'VIN' not in symbol table
+WARNING (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:219) line 293 [-2.480007	WHILE] skipped: word 'WHILE' not in symbol table
+LOG (arpa2fst[5.5.380~1445-0552e]:RemoveRedundantStates():arpa-lm-compiler.cc:359) Reduced num-states from 1 to 1
+fstisstochastic /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build0/G.fst 
+0.0614525 0.0614525
+*** Succeeded in creating G.fst for /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build0
+--- Preparing the grammar transducer (G.fst) from /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/lm/build2 in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build2 ...
+arpa2fst --disambig-symbol=#0 --read-symbol-table=/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build2/words.txt - /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build2/G.fst 
+LOG (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:94) Reading \data\ section.
+LOG (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:149) Reading \1-grams: section.
+LOG (arpa2fst[5.5.380~1445-0552e]:Read():arpa-file-parser.cc:149) Reading \2-grams: section.
+LOG (arpa2fst[5.5.380~1445-0552e]:RemoveRedundantStates():arpa-lm-compiler.cc:359) Reduced num-states from 936 to 936
+fstisstochastic /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build2/G.fst 
+-1.11135e-08 -0.105643
+*** Succeeded in creating G.fst for /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build2
+Create MFCC features and storing them (Could be large).
+steps/make_mfcc.sh --mfcc-config common/mfcc.conf --cmd run.pl --mem 2G --nj 20 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/train /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/make_mfcc/train /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/mfcc
+utils/validate_data_dir.sh: Successfully validated data-directory /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/train
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: Succeeded creating MFCC features for train
+steps/compute_cmvn_stats.sh --fake /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/train /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/make_mfcc/train /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/mfcc
+feat-to-dim scp:/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/train/feats.scp - 
+copy-matrix ark:- ark,scp:/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/mfcc/cmvn_train.ark,/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/mfcc/cmvn_train.scp 
+LOG (copy-matrix[5.5.380~1445-0552e]:main():copy-matrix.cc:135) Copied 47463 matrices.
+Succeeded creating CMVN stats for train
+steps/make_mfcc.sh --mfcc-config common/mfcc.conf --cmd run.pl --mem 2G --nj 20 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/dev /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/make_mfcc/dev /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/mfcc
+utils/validate_data_dir.sh: Successfully validated data-directory /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/dev
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: Succeeded creating MFCC features for dev
+steps/compute_cmvn_stats.sh --fake /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/dev /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/make_mfcc/dev /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/mfcc
+feat-to-dim scp:/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/dev/feats.scp - 
+copy-matrix ark:- ark,scp:/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/mfcc/cmvn_dev.ark,/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/mfcc/cmvn_dev.scp 
+LOG (copy-matrix[5.5.380~1445-0552e]:main():copy-matrix.cc:135) Copied 2000 matrices.
+Succeeded creating CMVN stats for dev
+steps/make_mfcc.sh --mfcc-config common/mfcc.conf --cmd run.pl --mem 2G --nj 20 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/test /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/make_mfcc/test /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/mfcc
+utils/validate_data_dir.sh: Successfully validated data-directory /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/test
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: Succeeded creating MFCC features for test
+steps/compute_cmvn_stats.sh --fake /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/test /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/make_mfcc/test /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/mfcc
+feat-to-dim scp:/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/test/feats.scp - 
+copy-matrix ark:- ark,scp:/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/mfcc/cmvn_test.ark,/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/mfcc/cmvn_test.scp 
+LOG (copy-matrix[5.5.380~1445-0552e]:main():copy-matrix.cc:135) Copied 2000 matrices.
+Succeeded creating CMVN stats for test
+Decoding is done for each pair (TEST_SET x LMs)
+Distribute the links to MFCC feats to all LM variations.
+cp /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/dev/feats.scp /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/dev_build0/feats.scp
+cp /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/dev/cmvn.scp /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/dev_build0/cmvn.scp
+cp /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/dev/feats.scp /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/dev_build2/feats.scp
+cp /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/dev/cmvn.scp /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/dev_build2/cmvn.scp
+cp /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/test/feats.scp /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/test_build0/feats.scp
+cp /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/test/cmvn.scp /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/test_build0/cmvn.scp
+cp /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/test/feats.scp /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/test_build2/feats.scp
+cp /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/local/test/cmvn.scp /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/test_build2/cmvn.scp
+Train monophone models on full data -> may be wastefull (can be done on subset)
+steps/train_mono.sh --nj 20 --cmd run.pl --mem 2G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/train /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl --mem 2G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono
+steps/diagnostic/analyze_alignments.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/log/analyze_alignments.log
+620 warnings in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/log/acc.*.*.log
+50170 warnings in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/log/align.*.*.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono: nj=20 align prob=-91.04 over 41.24h [retry=0.4%, fail=0.0%] states=142 gauss=989
+steps/train_mono.sh: Done training monophone system in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono
+Get alignments from monophone system.
+steps/align_si.sh --nj 20 --cmd run.pl --mem 2G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/train /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono_ali
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/train using model from /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono, putting alignments in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono_ali
+steps/diagnostic/analyze_alignments.sh --cmd run.pl --mem 2G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono_ali
+steps/diagnostic/analyze_alignments.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono_ali/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+Train tri1 [first triphone pass]
+steps/train_deltas.sh --cmd run.pl --mem 2G 1200 19200 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/train /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono_ali /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl --mem 2G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1
+steps/diagnostic/analyze_alignments.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/log/analyze_alignments.log
+1 warnings in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/log/build_tree.log
+171 warnings in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/log/acc.*.*.log
+55 warnings in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/log/update.*.log
+560 warnings in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/log/align.*.*.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1: nj=20 align prob=-88.91 over 41.24h [retry=0.3%, fail=0.0%] states=1000 gauss=19266 tree-impr=3.44
+steps/train_deltas.sh: Done training system with delta+delta-delta features in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1
+Align tri1
+steps/align_si.sh --nj 20 --cmd run.pl --mem 2G --use-graphs true /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/train /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1_ali
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/train using model from /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1, putting alignments in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1_ali
+steps/diagnostic/analyze_alignments.sh --cmd run.pl --mem 2G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1_ali
+steps/diagnostic/analyze_alignments.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1_ali/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+Train tri2a [delta+delta-deltas]
+steps/train_deltas.sh --cmd run.pl --mem 2G 1200 19200 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/train /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1_ali /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl --mem 2G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a
+steps/diagnostic/analyze_alignments.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/log/analyze_alignments.log
+1 warnings in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/log/update.*.log
+253 warnings in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/log/acc.*.*.log
+610 warnings in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/log/align.*.*.log
+1 warnings in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/log/build_tree.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a: nj=20 align prob=-88.85 over 41.23h [retry=0.3%, fail=0.0%] states=1008 gauss=19239 tree-impr=3.80
+steps/train_deltas.sh: Done training system with delta+delta-delta features in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a
+Train tri2b [LDA+MLLT]
+steps/train_lda_mllt.sh --cmd run.pl --mem 2G 1200 19200 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/train /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1_ali /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1_ali to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl --mem 2G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b
+steps/diagnostic/analyze_alignments.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/log/analyze_alignments.log
+788 warnings in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/log/align.*.*.log
+30 warnings in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/log/update.*.log
+1 warnings in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/log/build_tree.log
+313 warnings in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/log/acc.*.*.log
+7 warnings in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/log/lda_acc.*.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b: nj=20 align prob=-40.78 over 41.23h [retry=0.4%, fail=0.0%] states=1016 gauss=19250 tree-impr=4.12 lda-sum=13.56 mllt:impr,logdet=1.07,1.67
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b
+Align all data with LDA+MLLT system (tri2b)
+steps/align_si.sh --nj 20 --cmd run.pl --mem 2G --use-graphs true /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/train /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_ali
+steps/align_si.sh: feature type is lda
+steps/align_si.sh: aligning data in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/train using model from /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b, putting alignments in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_ali
+steps/diagnostic/analyze_alignments.sh --cmd run.pl --mem 2G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_ali
+steps/diagnostic/analyze_alignments.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_ali/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+Train MMI on top of LDA+MLLT.
+steps/make_denlats.sh --nj 20 --cmd run.pl --mem 2G --beam 16.0 --lattice-beam 10.0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/train /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_denlats
+Making unigram grammar FST in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_denlats/lang
+Compiling decoding graph in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_denlats/dengraph
+tree-info /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/tree 
+tree-info /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/tree 
+fsttablecompose /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_denlats/lang/L_disambig.fst /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_denlats/lang/G.fst 
+fstdeterminizestar --use-log=true 
+fstminimizeencoded 
+fstpushspecial 
+fstisstochastic /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_denlats/lang/tmp/LG.fst 
+-0.0706811 -0.0709589
+[info]: LG not stochastic.
+fstcomposecontext --context-size=3 --central-position=1 --read-disambig-syms=/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_denlats/lang/phones/disambig.int --write-disambig-syms=/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_denlats/lang/tmp/disambig_ilabels_3_1.int /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_denlats/lang/tmp/ilabels_3_1.6752 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_denlats/lang/tmp/LG.fst 
+fstisstochastic /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_denlats/lang/tmp/CLG_3_1.fst 
+0 -0.0709589
+[info]: CLG not stochastic.
+make-h-transducer --disambig-syms-out=/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_denlats/dengraph/disambig_tid.int --transition-scale=1.0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_denlats/lang/tmp/ilabels_3_1 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/tree /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/final.mdl 
+fsttablecompose /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_denlats/dengraph/Ha.fst /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_denlats/lang/tmp/CLG_3_1.fst 
+fstminimizeencoded 
+fstdeterminizestar --use-log=true 
+fstrmsymbols /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_denlats/dengraph/disambig_tid.int 
+fstrmepslocal 
+fstisstochastic /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_denlats/dengraph/HCLGa.fst 
+0.000478984 -0.170721
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/final.mdl /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_denlats/dengraph/HCLGa.fst 
+steps/make_denlats.sh: feature type is lda
+steps/make_denlats.sh: done generating denominator lattices.
+steps/train_mmi.sh /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/train /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_ali /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_denlats /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi
+steps/train_mmi.sh: feature type is lda
+Iteration 0 of MMI training
+Iteration 0: objf was 0.108636620177945, MMI auxf change was 0.0115786799496432
+Iteration 1 of MMI training
+Iteration 1: objf was 0.126483820463697, MMI auxf change was 0.00477312167126425
+Iteration 2 of MMI training
+Iteration 2: objf was 0.135326976394436, MMI auxf change was 0.00385574017083791
+Iteration 3 of MMI training
+Iteration 3: objf was 0.142025510101913, MMI auxf change was 0.00361026838325128
+MMI training finished
+Train MMI on top of LDA+MLLT with boosting. train_mmi_boost is a e.g. 0.05
+steps/train_mmi.sh --boost 0.05 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/train /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_ali /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_denlats /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05
+steps/train_mmi.sh: feature type is lda
+Iteration 0 of MMI training
+Iteration 0: objf was 0.101898117609847, MMI auxf change was 0.0143589913566471
+Iteration 1 of MMI training
+Iteration 1: objf was 0.121958664203845, MMI auxf change was 0.00554330228910509
+Iteration 2 of MMI training
+Iteration 2: objf was 0.131892931705773, MMI auxf change was 0.00390357877345757
+Iteration 3 of MMI training
+Iteration 3: objf was 0.138786274032388, MMI auxf change was 0.0039656995669734
+MMI training finished
+Train MPE.
+steps/train_mpe.sh /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/train /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_ali /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_denlats /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe
+steps/train_mpe.sh: feature type is lda
+Iteration 0 of MPE training
+Iteration 0: objf was 0.861304092995614, MPE auxf change was 0.0940010942047502
+Iteration 1 of MPE training
+Iteration 1: objf was 0.910200400364681, MPE auxf change was 0.0241855494235686
+Iteration 2 of MPE training
+Iteration 2: objf was 0.915949681888904, MPE auxf change was 0.0409329722453166
+Iteration 3 of MPE training
+Iteration 3: objf was 0.92595549404456, MPE auxf change was 0.0184574461670732
+MPE training finished
+tree-info /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/tree 
+tree-info /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/tree 
+fsttablecompose /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build0/L_disambig.fst /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build0/G.fst 
+fstpushspecial 
+fstminimizeencoded 
+fstdeterminizestar --use-log=true 
+fstisstochastic /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build0/tmp/LG.fst 
+-0.0299679 -0.0305982
+[info]: LG not stochastic.
+fstcomposecontext --context-size=1 --central-position=0 --read-disambig-syms=/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build0/phones/disambig.int --write-disambig-syms=/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build0/tmp/disambig_ilabels_1_0.int /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build0/tmp/ilabels_1_0.16014 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build0/tmp/LG.fst 
+fstisstochastic /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build0/tmp/CLG_1_0.fst 
+-0.0299679 -0.0305982
+[info]: CLG not stochastic.
+make-h-transducer --disambig-syms-out=/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/graph_build0/disambig_tid.int --transition-scale=1.0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build0/tmp/ilabels_1_0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/tree /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/final.mdl 
+fstrmepslocal 
+fsttablecompose /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/graph_build0/Ha.fst /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build0/tmp/CLG_1_0.fst 
+fstrmsymbols /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/graph_build0/disambig_tid.int 
+fstdeterminizestar --use-log=true 
+fstminimizeencoded 
+fstisstochastic /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/graph_build0/HCLGa.fst 
+0.000318285 -0.0308373
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/final.mdl /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/graph_build0/HCLGa.fst 
+tree-info /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/tree 
+tree-info /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/tree 
+fstcomposecontext --context-size=3 --central-position=1 --read-disambig-syms=/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build0/phones/disambig.int --write-disambig-syms=/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build0/tmp/disambig_ilabels_3_1.int /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build0/tmp/ilabels_3_1.16069 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build0/tmp/LG.fst 
+fstisstochastic /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build0/tmp/CLG_3_1.fst 
+0 -0.0305982
+[info]: CLG not stochastic.
+make-h-transducer --disambig-syms-out=/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/graph_build0/disambig_tid.int --transition-scale=1.0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build0/tmp/ilabels_3_1 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/tree /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/final.mdl 
+fstrmepslocal 
+fsttablecompose /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/graph_build0/Ha.fst /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build0/tmp/CLG_3_1.fst 
+fstminimizeencoded 
+fstrmsymbols /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/graph_build0/disambig_tid.int 
+fstdeterminizestar --use-log=true 
+fstisstochastic /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/graph_build0/HCLGa.fst 
+0.000456706 -0.0751232
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/final.mdl /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/graph_build0/HCLGa.fst 
+tree-info /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/tree 
+tree-info /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/tree 
+make-h-transducer --disambig-syms-out=/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/graph_build0/disambig_tid.int --transition-scale=1.0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build0/tmp/ilabels_3_1 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/tree /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/final.mdl 
+fstrmepslocal 
+fsttablecompose /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/graph_build0/Ha.fst /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build0/tmp/CLG_3_1.fst 
+fstrmsymbols /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/graph_build0/disambig_tid.int 
+fstminimizeencoded 
+fstdeterminizestar --use-log=true 
+fstisstochastic /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/graph_build0/HCLGa.fst 
+0.000453783 -0.075181
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/final.mdl /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/graph_build0/HCLGa.fst 
+tree-info /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/tree 
+tree-info /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/tree 
+make-h-transducer --disambig-syms-out=/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build0/disambig_tid.int --transition-scale=1.0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build0/tmp/ilabels_3_1 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/tree /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/final.mdl 
+fstrmepslocal 
+fsttablecompose /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build0/Ha.fst /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build0/tmp/CLG_3_1.fst 
+fstminimizeencoded 
+fstrmsymbols /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build0/disambig_tid.int 
+fstdeterminizestar --use-log=true 
+fstisstochastic /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build0/HCLGa.fst 
+0.000470272 -0.0752484
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/final.mdl /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build0/HCLGa.fst 
+tree-info /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/tree 
+tree-info /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/tree 
+fsttablecompose /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build2/L_disambig.fst /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build2/G.fst 
+fstpushspecial 
+fstminimizeencoded 
+fstdeterminizestar --use-log=true 
+fstisstochastic /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build2/tmp/LG.fst 
+-0.077553 -0.0781461
+[info]: LG not stochastic.
+fstcomposecontext --context-size=1 --central-position=0 --read-disambig-syms=/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build2/phones/disambig.int --write-disambig-syms=/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build2/tmp/disambig_ilabels_1_0.int /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build2/tmp/ilabels_1_0.16210 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build2/tmp/LG.fst 
+fstisstochastic /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build2/tmp/CLG_1_0.fst 
+-0.077553 -0.0781461
+[info]: CLG not stochastic.
+make-h-transducer --disambig-syms-out=/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/graph_build2/disambig_tid.int --transition-scale=1.0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build2/tmp/ilabels_1_0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/tree /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/final.mdl 
+fstrmepslocal 
+fsttablecompose /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/graph_build2/Ha.fst /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build2/tmp/CLG_1_0.fst 
+fstrmsymbols /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/graph_build2/disambig_tid.int 
+fstminimizeencoded 
+fstdeterminizestar --use-log=true 
+fstisstochastic /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/graph_build2/HCLGa.fst 
+0.000318285 -0.137392
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/final.mdl /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/graph_build2/HCLGa.fst 
+tree-info /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/tree 
+tree-info /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/tree 
+fstcomposecontext --context-size=3 --central-position=1 --read-disambig-syms=/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build2/phones/disambig.int --write-disambig-syms=/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build2/tmp/disambig_ilabels_3_1.int /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build2/tmp/ilabels_3_1.16266 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build2/tmp/LG.fst 
+fstisstochastic /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build2/tmp/CLG_3_1.fst 
+0 -0.0781461
+[info]: CLG not stochastic.
+make-h-transducer --disambig-syms-out=/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/graph_build2/disambig_tid.int --transition-scale=1.0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build2/tmp/ilabels_3_1 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/tree /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/final.mdl 
+fstrmepslocal 
+fsttablecompose /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/graph_build2/Ha.fst /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build2/tmp/CLG_3_1.fst 
+fstminimizeencoded 
+fstrmsymbols /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/graph_build2/disambig_tid.int 
+fstdeterminizestar --use-log=true 
+fstisstochastic /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/graph_build2/HCLGa.fst 
+0.000470571 -0.201002
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/final.mdl /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/graph_build2/HCLGa.fst 
+tree-info /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/tree 
+tree-info /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/tree 
+make-h-transducer --disambig-syms-out=/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/graph_build2/disambig_tid.int --transition-scale=1.0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build2/tmp/ilabels_3_1 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/tree /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/final.mdl 
+fstrmepslocal 
+fsttablecompose /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/graph_build2/Ha.fst /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build2/tmp/CLG_3_1.fst 
+fstrmsymbols /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/graph_build2/disambig_tid.int 
+fstminimizeencoded 
+fstdeterminizestar --use-log=true 
+fstisstochastic /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/graph_build2/HCLGa.fst 
+0.000469505 -0.200929
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/final.mdl /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/graph_build2/HCLGa.fst 
+tree-info /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/tree 
+tree-info /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/tree 
+make-h-transducer --disambig-syms-out=/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build2/disambig_tid.int --transition-scale=1.0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build2/tmp/ilabels_3_1 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/tree /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/final.mdl 
+fstrmepslocal 
+fsttablecompose /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build2/Ha.fst /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/lang_build2/tmp/CLG_3_1.fst 
+fstrmsymbols /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build2/disambig_tid.int 
+fstminimizeencoded 
+fstdeterminizestar --use-log=true 
+fstisstochastic /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build2/HCLGa.fst 
+0.00048559 -0.200988
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/final.mdl /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build2/HCLGa.fst 
+Monophone decoding
+steps/decode.sh --scoring-opts --min-lmw 9 --max-lmw 20 --config common/decode.conf --nj 20 --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/graph_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/dev_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build0
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/graph_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build0
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 74.35% of the time at utterance begin.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build0/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(3,28,176) and mean=76.8
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build0/log/analyze_lattice_depth_stats.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build0/wer_10
+%WER 65.97 [ 6185 / 9375, 411 ins, 2497 del, 3277 sub ]
+%SER 89.85 [ 1797 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build0/wer_11
+%WER 67.01 [ 6282 / 9375, 351 ins, 2727 del, 3204 sub ]
+%SER 89.70 [ 1794 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build0/wer_12
+%WER 67.73 [ 6350 / 9375, 290 ins, 2947 del, 3113 sub ]
+%SER 89.80 [ 1796 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build0/wer_13
+%WER 68.89 [ 6458 / 9375, 251 ins, 3152 del, 3055 sub ]
+%SER 89.75 [ 1795 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build0/wer_14
+%WER 69.67 [ 6532 / 9375, 212 ins, 3337 del, 2983 sub ]
+%SER 89.30 [ 1786 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build0/wer_15
+%WER 70.40 [ 6600 / 9375, 177 ins, 3498 del, 2925 sub ]
+%SER 89.05 [ 1781 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build0/wer_16
+%WER 71.15 [ 6670 / 9375, 160 ins, 3666 del, 2844 sub ]
+%SER 89.20 [ 1784 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build0/wer_17
+%WER 72.16 [ 6765 / 9375, 140 ins, 3816 del, 2809 sub ]
+%SER 89.50 [ 1790 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build0/wer_18
+%WER 72.87 [ 6832 / 9375, 126 ins, 3926 del, 2780 sub ]
+%SER 89.80 [ 1796 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build0/wer_19
+%WER 73.61 [ 6901 / 9375, 116 ins, 4024 del, 2761 sub ]
+%SER 89.95 [ 1799 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build0/wer_20
+%WER 74.21 [ 6957 / 9375, 105 ins, 4132 del, 2720 sub ]
+%SER 90.20 [ 1804 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build0/wer_9
+%WER 65.51 [ 6142 / 9375, 504 ins, 2244 del, 3394 sub ]
+%SER 90.15 [ 1803 / 2000 ]
+Decode tri1
+steps/decode.sh --scoring-opts --min-lmw 9 --max-lmw 20 --config common/decode.conf --nj 20 --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/graph_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/dev_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build0
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/graph_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build0
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 79.15% of the time at utterance begin.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build0/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,6,42) and mean=25.8
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build0/log/analyze_lattice_depth_stats.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build0/wer_10
+%WER 36.02 [ 3377 / 9375, 601 ins, 1064 del, 1712 sub ]
+%SER 68.95 [ 1379 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build0/wer_11
+%WER 36.28 [ 3401 / 9375, 508 ins, 1192 del, 1701 sub ]
+%SER 68.35 [ 1367 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build0/wer_12
+%WER 36.75 [ 3445 / 9375, 422 ins, 1340 del, 1683 sub ]
+%SER 68.35 [ 1367 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build0/wer_13
+%WER 37.51 [ 3517 / 9375, 364 ins, 1482 del, 1671 sub ]
+%SER 69.15 [ 1383 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build0/wer_14
+%WER 38.57 [ 3616 / 9375, 318 ins, 1623 del, 1675 sub ]
+%SER 70.05 [ 1401 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build0/wer_15
+%WER 39.74 [ 3726 / 9375, 282 ins, 1781 del, 1663 sub ]
+%SER 71.05 [ 1421 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build0/wer_16
+%WER 40.65 [ 3811 / 9375, 253 ins, 1935 del, 1623 sub ]
+%SER 71.60 [ 1432 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build0/wer_17
+%WER 41.99 [ 3937 / 9375, 227 ins, 2090 del, 1620 sub ]
+%SER 72.60 [ 1452 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build0/wer_18
+%WER 42.60 [ 3994 / 9375, 205 ins, 2189 del, 1600 sub ]
+%SER 73.20 [ 1464 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build0/wer_19
+%WER 43.69 [ 4096 / 9375, 190 ins, 2307 del, 1599 sub ]
+%SER 73.90 [ 1478 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build0/wer_20
+%WER 44.51 [ 4173 / 9375, 172 ins, 2413 del, 1588 sub ]
+%SER 74.65 [ 1493 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build0/wer_9
+%WER 35.78 [ 3354 / 9375, 698 ins, 933 del, 1723 sub ]
+%SER 68.90 [ 1378 / 2000 ]
+Decode tri2a
+steps/decode.sh --scoring-opts --min-lmw 9 --max-lmw 20 --config common/decode.conf --nj 20 --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/graph_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/dev_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build0
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/graph_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build0
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build0/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,5,42) and mean=23.8
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build0/log/analyze_lattice_depth_stats.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build0/wer_10
+%WER 34.66 [ 3249 / 9375, 611 ins, 961 del, 1677 sub ]
+%SER 67.50 [ 1350 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build0/wer_11
+%WER 35.09 [ 3290 / 9375, 528 ins, 1107 del, 1655 sub ]
+%SER 67.70 [ 1354 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build0/wer_12
+%WER 35.58 [ 3336 / 9375, 450 ins, 1240 del, 1646 sub ]
+%SER 67.75 [ 1355 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build0/wer_13
+%WER 36.25 [ 3398 / 9375, 391 ins, 1384 del, 1623 sub ]
+%SER 68.10 [ 1362 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build0/wer_14
+%WER 37.60 [ 3525 / 9375, 344 ins, 1564 del, 1617 sub ]
+%SER 69.15 [ 1383 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build0/wer_15
+%WER 38.36 [ 3596 / 9375, 297 ins, 1694 del, 1605 sub ]
+%SER 69.55 [ 1391 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build0/wer_16
+%WER 39.25 [ 3680 / 9375, 260 ins, 1830 del, 1590 sub ]
+%SER 70.10 [ 1402 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build0/wer_17
+%WER 40.57 [ 3803 / 9375, 237 ins, 1975 del, 1591 sub ]
+%SER 70.85 [ 1417 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build0/wer_18
+%WER 41.53 [ 3893 / 9375, 222 ins, 2103 del, 1568 sub ]
+%SER 71.90 [ 1438 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build0/wer_19
+%WER 42.54 [ 3988 / 9375, 205 ins, 2217 del, 1566 sub ]
+%SER 72.70 [ 1454 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build0/wer_20
+%WER 43.53 [ 4081 / 9375, 193 ins, 2327 del, 1561 sub ]
+%SER 73.55 [ 1471 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build0/wer_9
+%WER 34.50 [ 3234 / 9375, 703 ins, 825 del, 1706 sub ]
+%SER 67.80 [ 1356 / 2000 ]
+Decode tri2b [LDA+MLLT]
+steps/decode.sh --scoring-opts --min-lmw 9 --max-lmw 20 --config common/decode.conf --nj 20 --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/dev_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build0
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build0
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build0/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,3,23) and mean=11.5
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build0/log/analyze_lattice_depth_stats.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build0/wer_10
+%WER 30.85 [ 2892 / 9375, 722 ins, 758 del, 1412 sub ]
+%SER 63.25 [ 1265 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build0/wer_11
+%WER 31.09 [ 2915 / 9375, 628 ins, 859 del, 1428 sub ]
+%SER 63.55 [ 1271 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build0/wer_12
+%WER 31.54 [ 2957 / 9375, 561 ins, 977 del, 1419 sub ]
+%SER 64.25 [ 1285 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build0/wer_13
+%WER 32.01 [ 3001 / 9375, 494 ins, 1090 del, 1417 sub ]
+%SER 64.90 [ 1298 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build0/wer_14
+%WER 32.36 [ 3034 / 9375, 442 ins, 1191 del, 1401 sub ]
+%SER 64.70 [ 1294 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build0/wer_15
+%WER 32.90 [ 3084 / 9375, 383 ins, 1309 del, 1392 sub ]
+%SER 65.35 [ 1307 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build0/wer_16
+%WER 33.61 [ 3151 / 9375, 341 ins, 1407 del, 1403 sub ]
+%SER 66.30 [ 1326 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build0/wer_17
+%WER 34.50 [ 3234 / 9375, 310 ins, 1530 del, 1394 sub ]
+%SER 66.75 [ 1335 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build0/wer_18
+%WER 35.42 [ 3321 / 9375, 296 ins, 1647 del, 1378 sub ]
+%SER 67.50 [ 1350 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build0/wer_19
+%WER 36.01 [ 3376 / 9375, 277 ins, 1737 del, 1362 sub ]
+%SER 68.25 [ 1365 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build0/wer_20
+%WER 36.64 [ 3435 / 9375, 254 ins, 1826 del, 1355 sub ]
+%SER 68.70 [ 1374 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build0/wer_9
+%WER 31.10 [ 2916 / 9375, 834 ins, 656 del, 1426 sub ]
+%SER 63.80 [ 1276 / 2000 ]
+Decode MMI on top of LDA+MLLT.
+steps/decode.sh --scoring-opts --min-lmw 9 --max-lmw 20 --config common/decode.conf --iter 4 --nj 20 --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/dev_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build0
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G --iter 4 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build0
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build0/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,3,25) and mean=10.0
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build0/log/analyze_lattice_depth_stats.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build0/wer_10
+%WER 23.75 [ 2227 / 9375, 199 ins, 842 del, 1186 sub ]
+%SER 51.70 [ 1034 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build0/wer_11
+%WER 24.82 [ 2327 / 9375, 171 ins, 988 del, 1168 sub ]
+%SER 53.50 [ 1070 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build0/wer_12
+%WER 26.21 [ 2457 / 9375, 141 ins, 1152 del, 1164 sub ]
+%SER 54.90 [ 1098 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build0/wer_13
+%WER 27.71 [ 2598 / 9375, 116 ins, 1312 del, 1170 sub ]
+%SER 57.00 [ 1140 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build0/wer_14
+%WER 28.98 [ 2717 / 9375, 100 ins, 1455 del, 1162 sub ]
+%SER 58.90 [ 1178 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build0/wer_15
+%WER 30.47 [ 2857 / 9375, 88 ins, 1616 del, 1153 sub ]
+%SER 61.00 [ 1220 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build0/wer_16
+%WER 32.02 [ 3002 / 9375, 77 ins, 1785 del, 1140 sub ]
+%SER 63.05 [ 1261 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build0/wer_17
+%WER 33.50 [ 3141 / 9375, 69 ins, 1946 del, 1126 sub ]
+%SER 65.05 [ 1301 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build0/wer_18
+%WER 34.98 [ 3279 / 9375, 61 ins, 2093 del, 1125 sub ]
+%SER 67.05 [ 1341 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build0/wer_19
+%WER 36.30 [ 3403 / 9375, 55 ins, 2219 del, 1129 sub ]
+%SER 68.75 [ 1375 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build0/wer_20
+%WER 37.76 [ 3540 / 9375, 52 ins, 2355 del, 1133 sub ]
+%SER 70.85 [ 1417 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build0/wer_9
+%WER 23.29 [ 2183 / 9375, 257 ins, 720 del, 1206 sub ]
+%SER 51.10 [ 1022 / 2000 ]
+Decode MMI on top of LDA+MLLT with boosting. train_mmi_boost is a number e.g. 0.05
+steps/decode.sh --scoring-opts --min-lmw 9 --max-lmw 20 --config common/decode.conf --iter 4 --nj 20 --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/dev_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build0
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G --iter 4 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build0
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build0/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,3,24) and mean=9.5
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build0/log/analyze_lattice_depth_stats.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build0/wer_10
+%WER 22.60 [ 2119 / 9375, 193 ins, 799 del, 1127 sub ]
+%SER 49.10 [ 982 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build0/wer_11
+%WER 23.53 [ 2206 / 9375, 158 ins, 935 del, 1113 sub ]
+%SER 50.40 [ 1008 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build0/wer_12
+%WER 24.87 [ 2332 / 9375, 134 ins, 1091 del, 1107 sub ]
+%SER 52.15 [ 1043 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build0/wer_13
+%WER 26.34 [ 2469 / 9375, 115 ins, 1256 del, 1098 sub ]
+%SER 54.10 [ 1082 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build0/wer_14
+%WER 27.59 [ 2587 / 9375, 99 ins, 1389 del, 1099 sub ]
+%SER 55.90 [ 1118 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build0/wer_15
+%WER 28.98 [ 2717 / 9375, 87 ins, 1541 del, 1089 sub ]
+%SER 57.85 [ 1157 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build0/wer_16
+%WER 30.36 [ 2846 / 9375, 77 ins, 1691 del, 1078 sub ]
+%SER 60.15 [ 1203 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build0/wer_17
+%WER 31.74 [ 2976 / 9375, 64 ins, 1840 del, 1072 sub ]
+%SER 61.90 [ 1238 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build0/wer_18
+%WER 33.17 [ 3110 / 9375, 59 ins, 1992 del, 1059 sub ]
+%SER 63.70 [ 1274 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build0/wer_19
+%WER 34.60 [ 3244 / 9375, 55 ins, 2138 del, 1051 sub ]
+%SER 66.00 [ 1320 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build0/wer_20
+%WER 36.02 [ 3377 / 9375, 51 ins, 2265 del, 1061 sub ]
+%SER 67.85 [ 1357 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build0/wer_9
+%WER 22.03 [ 2065 / 9375, 254 ins, 687 del, 1124 sub ]
+%SER 48.75 [ 975 / 2000 ]
+Decode MPE.
+steps/decode.sh --scoring-opts --min-lmw 9 --max-lmw 20 --config common/decode.conf --iter 4 --nj 20 --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/dev_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build0
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G --iter 4 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build0
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build0/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,13) and mean=6.1
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build0/log/analyze_lattice_depth_stats.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build0/wer_10
+%WER 20.98 [ 1967 / 9375, 307 ins, 646 del, 1014 sub ]
+%SER 47.55 [ 951 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build0/wer_11
+%WER 21.58 [ 2023 / 9375, 270 ins, 737 del, 1016 sub ]
+%SER 48.60 [ 972 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build0/wer_12
+%WER 22.19 [ 2080 / 9375, 239 ins, 827 del, 1014 sub ]
+%SER 49.10 [ 982 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build0/wer_13
+%WER 23.00 [ 2156 / 9375, 219 ins, 906 del, 1031 sub ]
+%SER 49.80 [ 996 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build0/wer_14
+%WER 23.59 [ 2212 / 9375, 193 ins, 984 del, 1035 sub ]
+%SER 50.65 [ 1013 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build0/wer_15
+%WER 24.64 [ 2310 / 9375, 181 ins, 1087 del, 1042 sub ]
+%SER 52.05 [ 1041 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build0/wer_16
+%WER 25.70 [ 2409 / 9375, 160 ins, 1204 del, 1045 sub ]
+%SER 53.00 [ 1060 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build0/wer_17
+%WER 26.82 [ 2514 / 9375, 148 ins, 1308 del, 1058 sub ]
+%SER 54.55 [ 1091 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build0/wer_18
+%WER 27.74 [ 2601 / 9375, 132 ins, 1414 del, 1055 sub ]
+%SER 55.95 [ 1119 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build0/wer_19
+%WER 28.42 [ 2664 / 9375, 119 ins, 1483 del, 1062 sub ]
+%SER 56.40 [ 1128 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build0/wer_20
+%WER 29.38 [ 2754 / 9375, 111 ins, 1571 del, 1072 sub ]
+%SER 57.20 [ 1144 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build0/wer_9
+%WER 20.67 [ 1938 / 9375, 359 ins, 561 del, 1018 sub ]
+%SER 47.40 [ 948 / 2000 ]
+Monophone decoding
+steps/decode.sh --scoring-opts --min-lmw 9 --max-lmw 20 --config common/decode.conf --nj 20 --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/graph_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/dev_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build2
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/graph_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build2
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 79.1% of the time at utterance begin.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build2/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,5,34) and mean=15.5
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build2/log/analyze_lattice_depth_stats.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build2/wer_10
+%WER 29.60 [ 2775 / 9375, 674 ins, 673 del, 1428 sub ]
+%SER 62.50 [ 1250 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build2/wer_11
+%WER 28.86 [ 2706 / 9375, 620 ins, 706 del, 1380 sub ]
+%SER 61.60 [ 1232 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build2/wer_12
+%WER 28.28 [ 2651 / 9375, 560 ins, 741 del, 1350 sub ]
+%SER 60.90 [ 1218 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build2/wer_13
+%WER 28.03 [ 2628 / 9375, 528 ins, 768 del, 1332 sub ]
+%SER 60.80 [ 1216 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build2/wer_14
+%WER 28.00 [ 2625 / 9375, 491 ins, 811 del, 1323 sub ]
+%SER 60.65 [ 1213 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build2/wer_15
+%WER 27.95 [ 2620 / 9375, 456 ins, 833 del, 1331 sub ]
+%SER 60.55 [ 1211 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build2/wer_16
+%WER 28.06 [ 2631 / 9375, 434 ins, 872 del, 1325 sub ]
+%SER 60.50 [ 1210 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build2/wer_17
+%WER 28.10 [ 2634 / 9375, 420 ins, 899 del, 1315 sub ]
+%SER 60.40 [ 1208 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build2/wer_18
+%WER 28.45 [ 2667 / 9375, 411 ins, 944 del, 1312 sub ]
+%SER 60.45 [ 1209 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build2/wer_19
+%WER 28.52 [ 2674 / 9375, 404 ins, 968 del, 1302 sub ]
+%SER 60.55 [ 1211 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build2/wer_20
+%WER 28.83 [ 2703 / 9375, 398 ins, 998 del, 1307 sub ]
+%SER 60.45 [ 1209 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_dev_build2/wer_9
+%WER 30.39 [ 2849 / 9375, 750 ins, 638 del, 1461 sub ]
+%SER 63.90 [ 1278 / 2000 ]
+Decode tri1
+steps/decode.sh --scoring-opts --min-lmw 9 --max-lmw 20 --config common/decode.conf --nj 20 --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/graph_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/dev_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build2
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/graph_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build2
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build2/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,10) and mean=5.4
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build2/log/analyze_lattice_depth_stats.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build2/wer_10
+%WER 16.68 [ 1564 / 9375, 648 ins, 239 del, 677 sub ]
+%SER 44.10 [ 882 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build2/wer_11
+%WER 15.87 [ 1488 / 9375, 584 ins, 240 del, 664 sub ]
+%SER 42.85 [ 857 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build2/wer_12
+%WER 15.46 [ 1449 / 9375, 553 ins, 248 del, 648 sub ]
+%SER 42.25 [ 845 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build2/wer_13
+%WER 15.19 [ 1424 / 9375, 511 ins, 266 del, 647 sub ]
+%SER 41.55 [ 831 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build2/wer_14
+%WER 14.61 [ 1370 / 9375, 467 ins, 276 del, 627 sub ]
+%SER 40.25 [ 805 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build2/wer_15
+%WER 14.49 [ 1358 / 9375, 437 ins, 291 del, 630 sub ]
+%SER 39.85 [ 797 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build2/wer_16
+%WER 14.46 [ 1356 / 9375, 422 ins, 310 del, 624 sub ]
+%SER 39.80 [ 796 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build2/wer_17
+%WER 14.57 [ 1366 / 9375, 417 ins, 324 del, 625 sub ]
+%SER 39.95 [ 799 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build2/wer_18
+%WER 14.55 [ 1364 / 9375, 404 ins, 331 del, 629 sub ]
+%SER 39.95 [ 799 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build2/wer_19
+%WER 14.58 [ 1367 / 9375, 390 ins, 347 del, 630 sub ]
+%SER 39.90 [ 798 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build2/wer_20
+%WER 14.74 [ 1382 / 9375, 392 ins, 361 del, 629 sub ]
+%SER 40.20 [ 804 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_dev_build2/wer_9
+%WER 17.32 [ 1624 / 9375, 708 ins, 237 del, 679 sub ]
+%SER 45.30 [ 906 / 2000 ]
+Decode tri2a
+steps/decode.sh --scoring-opts --min-lmw 9 --max-lmw 20 --config common/decode.conf --nj 20 --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/graph_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/dev_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build2
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/graph_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build2
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build2/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,10) and mean=5.3
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build2/log/analyze_lattice_depth_stats.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build2/wer_10
+%WER 16.11 [ 1510 / 9375, 649 ins, 202 del, 659 sub ]
+%SER 42.45 [ 849 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build2/wer_11
+%WER 15.41 [ 1445 / 9375, 581 ins, 209 del, 655 sub ]
+%SER 41.20 [ 824 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build2/wer_12
+%WER 14.97 [ 1403 / 9375, 537 ins, 231 del, 635 sub ]
+%SER 40.15 [ 803 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build2/wer_13
+%WER 14.69 [ 1377 / 9375, 510 ins, 247 del, 620 sub ]
+%SER 39.70 [ 794 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build2/wer_14
+%WER 14.56 [ 1365 / 9375, 488 ins, 260 del, 617 sub ]
+%SER 39.25 [ 785 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build2/wer_15
+%WER 14.43 [ 1353 / 9375, 471 ins, 272 del, 610 sub ]
+%SER 38.75 [ 775 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build2/wer_16
+%WER 14.21 [ 1332 / 9375, 451 ins, 290 del, 591 sub ]
+%SER 38.00 [ 760 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build2/wer_17
+%WER 14.08 [ 1320 / 9375, 427 ins, 304 del, 589 sub ]
+%SER 37.95 [ 759 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build2/wer_18
+%WER 14.04 [ 1316 / 9375, 411 ins, 321 del, 584 sub ]
+%SER 38.05 [ 761 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build2/wer_19
+%WER 14.06 [ 1318 / 9375, 399 ins, 331 del, 588 sub ]
+%SER 38.10 [ 762 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build2/wer_20
+%WER 14.04 [ 1316 / 9375, 388 ins, 339 del, 589 sub ]
+%SER 38.20 [ 764 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_dev_build2/wer_9
+%WER 16.80 [ 1575 / 9375, 716 ins, 190 del, 669 sub ]
+%SER 43.95 [ 879 / 2000 ]
+Decode tri2b [LDA+MLLT]
+steps/decode.sh --scoring-opts --min-lmw 9 --max-lmw 20 --config common/decode.conf --nj 20 --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/dev_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build2
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build2
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build2/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,7) and mean=3.7
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build2/log/analyze_lattice_depth_stats.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build2/wer_10
+%WER 16.23 [ 1522 / 9375, 702 ins, 190 del, 630 sub ]
+%SER 43.75 [ 875 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build2/wer_11
+%WER 15.69 [ 1471 / 9375, 647 ins, 196 del, 628 sub ]
+%SER 42.30 [ 846 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build2/wer_12
+%WER 15.02 [ 1408 / 9375, 593 ins, 204 del, 611 sub ]
+%SER 40.50 [ 810 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build2/wer_13
+%WER 14.46 [ 1356 / 9375, 550 ins, 212 del, 594 sub ]
+%SER 39.60 [ 792 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build2/wer_14
+%WER 14.09 [ 1321 / 9375, 508 ins, 217 del, 596 sub ]
+%SER 38.60 [ 772 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build2/wer_15
+%WER 13.83 [ 1297 / 9375, 478 ins, 230 del, 589 sub ]
+%SER 38.35 [ 767 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build2/wer_16
+%WER 13.66 [ 1281 / 9375, 461 ins, 236 del, 584 sub ]
+%SER 38.05 [ 761 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build2/wer_17
+%WER 13.62 [ 1277 / 9375, 442 ins, 247 del, 588 sub ]
+%SER 37.70 [ 754 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build2/wer_18
+%WER 13.67 [ 1282 / 9375, 437 ins, 259 del, 586 sub ]
+%SER 37.90 [ 758 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build2/wer_19
+%WER 13.55 [ 1270 / 9375, 423 ins, 266 del, 581 sub ]
+%SER 37.60 [ 752 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build2/wer_20
+%WER 13.62 [ 1277 / 9375, 415 ins, 282 del, 580 sub ]
+%SER 37.65 [ 753 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_dev_build2/wer_9
+%WER 17.05 [ 1598 / 9375, 774 ins, 181 del, 643 sub ]
+%SER 45.50 [ 910 / 2000 ]
+Decode MMI on top of LDA+MLLT.
+steps/decode.sh --scoring-opts --min-lmw 9 --max-lmw 20 --config common/decode.conf --iter 4 --nj 20 --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/dev_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build2
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G --iter 4 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build2
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build2/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,1,6) and mean=3.7
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build2/log/analyze_lattice_depth_stats.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build2/wer_10
+%WER 10.65 [ 998 / 9375, 288 ins, 235 del, 475 sub ]
+%SER 30.40 [ 608 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build2/wer_11
+%WER 10.40 [ 975 / 9375, 267 ins, 249 del, 459 sub ]
+%SER 29.95 [ 599 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build2/wer_12
+%WER 10.20 [ 956 / 9375, 248 ins, 262 del, 446 sub ]
+%SER 29.75 [ 595 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build2/wer_13
+%WER 9.98 [ 936 / 9375, 227 ins, 268 del, 441 sub ]
+%SER 29.50 [ 590 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build2/wer_14
+%WER 9.79 [ 918 / 9375, 201 ins, 280 del, 437 sub ]
+%SER 29.00 [ 580 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build2/wer_15
+%WER 9.81 [ 920 / 9375, 196 ins, 291 del, 433 sub ]
+%SER 29.10 [ 582 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build2/wer_16
+%WER 9.86 [ 924 / 9375, 193 ins, 302 del, 429 sub ]
+%SER 29.05 [ 581 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build2/wer_17
+%WER 9.83 [ 922 / 9375, 187 ins, 308 del, 427 sub ]
+%SER 29.05 [ 581 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build2/wer_18
+%WER 9.78 [ 917 / 9375, 180 ins, 321 del, 416 sub ]
+%SER 28.95 [ 579 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build2/wer_19
+%WER 9.92 [ 930 / 9375, 177 ins, 337 del, 416 sub ]
+%SER 29.35 [ 587 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build2/wer_20
+%WER 9.95 [ 933 / 9375, 175 ins, 347 del, 411 sub ]
+%SER 29.50 [ 590 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_dev_build2/wer_9
+%WER 11.09 [ 1040 / 9375, 322 ins, 221 del, 497 sub ]
+%SER 31.60 [ 632 / 2000 ]
+Decode MMI on top of LDA+MLLT with boosting. train_mmi_boost is a number e.g. 0.05
+steps/decode.sh --scoring-opts --min-lmw 9 --max-lmw 20 --config common/decode.conf --iter 4 --nj 20 --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/dev_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build2
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G --iter 4 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build2
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build2/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,1,6) and mean=3.5
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build2/log/analyze_lattice_depth_stats.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build2/wer_10
+%WER 10.42 [ 977 / 9375, 281 ins, 236 del, 460 sub ]
+%SER 29.55 [ 591 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build2/wer_11
+%WER 10.20 [ 956 / 9375, 254 ins, 255 del, 447 sub ]
+%SER 29.30 [ 586 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build2/wer_12
+%WER 9.88 [ 926 / 9375, 230 ins, 264 del, 432 sub ]
+%SER 28.85 [ 577 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build2/wer_13
+%WER 9.74 [ 913 / 9375, 220 ins, 273 del, 420 sub ]
+%SER 28.55 [ 571 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build2/wer_14
+%WER 9.59 [ 899 / 9375, 201 ins, 281 del, 417 sub ]
+%SER 28.60 [ 572 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build2/wer_15
+%WER 9.62 [ 902 / 9375, 193 ins, 290 del, 419 sub ]
+%SER 28.60 [ 572 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build2/wer_16
+%WER 9.67 [ 907 / 9375, 193 ins, 300 del, 414 sub ]
+%SER 28.35 [ 567 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build2/wer_17
+%WER 9.78 [ 917 / 9375, 193 ins, 312 del, 412 sub ]
+%SER 28.50 [ 570 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build2/wer_18
+%WER 9.72 [ 911 / 9375, 184 ins, 321 del, 406 sub ]
+%SER 28.60 [ 572 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build2/wer_19
+%WER 9.75 [ 914 / 9375, 178 ins, 334 del, 402 sub ]
+%SER 28.70 [ 574 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build2/wer_20
+%WER 9.82 [ 921 / 9375, 171 ins, 344 del, 406 sub ]
+%SER 28.95 [ 579 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_dev_build2/wer_9
+%WER 10.74 [ 1007 / 9375, 305 ins, 231 del, 471 sub ]
+%SER 30.40 [ 608 / 2000 ]
+Decode MPE.
+steps/decode.sh --scoring-opts --min-lmw 9 --max-lmw 20 --config common/decode.conf --iter 4 --nj 20 --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/dev_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build2
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G --iter 4 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build2
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build2/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,1,4) and mean=2.3
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build2/log/analyze_lattice_depth_stats.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build2/wer_10
+%WER 11.16 [ 1046 / 9375, 361 ins, 229 del, 456 sub ]
+%SER 31.15 [ 623 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build2/wer_11
+%WER 10.93 [ 1025 / 9375, 336 ins, 240 del, 449 sub ]
+%SER 30.90 [ 618 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build2/wer_12
+%WER 10.68 [ 1001 / 9375, 313 ins, 242 del, 446 sub ]
+%SER 30.30 [ 606 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build2/wer_13
+%WER 10.54 [ 988 / 9375, 304 ins, 248 del, 436 sub ]
+%SER 30.00 [ 600 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build2/wer_14
+%WER 10.42 [ 977 / 9375, 287 ins, 258 del, 432 sub ]
+%SER 29.90 [ 598 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build2/wer_15
+%WER 10.29 [ 965 / 9375, 272 ins, 263 del, 430 sub ]
+%SER 29.70 [ 594 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build2/wer_16
+%WER 10.15 [ 952 / 9375, 258 ins, 267 del, 427 sub ]
+%SER 29.80 [ 596 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build2/wer_17
+%WER 10.14 [ 951 / 9375, 251 ins, 271 del, 429 sub ]
+%SER 29.90 [ 598 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build2/wer_18
+%WER 10.24 [ 960 / 9375, 242 ins, 277 del, 441 sub ]
+%SER 29.90 [ 598 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build2/wer_19
+%WER 10.23 [ 959 / 9375, 235 ins, 286 del, 438 sub ]
+%SER 30.00 [ 600 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build2/wer_20
+%WER 10.28 [ 964 / 9375, 232 ins, 298 del, 434 sub ]
+%SER 30.15 [ 603 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_dev_build2/wer_9
+%WER 11.65 [ 1092 / 9375, 392 ins, 217 del, 483 sub ]
+%SER 32.30 [ 646 / 2000 ]
+Monophone decoding
+steps/decode.sh --scoring-opts --min-lmw 9 --max-lmw 20 --config common/decode.conf --nj 20 --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/graph_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/test_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build0
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/graph_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build0
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 74.85% of the time at utterance begin.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build0/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(3,30,193) and mean=82.9
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build0/log/analyze_lattice_depth_stats.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build0/wer_10
+%WER 67.49 [ 6594 / 9771, 405 ins, 2693 del, 3496 sub ]
+%SER 90.55 [ 1811 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build0/wer_11
+%WER 68.15 [ 6659 / 9771, 328 ins, 2927 del, 3404 sub ]
+%SER 90.40 [ 1808 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build0/wer_12
+%WER 68.88 [ 6730 / 9771, 281 ins, 3109 del, 3340 sub ]
+%SER 90.50 [ 1810 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build0/wer_13
+%WER 69.55 [ 6796 / 9771, 251 ins, 3311 del, 3234 sub ]
+%SER 90.35 [ 1807 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build0/wer_14
+%WER 70.56 [ 6894 / 9771, 208 ins, 3510 del, 3176 sub ]
+%SER 90.20 [ 1804 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build0/wer_15
+%WER 71.29 [ 6966 / 9771, 178 ins, 3683 del, 3105 sub ]
+%SER 90.40 [ 1808 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build0/wer_16
+%WER 72.03 [ 7038 / 9771, 151 ins, 3870 del, 3017 sub ]
+%SER 90.50 [ 1810 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build0/wer_17
+%WER 72.82 [ 7115 / 9771, 132 ins, 4021 del, 2962 sub ]
+%SER 90.55 [ 1811 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build0/wer_18
+%WER 73.74 [ 7205 / 9771, 116 ins, 4187 del, 2902 sub ]
+%SER 90.70 [ 1814 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build0/wer_19
+%WER 74.69 [ 7298 / 9771, 102 ins, 4324 del, 2872 sub ]
+%SER 91.05 [ 1821 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build0/wer_20
+%WER 75.37 [ 7364 / 9771, 96 ins, 4434 del, 2834 sub ]
+%SER 91.30 [ 1826 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build0/wer_9
+%WER 67.09 [ 6555 / 9771, 491 ins, 2430 del, 3634 sub ]
+%SER 90.80 [ 1816 / 2000 ]
+Decode tri1
+steps/decode.sh --scoring-opts --min-lmw 9 --max-lmw 20 --config common/decode.conf --nj 20 --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/graph_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/test_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build0
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/graph_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build0
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 78.6% of the time at utterance begin.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build0/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,6,48) and mean=19.9
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build0/log/analyze_lattice_depth_stats.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build0/wer_10
+%WER 36.39 [ 3556 / 9771, 596 ins, 1113 del, 1847 sub ]
+%SER 73.40 [ 1468 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build0/wer_11
+%WER 37.12 [ 3627 / 9771, 498 ins, 1311 del, 1818 sub ]
+%SER 73.75 [ 1475 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build0/wer_12
+%WER 37.88 [ 3701 / 9771, 436 ins, 1470 del, 1795 sub ]
+%SER 73.70 [ 1474 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build0/wer_13
+%WER 38.70 [ 3781 / 9771, 371 ins, 1622 del, 1788 sub ]
+%SER 73.85 [ 1477 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build0/wer_14
+%WER 39.56 [ 3865 / 9771, 329 ins, 1753 del, 1783 sub ]
+%SER 74.20 [ 1484 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build0/wer_15
+%WER 40.71 [ 3978 / 9771, 301 ins, 1934 del, 1743 sub ]
+%SER 74.60 [ 1492 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build0/wer_16
+%WER 41.63 [ 4068 / 9771, 268 ins, 2072 del, 1728 sub ]
+%SER 75.25 [ 1505 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build0/wer_17
+%WER 42.81 [ 4183 / 9771, 235 ins, 2206 del, 1742 sub ]
+%SER 76.00 [ 1520 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build0/wer_18
+%WER 43.96 [ 4295 / 9771, 218 ins, 2336 del, 1741 sub ]
+%SER 77.00 [ 1540 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build0/wer_19
+%WER 44.96 [ 4393 / 9771, 193 ins, 2465 del, 1735 sub ]
+%SER 77.85 [ 1557 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build0/wer_20
+%WER 45.80 [ 4475 / 9771, 182 ins, 2573 del, 1720 sub ]
+%SER 78.95 [ 1579 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build0/wer_9
+%WER 36.23 [ 3540 / 9771, 711 ins, 953 del, 1876 sub ]
+%SER 74.10 [ 1482 / 2000 ]
+Decode tri2a
+steps/decode.sh --scoring-opts --min-lmw 9 --max-lmw 20 --config common/decode.conf --nj 20 --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/graph_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/test_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build0
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/graph_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build0
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build0/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,5,43) and mean=19.8
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build0/log/analyze_lattice_depth_stats.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build0/wer_10
+%WER 35.35 [ 3454 / 9771, 630 ins, 1049 del, 1775 sub ]
+%SER 70.65 [ 1413 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build0/wer_11
+%WER 35.89 [ 3507 / 9771, 531 ins, 1207 del, 1769 sub ]
+%SER 70.00 [ 1400 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build0/wer_12
+%WER 36.87 [ 3603 / 9771, 466 ins, 1366 del, 1771 sub ]
+%SER 70.65 [ 1413 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build0/wer_13
+%WER 37.59 [ 3673 / 9771, 395 ins, 1522 del, 1756 sub ]
+%SER 70.85 [ 1417 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build0/wer_14
+%WER 38.73 [ 3784 / 9771, 341 ins, 1690 del, 1753 sub ]
+%SER 71.35 [ 1427 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build0/wer_15
+%WER 39.66 [ 3875 / 9771, 305 ins, 1838 del, 1732 sub ]
+%SER 71.65 [ 1433 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build0/wer_16
+%WER 40.98 [ 4004 / 9771, 275 ins, 2008 del, 1721 sub ]
+%SER 72.60 [ 1452 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build0/wer_17
+%WER 41.79 [ 4083 / 9771, 244 ins, 2131 del, 1708 sub ]
+%SER 73.00 [ 1460 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build0/wer_18
+%WER 42.89 [ 4191 / 9771, 217 ins, 2270 del, 1704 sub ]
+%SER 73.90 [ 1478 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build0/wer_19
+%WER 43.87 [ 4287 / 9771, 203 ins, 2376 del, 1708 sub ]
+%SER 74.80 [ 1496 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build0/wer_20
+%WER 44.73 [ 4371 / 9771, 183 ins, 2482 del, 1706 sub ]
+%SER 75.55 [ 1511 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build0/wer_9
+%WER 35.17 [ 3436 / 9771, 744 ins, 884 del, 1808 sub ]
+%SER 70.90 [ 1418 / 2000 ]
+Decode tri2b [LDA+MLLT]
+steps/decode.sh --scoring-opts --min-lmw 9 --max-lmw 20 --config common/decode.conf --nj 20 --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/test_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build0
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build0
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build0/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,3,24) and mean=12.7
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build0/log/analyze_lattice_depth_stats.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build0/wer_10
+%WER 31.03 [ 3032 / 9771, 743 ins, 797 del, 1492 sub ]
+%SER 66.50 [ 1330 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build0/wer_11
+%WER 30.98 [ 3027 / 9771, 636 ins, 896 del, 1495 sub ]
+%SER 66.15 [ 1323 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build0/wer_12
+%WER 31.55 [ 3083 / 9771, 567 ins, 1031 del, 1485 sub ]
+%SER 67.00 [ 1340 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build0/wer_13
+%WER 32.24 [ 3150 / 9771, 509 ins, 1157 del, 1484 sub ]
+%SER 67.05 [ 1341 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build0/wer_14
+%WER 32.94 [ 3219 / 9771, 456 ins, 1275 del, 1488 sub ]
+%SER 67.25 [ 1345 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build0/wer_15
+%WER 33.69 [ 3292 / 9771, 409 ins, 1406 del, 1477 sub ]
+%SER 67.70 [ 1354 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build0/wer_16
+%WER 34.42 [ 3363 / 9771, 370 ins, 1535 del, 1458 sub ]
+%SER 68.05 [ 1361 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build0/wer_17
+%WER 35.03 [ 3423 / 9771, 343 ins, 1640 del, 1440 sub ]
+%SER 69.10 [ 1382 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build0/wer_18
+%WER 35.93 [ 3511 / 9771, 309 ins, 1743 del, 1459 sub ]
+%SER 69.60 [ 1392 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build0/wer_19
+%WER 36.69 [ 3585 / 9771, 279 ins, 1845 del, 1461 sub ]
+%SER 70.20 [ 1404 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build0/wer_20
+%WER 37.52 [ 3666 / 9771, 265 ins, 1939 del, 1462 sub ]
+%SER 71.20 [ 1424 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build0/wer_9
+%WER 31.40 [ 3068 / 9771, 860 ins, 693 del, 1515 sub ]
+%SER 66.85 [ 1337 / 2000 ]
+Decode MMI on top of LDA+MLLT.
+steps/decode.sh --scoring-opts --min-lmw 9 --max-lmw 20 --config common/decode.conf --iter 4 --nj 20 --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/test_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build0
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G --iter 4 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build0
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build0/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,3,24) and mean=10.2
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build0/log/analyze_lattice_depth_stats.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build0/wer_10
+%WER 24.97 [ 2440 / 9771, 262 ins, 909 del, 1269 sub ]
+%SER 54.70 [ 1094 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build0/wer_11
+%WER 26.12 [ 2552 / 9771, 210 ins, 1086 del, 1256 sub ]
+%SER 56.45 [ 1129 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build0/wer_12
+%WER 27.51 [ 2688 / 9771, 185 ins, 1234 del, 1269 sub ]
+%SER 57.95 [ 1159 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build0/wer_13
+%WER 28.81 [ 2815 / 9771, 154 ins, 1397 del, 1264 sub ]
+%SER 59.55 [ 1191 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build0/wer_14
+%WER 30.02 [ 2933 / 9771, 130 ins, 1562 del, 1241 sub ]
+%SER 61.10 [ 1222 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build0/wer_15
+%WER 31.94 [ 3121 / 9771, 116 ins, 1769 del, 1236 sub ]
+%SER 62.95 [ 1259 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build0/wer_16
+%WER 33.34 [ 3258 / 9771, 100 ins, 1936 del, 1222 sub ]
+%SER 64.80 [ 1296 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build0/wer_17
+%WER 34.79 [ 3399 / 9771, 84 ins, 2090 del, 1225 sub ]
+%SER 67.05 [ 1341 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build0/wer_18
+%WER 36.12 [ 3529 / 9771, 78 ins, 2224 del, 1227 sub ]
+%SER 69.00 [ 1380 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build0/wer_19
+%WER 37.43 [ 3657 / 9771, 69 ins, 2359 del, 1229 sub ]
+%SER 71.15 [ 1423 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build0/wer_20
+%WER 38.61 [ 3773 / 9771, 63 ins, 2478 del, 1232 sub ]
+%SER 72.70 [ 1454 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build0/wer_9
+%WER 24.21 [ 2366 / 9771, 318 ins, 764 del, 1284 sub ]
+%SER 53.90 [ 1078 / 2000 ]
+Decode MMI on top of LDA+MLLT with boosting. train_mmi_boost is a number e.g. 0.05
+steps/decode.sh --scoring-opts --min-lmw 9 --max-lmw 20 --config common/decode.conf --iter 4 --nj 20 --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/test_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build0
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G --iter 4 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build0
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build0/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,3,23) and mean=9.6
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build0/log/analyze_lattice_depth_stats.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build0/wer_10
+%WER 23.62 [ 2308 / 9771, 236 ins, 884 del, 1188 sub ]
+%SER 52.40 [ 1048 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build0/wer_11
+%WER 24.77 [ 2420 / 9771, 202 ins, 1026 del, 1192 sub ]
+%SER 54.30 [ 1086 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build0/wer_12
+%WER 26.08 [ 2548 / 9771, 171 ins, 1172 del, 1205 sub ]
+%SER 55.75 [ 1115 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build0/wer_13
+%WER 27.21 [ 2659 / 9771, 149 ins, 1312 del, 1198 sub ]
+%SER 56.90 [ 1138 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build0/wer_14
+%WER 28.40 [ 2775 / 9771, 120 ins, 1479 del, 1176 sub ]
+%SER 58.35 [ 1167 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build0/wer_15
+%WER 30.17 [ 2948 / 9771, 109 ins, 1665 del, 1174 sub ]
+%SER 60.20 [ 1204 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build0/wer_16
+%WER 31.69 [ 3096 / 9771, 91 ins, 1828 del, 1177 sub ]
+%SER 62.10 [ 1242 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build0/wer_17
+%WER 33.13 [ 3237 / 9771, 79 ins, 1999 del, 1159 sub ]
+%SER 64.05 [ 1281 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build0/wer_18
+%WER 34.27 [ 3349 / 9771, 74 ins, 2119 del, 1156 sub ]
+%SER 65.85 [ 1317 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build0/wer_19
+%WER 35.51 [ 3470 / 9771, 67 ins, 2244 del, 1159 sub ]
+%SER 67.70 [ 1354 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build0/wer_20
+%WER 36.92 [ 3607 / 9771, 62 ins, 2374 del, 1171 sub ]
+%SER 69.65 [ 1393 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build0/wer_9
+%WER 23.00 [ 2247 / 9771, 299 ins, 741 del, 1207 sub ]
+%SER 51.60 [ 1032 / 2000 ]
+Decode MPE.
+steps/decode.sh --scoring-opts --min-lmw 9 --max-lmw 20 --config common/decode.conf --iter 4 --nj 20 --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/test_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build0
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G --iter 4 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build0 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build0
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build0/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,14) and mean=6.0
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build0/log/analyze_lattice_depth_stats.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build0/wer_10
+%WER 21.16 [ 2068 / 9771, 331 ins, 635 del, 1102 sub ]
+%SER 49.40 [ 988 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build0/wer_11
+%WER 21.66 [ 2116 / 9771, 292 ins, 721 del, 1103 sub ]
+%SER 50.05 [ 1001 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build0/wer_12
+%WER 22.35 [ 2184 / 9771, 259 ins, 822 del, 1103 sub ]
+%SER 50.85 [ 1017 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build0/wer_13
+%WER 23.16 [ 2263 / 9771, 232 ins, 934 del, 1097 sub ]
+%SER 51.65 [ 1033 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build0/wer_14
+%WER 24.19 [ 2364 / 9771, 210 ins, 1051 del, 1103 sub ]
+%SER 52.35 [ 1047 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build0/wer_15
+%WER 25.02 [ 2445 / 9771, 195 ins, 1149 del, 1101 sub ]
+%SER 53.45 [ 1069 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build0/wer_16
+%WER 26.00 [ 2540 / 9771, 173 ins, 1269 del, 1098 sub ]
+%SER 54.70 [ 1094 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build0/wer_17
+%WER 26.81 [ 2620 / 9771, 152 ins, 1371 del, 1097 sub ]
+%SER 55.45 [ 1109 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build0/wer_18
+%WER 28.02 [ 2738 / 9771, 141 ins, 1488 del, 1109 sub ]
+%SER 56.80 [ 1136 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build0/wer_19
+%WER 28.70 [ 2804 / 9771, 131 ins, 1559 del, 1114 sub ]
+%SER 57.50 [ 1150 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build0/wer_20
+%WER 29.65 [ 2897 / 9771, 125 ins, 1648 del, 1124 sub ]
+%SER 58.55 [ 1171 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build0/wer_9
+%WER 20.85 [ 2037 / 9771, 380 ins, 547 del, 1110 sub ]
+%SER 49.20 [ 984 / 2000 ]
+Monophone decoding
+steps/decode.sh --scoring-opts --min-lmw 9 --max-lmw 20 --config common/decode.conf --nj 20 --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/graph_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/test_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build2
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/graph_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build2
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 78.05% of the time at utterance begin.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build2/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,5,39) and mean=16.6
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build2/log/analyze_lattice_depth_stats.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build2/wer_10
+%WER 32.32 [ 3158 / 9771, 746 ins, 794 del, 1618 sub ]
+%SER 65.30 [ 1306 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build2/wer_11
+%WER 31.65 [ 3093 / 9771, 692 ins, 811 del, 1590 sub ]
+%SER 63.95 [ 1279 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build2/wer_12
+%WER 31.26 [ 3054 / 9771, 641 ins, 862 del, 1551 sub ]
+%SER 63.30 [ 1266 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build2/wer_13
+%WER 30.96 [ 3025 / 9771, 608 ins, 883 del, 1534 sub ]
+%SER 62.65 [ 1253 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build2/wer_14
+%WER 30.98 [ 3027 / 9771, 574 ins, 918 del, 1535 sub ]
+%SER 62.35 [ 1247 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build2/wer_15
+%WER 30.78 [ 3008 / 9771, 541 ins, 940 del, 1527 sub ]
+%SER 61.80 [ 1236 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build2/wer_16
+%WER 30.67 [ 2997 / 9771, 513 ins, 969 del, 1515 sub ]
+%SER 61.50 [ 1230 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build2/wer_17
+%WER 30.91 [ 3020 / 9771, 492 ins, 1019 del, 1509 sub ]
+%SER 61.45 [ 1229 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build2/wer_18
+%WER 31.05 [ 3034 / 9771, 474 ins, 1073 del, 1487 sub ]
+%SER 61.55 [ 1231 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build2/wer_19
+%WER 31.18 [ 3047 / 9771, 456 ins, 1108 del, 1483 sub ]
+%SER 61.80 [ 1236 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build2/wer_20
+%WER 31.29 [ 3057 / 9771, 440 ins, 1133 del, 1484 sub ]
+%SER 62.10 [ 1242 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/mono/decode_test_build2/wer_9
+%WER 33.35 [ 3259 / 9771, 803 ins, 773 del, 1683 sub ]
+%SER 66.80 [ 1336 / 2000 ]
+Decode tri1
+steps/decode.sh --scoring-opts --min-lmw 9 --max-lmw 20 --config common/decode.conf --nj 20 --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/graph_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/test_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build2
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/graph_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build2
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build2/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,11) and mean=5.4
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build2/log/analyze_lattice_depth_stats.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build2/wer_10
+%WER 16.87 [ 1648 / 9771, 689 ins, 246 del, 713 sub ]
+%SER 45.65 [ 913 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build2/wer_11
+%WER 16.23 [ 1586 / 9771, 638 ins, 263 del, 685 sub ]
+%SER 44.45 [ 889 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build2/wer_12
+%WER 15.65 [ 1529 / 9771, 580 ins, 285 del, 664 sub ]
+%SER 43.00 [ 860 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build2/wer_13
+%WER 15.26 [ 1491 / 9771, 539 ins, 288 del, 664 sub ]
+%SER 41.85 [ 837 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build2/wer_14
+%WER 14.95 [ 1461 / 9771, 513 ins, 299 del, 649 sub ]
+%SER 41.40 [ 828 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build2/wer_15
+%WER 14.72 [ 1438 / 9771, 486 ins, 308 del, 644 sub ]
+%SER 40.85 [ 817 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build2/wer_16
+%WER 14.69 [ 1435 / 9771, 471 ins, 320 del, 644 sub ]
+%SER 40.75 [ 815 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build2/wer_17
+%WER 14.59 [ 1426 / 9771, 448 ins, 334 del, 644 sub ]
+%SER 40.60 [ 812 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build2/wer_18
+%WER 14.65 [ 1431 / 9771, 429 ins, 352 del, 650 sub ]
+%SER 40.80 [ 816 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build2/wer_19
+%WER 14.69 [ 1435 / 9771, 413 ins, 368 del, 654 sub ]
+%SER 40.90 [ 818 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build2/wer_20
+%WER 14.61 [ 1428 / 9771, 403 ins, 372 del, 653 sub ]
+%SER 40.75 [ 815 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri1/decode_test_build2/wer_9
+%WER 17.90 [ 1749 / 9771, 769 ins, 236 del, 744 sub ]
+%SER 47.60 [ 952 / 2000 ]
+Decode tri2a
+steps/decode.sh --scoring-opts --min-lmw 9 --max-lmw 20 --config common/decode.conf --nj 20 --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/graph_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/test_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build2
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/graph_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build2
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build2/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,10) and mean=4.9
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build2/log/analyze_lattice_depth_stats.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build2/wer_10
+%WER 16.47 [ 1609 / 9771, 692 ins, 231 del, 686 sub ]
+%SER 44.75 [ 895 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build2/wer_11
+%WER 15.92 [ 1556 / 9771, 637 ins, 236 del, 683 sub ]
+%SER 43.10 [ 862 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build2/wer_12
+%WER 15.55 [ 1519 / 9771, 594 ins, 246 del, 679 sub ]
+%SER 41.95 [ 839 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build2/wer_13
+%WER 15.26 [ 1491 / 9771, 560 ins, 253 del, 678 sub ]
+%SER 41.35 [ 827 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build2/wer_14
+%WER 14.94 [ 1460 / 9771, 518 ins, 273 del, 669 sub ]
+%SER 40.65 [ 813 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build2/wer_15
+%WER 14.88 [ 1454 / 9771, 496 ins, 287 del, 671 sub ]
+%SER 40.35 [ 807 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build2/wer_16
+%WER 14.70 [ 1436 / 9771, 472 ins, 302 del, 662 sub ]
+%SER 40.45 [ 809 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build2/wer_17
+%WER 14.58 [ 1425 / 9771, 451 ins, 317 del, 657 sub ]
+%SER 40.35 [ 807 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build2/wer_18
+%WER 14.54 [ 1421 / 9771, 438 ins, 328 del, 655 sub ]
+%SER 40.15 [ 803 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build2/wer_19
+%WER 14.65 [ 1431 / 9771, 431 ins, 338 del, 662 sub ]
+%SER 40.40 [ 808 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build2/wer_20
+%WER 14.62 [ 1429 / 9771, 414 ins, 357 del, 658 sub ]
+%SER 40.65 [ 813 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2a/decode_test_build2/wer_9
+%WER 17.24 [ 1685 / 9771, 757 ins, 222 del, 706 sub ]
+%SER 46.60 [ 932 / 2000 ]
+Decode tri2b [LDA+MLLT]
+steps/decode.sh --scoring-opts --min-lmw 9 --max-lmw 20 --config common/decode.conf --nj 20 --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/test_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build2
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build2
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build2/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,7) and mean=3.9
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build2/log/analyze_lattice_depth_stats.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build2/wer_10
+%WER 16.73 [ 1635 / 9771, 762 ins, 206 del, 667 sub ]
+%SER 45.40 [ 908 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build2/wer_11
+%WER 16.22 [ 1585 / 9771, 703 ins, 222 del, 660 sub ]
+%SER 44.35 [ 887 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build2/wer_12
+%WER 15.68 [ 1532 / 9771, 655 ins, 231 del, 646 sub ]
+%SER 42.95 [ 859 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build2/wer_13
+%WER 15.36 [ 1501 / 9771, 626 ins, 240 del, 635 sub ]
+%SER 42.40 [ 848 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build2/wer_14
+%WER 14.83 [ 1449 / 9771, 583 ins, 244 del, 622 sub ]
+%SER 41.45 [ 829 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build2/wer_15
+%WER 14.52 [ 1419 / 9771, 554 ins, 255 del, 610 sub ]
+%SER 41.00 [ 820 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build2/wer_16
+%WER 14.31 [ 1398 / 9771, 528 ins, 260 del, 610 sub ]
+%SER 40.35 [ 807 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build2/wer_17
+%WER 14.21 [ 1388 / 9771, 508 ins, 266 del, 614 sub ]
+%SER 40.05 [ 801 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build2/wer_18
+%WER 14.11 [ 1379 / 9771, 490 ins, 268 del, 621 sub ]
+%SER 39.80 [ 796 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build2/wer_19
+%WER 14.08 [ 1376 / 9771, 480 ins, 275 del, 621 sub ]
+%SER 39.80 [ 796 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build2/wer_20
+%WER 14.16 [ 1384 / 9771, 472 ins, 283 del, 629 sub ]
+%SER 39.90 [ 798 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/decode_test_build2/wer_9
+%WER 17.58 [ 1718 / 9771, 829 ins, 203 del, 686 sub ]
+%SER 46.90 [ 938 / 2000 ]
+Decode MMI on top of LDA+MLLT.
+steps/decode.sh --scoring-opts --min-lmw 9 --max-lmw 20 --config common/decode.conf --iter 4 --nj 20 --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/test_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build2
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G --iter 4 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build2
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build2/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,1,6) and mean=3.4
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build2/log/analyze_lattice_depth_stats.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build2/wer_10
+%WER 11.04 [ 1079 / 9771, 359 ins, 219 del, 501 sub ]
+%SER 31.70 [ 634 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build2/wer_11
+%WER 10.67 [ 1043 / 9771, 324 ins, 226 del, 493 sub ]
+%SER 31.05 [ 621 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build2/wer_12
+%WER 10.53 [ 1029 / 9771, 311 ins, 243 del, 475 sub ]
+%SER 30.75 [ 615 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build2/wer_13
+%WER 10.19 [ 996 / 9771, 280 ins, 251 del, 465 sub ]
+%SER 30.00 [ 600 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build2/wer_14
+%WER 10.04 [ 981 / 9771, 266 ins, 265 del, 450 sub ]
+%SER 29.45 [ 589 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build2/wer_15
+%WER 10.01 [ 978 / 9771, 254 ins, 277 del, 447 sub ]
+%SER 29.40 [ 588 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build2/wer_16
+%WER 10.02 [ 979 / 9771, 242 ins, 298 del, 439 sub ]
+%SER 29.65 [ 593 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build2/wer_17
+%WER 10.03 [ 980 / 9771, 234 ins, 310 del, 436 sub ]
+%SER 29.70 [ 594 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build2/wer_18
+%WER 10.27 [ 1003 / 9771, 234 ins, 333 del, 436 sub ]
+%SER 29.95 [ 599 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build2/wer_19
+%WER 10.16 [ 993 / 9771, 223 ins, 351 del, 419 sub ]
+%SER 29.85 [ 597 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build2/wer_20
+%WER 10.30 [ 1006 / 9771, 217 ins, 370 del, 419 sub ]
+%SER 30.00 [ 600 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi/decode_it4_test_build2/wer_9
+%WER 11.32 [ 1106 / 9771, 389 ins, 204 del, 513 sub ]
+%SER 32.15 [ 643 / 2000 ]
+Decode MMI on top of LDA+MLLT with boosting. train_mmi_boost is a number e.g. 0.05
+steps/decode.sh --scoring-opts --min-lmw 9 --max-lmw 20 --config common/decode.conf --iter 4 --nj 20 --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/test_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build2
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G --iter 4 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build2
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build2/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,1,6) and mean=3.2
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build2/log/analyze_lattice_depth_stats.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build2/wer_10
+%WER 10.59 [ 1035 / 9771, 334 ins, 228 del, 473 sub ]
+%SER 30.65 [ 613 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build2/wer_11
+%WER 10.34 [ 1010 / 9771, 312 ins, 229 del, 469 sub ]
+%SER 30.15 [ 603 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build2/wer_12
+%WER 10.15 [ 992 / 9771, 289 ins, 241 del, 462 sub ]
+%SER 29.60 [ 592 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build2/wer_13
+%WER 9.91 [ 968 / 9771, 266 ins, 251 del, 451 sub ]
+%SER 29.20 [ 584 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build2/wer_14
+%WER 10.02 [ 979 / 9771, 257 ins, 275 del, 447 sub ]
+%SER 29.35 [ 587 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build2/wer_15
+%WER 9.82 [ 960 / 9771, 241 ins, 283 del, 436 sub ]
+%SER 29.10 [ 582 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build2/wer_16
+%WER 9.78 [ 956 / 9771, 235 ins, 296 del, 425 sub ]
+%SER 28.95 [ 579 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build2/wer_17
+%WER 9.80 [ 958 / 9771, 228 ins, 306 del, 424 sub ]
+%SER 28.95 [ 579 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build2/wer_18
+%WER 9.69 [ 947 / 9771, 215 ins, 317 del, 415 sub ]
+%SER 28.95 [ 579 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build2/wer_19
+%WER 9.92 [ 969 / 9771, 211 ins, 343 del, 415 sub ]
+%SER 29.35 [ 587 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build2/wer_20
+%WER 10.01 [ 978 / 9771, 206 ins, 362 del, 410 sub ]
+%SER 29.55 [ 591 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mmi_b0.05/decode_it4_test_build2/wer_9
+%WER 10.87 [ 1062 / 9771, 366 ins, 211 del, 485 sub ]
+%SER 31.20 [ 624 / 2000 ]
+Decode MPE.
+steps/decode.sh --scoring-opts --min-lmw 9 --max-lmw 20 --config common/decode.conf --iter 4 --nj 20 --cmd run.pl --mem 4G /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/lang_prep/test_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build2
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 4G --iter 4 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b/graph_build2 /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build2
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build2/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,1,5) and mean=2.5
+steps/diagnostic/analyze_lats.sh: see stats in /home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build2/log/analyze_lattice_depth_stats.log
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build2/wer_10
+%WER 11.72 [ 1145 / 9771, 396 ins, 217 del, 532 sub ]
+%SER 33.10 [ 662 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build2/wer_11
+%WER 11.43 [ 1117 / 9771, 377 ins, 224 del, 516 sub ]
+%SER 32.60 [ 652 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build2/wer_12
+%WER 11.12 [ 1087 / 9771, 348 ins, 235 del, 504 sub ]
+%SER 32.25 [ 645 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build2/wer_13
+%WER 10.97 [ 1072 / 9771, 341 ins, 249 del, 482 sub ]
+%SER 31.85 [ 637 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build2/wer_14
+%WER 10.88 [ 1063 / 9771, 327 ins, 254 del, 482 sub ]
+%SER 31.45 [ 629 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build2/wer_15
+%WER 10.81 [ 1056 / 9771, 319 ins, 262 del, 475 sub ]
+%SER 31.10 [ 622 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build2/wer_16
+%WER 10.64 [ 1040 / 9771, 303 ins, 264 del, 473 sub ]
+%SER 30.65 [ 613 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build2/wer_17
+%WER 10.63 [ 1039 / 9771, 294 ins, 275 del, 470 sub ]
+%SER 30.60 [ 612 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build2/wer_18
+%WER 10.67 [ 1043 / 9771, 287 ins, 293 del, 463 sub ]
+%SER 30.65 [ 613 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build2/wer_19
+%WER 10.80 [ 1055 / 9771, 279 ins, 306 del, 470 sub ]
+%SER 30.70 [ 614 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build2/wer_20
+%WER 10.93 [ 1068 / 9771, 279 ins, 321 del, 468 sub ]
+%SER 30.90 [ 618 / 2000 ]
+/home/iiit-dharwad/kaldi/egs/vystadial_en/s5/exp/tri2b_mpe/decode_it4_test_build2/wer_9
+%WER 12.00 [ 1173 / 9771, 428 ins, 212 del, 533 sub ]
+%SER 33.70 [ 674 / 2000 ]
+Successfully trained and evaluated all the experiments
+exp            	set 	LM    	LMW	WER  	SER  
+mono           	test	build0	9  	67.09	90.8 
+tri1           	test	build0	9  	36.23	74.1 
+tri2a          	test	build0	9  	35.17	70.9 
+tri2b          	test	build0	10 	31.03	66.5 
+tri2b_mmi      	test	build0	9  	24.21	53.9 
+tri2b_mmi_b0.05	test	build0	9  	23.0 	51.6 
+tri2b_mpe      	test	build0	9  	20.85	49.2 
+mono           	test	build2	15 	30.78	61.8 
+tri1           	test	build2	16 	14.69	40.75
+tri2a          	test	build2	18 	14.54	40.15
+tri2b          	test	build2	19 	14.08	39.8 
+tri2b_mmi      	test	build2	18 	10.27	29.95
+tri2b_mmi_b0.05	test	build2	14 	10.02	29.35
+tri2b_mpe      	test	build2	17 	10.63	30.6 
+--- Exporting models to trained_models ...
