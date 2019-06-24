@@ -22,6 +22,7 @@ _Author : Suraj Durgesht_
       cat INSTALL
       cd tools/
       cat INSTALL
+      make
       
 5. Ceck out dependencies
     extras/check_dependencies.sh
