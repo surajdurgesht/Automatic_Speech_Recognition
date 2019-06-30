@@ -1,0 +1,1151 @@
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ sudo apt-get remove docker docker-engine docker.io
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package 'docker-engine' is not installed, so not removed
+Package 'docker' is not installed, so not removed
+Package 'docker.io' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 7 not upgraded.
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ clear
+
+
+
+
+
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ sudo apt-get remove docker docker-engine docker.io
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package 'docker-engine' is not installed, so not removed
+Package 'docker' is not installed, so not removed
+Package 'docker.io' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 7 not upgraded.
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ sudo apt upgrade
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Calculating upgrade... Done
+The following NEW packages will be installed:
+  linux-headers-4.18.0-25 linux-headers-4.18.0-25-generic linux-image-4.18.0-25-generic linux-modules-4.18.0-25-generic linux-modules-extra-4.18.0-25-generic
+The following packages will be upgraded:
+  initramfs-tools initramfs-tools-bin initramfs-tools-core linux-generic linux-headers-generic linux-image-generic linux-libc-dev
+7 upgraded, 5 newly installed, 0 to remove and 0 not upgraded.
+Need to get 66.7 MB of archives.
+After this operation, 327 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 initramfs-tools all 0.131ubuntu15.2 [9,676 B]
+Get:2 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 initramfs-tools-core all 0.131ubuntu15.2 [45.8 kB]
+Get:3 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 initramfs-tools-bin amd64 0.131ubuntu15.2 [10.3 kB]
+Get:4 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 linux-modules-4.18.0-25-generic amd64 4.18.0-25.26 [13.4 MB]
+Get:5 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 linux-image-4.18.0-25-generic amd64 4.18.0-25.26 [8,162 kB]                                                                                   
+Get:6 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 linux-modules-extra-4.18.0-25-generic amd64 4.18.0-25.26 [32.5 MB]                                                                            
+Get:7 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 linux-generic amd64 4.18.0.25.26 [1,860 B]                                                                                                    
+Get:8 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 linux-image-generic amd64 4.18.0.25.26 [2,388 B]                                                                                              
+Get:9 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 linux-headers-4.18.0-25 all 4.18.0-25.26 [10.4 MB]                                                                                            
+Get:10 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 linux-headers-4.18.0-25-generic amd64 4.18.0-25.26 [1,132 kB]                                                                                
+Get:11 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 linux-headers-generic amd64 4.18.0.25.26 [2,344 B]                                                                                           
+Get:12 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 linux-libc-dev amd64 4.18.0-25.26 [1,009 kB]                                                                                                 
+Fetched 66.7 MB in 1min 35s (705 kB/s)                                                                                                                                                                            
+(Reading database ... 188145 files and directories currently installed.)
+Preparing to unpack .../00-initramfs-tools_0.131ubuntu15.2_all.deb ...
+Unpacking initramfs-tools (0.131ubuntu15.2) over (0.131ubuntu15.1) ...
+Preparing to unpack .../01-initramfs-tools-core_0.131ubuntu15.2_all.deb ...
+Unpacking initramfs-tools-core (0.131ubuntu15.2) over (0.131ubuntu15.1) ...
+Preparing to unpack .../02-initramfs-tools-bin_0.131ubuntu15.2_amd64.deb ...
+Unpacking initramfs-tools-bin (0.131ubuntu15.2) over (0.131ubuntu15.1) ...
+Selecting previously unselected package linux-modules-4.18.0-25-generic.
+Preparing to unpack .../03-linux-modules-4.18.0-25-generic_4.18.0-25.26_amd64.deb ...
+Unpacking linux-modules-4.18.0-25-generic (4.18.0-25.26) ...
+Selecting previously unselected package linux-image-4.18.0-25-generic.
+Preparing to unpack .../04-linux-image-4.18.0-25-generic_4.18.0-25.26_amd64.deb ...
+Unpacking linux-image-4.18.0-25-generic (4.18.0-25.26) ...
+Selecting previously unselected package linux-modules-extra-4.18.0-25-generic.
+Preparing to unpack .../05-linux-modules-extra-4.18.0-25-generic_4.18.0-25.26_amd64.deb ...
+Unpacking linux-modules-extra-4.18.0-25-generic (4.18.0-25.26) ...
+Preparing to unpack .../06-linux-generic_4.18.0.25.26_amd64.deb ...
+Unpacking linux-generic (4.18.0.25.26) over (4.18.0.24.25) ...
+Preparing to unpack .../07-linux-image-generic_4.18.0.25.26_amd64.deb ...
+Unpacking linux-image-generic (4.18.0.25.26) over (4.18.0.24.25) ...
+Selecting previously unselected package linux-headers-4.18.0-25.
+Preparing to unpack .../08-linux-headers-4.18.0-25_4.18.0-25.26_all.deb ...
+Unpacking linux-headers-4.18.0-25 (4.18.0-25.26) ...
+Selecting previously unselected package linux-headers-4.18.0-25-generic.
+Preparing to unpack .../09-linux-headers-4.18.0-25-generic_4.18.0-25.26_amd64.deb ...
+Unpacking linux-headers-4.18.0-25-generic (4.18.0-25.26) ...
+Preparing to unpack .../10-linux-headers-generic_4.18.0.25.26_amd64.deb ...
+Unpacking linux-headers-generic (4.18.0.25.26) over (4.18.0.24.25) ...
+Preparing to unpack .../11-linux-libc-dev_4.18.0-25.26_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (4.18.0-25.26) over (4.18.0-24.25) ...
+Setting up linux-libc-dev:amd64 (4.18.0-25.26) ...
+Processing triggers for man-db (2.8.4-2) ...
+Setting up linux-modules-4.18.0-25-generic (4.18.0-25.26) ...
+Setting up initramfs-tools-bin (0.131ubuntu15.2) ...
+Setting up linux-headers-4.18.0-25 (4.18.0-25.26) ...
+Setting up initramfs-tools-core (0.131ubuntu15.2) ...
+Setting up initramfs-tools (0.131ubuntu15.2) ...
+update-initramfs: deferring update (trigger activated)
+Setting up linux-headers-4.18.0-25-generic (4.18.0-25.26) ...
+Setting up linux-image-4.18.0-25-generic (4.18.0-25.26) ...
+I: /vmlinuz.old is now a symlink to boot/vmlinuz-4.18.0-24-generic
+I: /initrd.img.old is now a symlink to boot/initrd.img-4.18.0-24-generic
+I: /vmlinuz is now a symlink to boot/vmlinuz-4.18.0-25-generic
+I: /initrd.img is now a symlink to boot/initrd.img-4.18.0-25-generic
+Setting up linux-headers-generic (4.18.0.25.26) ...
+Setting up linux-modules-extra-4.18.0-25-generic (4.18.0-25.26) ...
+Setting up linux-image-generic (4.18.0.25.26) ...
+Setting up linux-generic (4.18.0.25.26) ...
+Processing triggers for initramfs-tools (0.131ubuntu15.2) ...
+update-initramfs: Generating /boot/initrd.img-4.18.0-24-generic
+Processing triggers for linux-image-4.18.0-25-generic (4.18.0-25.26) ...
+/etc/kernel/postinst.d/initramfs-tools:
+update-initramfs: Generating /boot/initrd.img-4.18.0-25-generic
+/etc/kernel/postinst.d/zz-update-grub:
+Sourcing file `/etc/default/grub'
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-4.18.0-25-generic
+Found initrd image: /boot/initrd.img-4.18.0-25-generic
+Found linux image: /boot/vmlinuz-4.18.0-24-generic
+Found initrd image: /boot/initrd.img-4.18.0-24-generic
+Found linux image: /boot/vmlinuz-4.18.0-22-generic
+Found initrd image: /boot/initrd.img-4.18.0-22-generic
+Adding boot menu entry for EFI firmware configuration
+done
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ sudo apt-get update
+Ign:1 http://dl.google.com/linux/chrome/deb stable InRelease
+Hit:2 https://download.docker.com/linux/ubuntu cosmic InRelease                                                                                    
+Hit:3 http://dl.google.com/linux/chrome/deb stable Release                                                                                         
+Hit:4 http://in.archive.ubuntu.com/ubuntu cosmic InRelease                                                                                       
+Hit:5 https://apt.repos.intel.com/mkl all InRelease                                                                        
+Get:7 http://in.archive.ubuntu.com/ubuntu cosmic-updates InRelease [88.7 kB]                 
+Get:8 http://security.ubuntu.com/ubuntu cosmic-security InRelease [88.7 kB]          
+Get:9 http://in.archive.ubuntu.com/ubuntu cosmic-backports InRelease [74.6 kB]      
+Fetched 252 kB in 2s (155 kB/s)                               
+Reading package lists... Done
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ sudo apt-get install \
+>     apt-transport-https \
+>     ca-certificates \
+>     curl \
+>     software-properties-common
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+ca-certificates is already the newest version (20180409).
+curl is already the newest version (7.61.0-1ubuntu2.4).
+software-properties-common is already the newest version (0.96.27.1).
+apt-transport-https is already the newest version (1.7.5).
+The following packages were automatically installed and are no longer required:
+  linux-headers-4.18.0-22 linux-headers-4.18.0-22-generic linux-image-4.18.0-22-generic linux-modules-4.18.0-22-generic linux-modules-extra-4.18.0-22-generic
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+OK
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ sudo apt-key fingerprint 0EBFCD88
+pub   rsa4096 2017-02-22 [SCEA]
+      9DC8 5822 9FC7 DD38 854A  E2D8 8D81 803C 0EBF CD88
+uid           [ unknown] Docker Release (CE deb) <docker@docker.com>
+sub   rsa4096 2017-02-22 [S]
+
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ sudo add-apt-repository \
+>    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+>    $(lsb_release -cs) \
+>    stable"sudo add-apt-repository \
+>    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+>    $(lsb_release -cs) \
+>    stable"
+Error: need a single repository as argument
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+Error: need a single repository as argument
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ docker
+
+Usage:	docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Options:
+      --config string      Location of client config files (default "/home/iiit-dharwad/.docker")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket(s) to connect to
+  -l, --log-level string   Set the logging level ("debug"|"info"|"warn"|"error"|"fatal") (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default "/home/iiit-dharwad/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default "/home/iiit-dharwad/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default "/home/iiit-dharwad/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Management Commands:
+  builder     Manage builds
+  config      Manage Docker configs
+  container   Manage containers
+  engine      Manage the docker engine
+  image       Manage images
+  network     Manage networks
+  node        Manage Swarm nodes
+  plugin      Manage plugins
+  secret      Manage Docker secrets
+  service     Manage services
+  stack       Manage Docker stacks
+  swarm       Manage Swarm
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  build       Build an image from a Dockerfile
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  deploy      Deploy a new stack or update an existing stack
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  exec        Run a command in a running container
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  images      List images
+  import      Import the contents from a tarball to create a filesystem image
+  info        Display system-wide information
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  login       Log in to a Docker registry
+  logout      Log out from a Docker registry
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  ps          List containers
+  pull        Pull an image or a repository from a registry
+  push        Push an image or a repository to a registry
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  run         Run a command in a new container
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  search      Search the Docker Hub for images
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  version     Show the Docker version information
+  wait        Block until one or more containers stop, then print their exit codes
+
+Run 'docker COMMAND --help' for more information on a command.
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ apt-cache policy docker-ce
+
+
+
+
+docker-ce:
+  Installed: 5:18.09.7~3-0~ubuntu-cosmic
+  Candidate: 5:18.09.7~3-0~ubuntu-cosmic
+  Version table:
+ *** 5:18.09.7~3-0~ubuntu-cosmic 500
+        500 https://download.docker.com/linux/ubuntu cosmic/stable amd64 Packages
+        100 /var/lib/dpkg/status
+     5:18.09.6~3-0~ubuntu-cosmic 500
+        500 https://download.docker.com/linux/ubuntu cosmic/stable amd64 Packages
+     5:18.09.5~3-0~ubuntu-cosmic 500
+        500 https://download.docker.com/linux/ubuntu cosmic/stable amd64 Packages
+     5:18.09.4~3-0~ubuntu-cosmic 500
+        500 https://download.docker.com/linux/ubuntu cosmic/stable amd64 Packages
+     5:18.09.3~3-0~ubuntu-cosmic 500
+        500 https://download.docker.com/linux/ubuntu cosmic/stable amd64 Packages
+     5:18.09.2~3-0~ubuntu-cosmic 500
+        500 https://download.docker.com/linux/ubuntu cosmic/stable amd64 Packages
+     5:18.09.1~3-0~ubuntu-cosmic 500
+        500 https://download.docker.com/linux/ubuntu cosmic/stable amd64 Packages
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ 
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ 
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ 
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ 
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ docker start
+"docker start" requires at least 1 argument.
+See 'docker start --help'.
+
+Usage:  docker start [OPTIONS] CONTAINER [CONTAINER...]
+
+Start one or more stopped containers
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ docker ps
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.39/containers/json: dial unix /var/run/docker.sock: connect: permission denied
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ sudo docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ sudo docker run hello-world
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+1b930d010525: Pull complete 
+Digest: sha256:41a65640635299bab090f783209c1e3a3f11934cf7756b09cb2f1e02147c6ed8
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ sudo usermod -aG docker iiitdharwad
+usermod: user 'iiitdharwad' does not exist
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ echo $USER
+iiit-dharwad
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ sudo usermod -aG docker iiit-dharwad
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ docker pull oadams/persephone
+Using default tag: latest
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.39/images/create?fromImage=oadams%2Fpersephone&tag=latest: dial unix /var/run/docker.sock: connect: permission denied
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ docker run hello-world
+docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.39/containers/create: dial unix /var/run/docker.sock: connect: permission denied.
+See 'docker run --help'.
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ sudo usermod -aG docker iiit-dharwad
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ su - iiit-dharwad
+Password: 
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ id -nG
+iiit-dharwad adm cdrom sudo dip plugdev lpadmin sambashare docker
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ sudo usermod -aG docker iiit-dharwad
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ docker run hello-world
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ docker pull oadams/persephone
+Using default tag: latest
+latest: Pulling from oadams/persephone
+b234f539f7a1: Pull complete 
+55172d420b43: Pull complete 
+5ba5bbeb6b91: Pull complete 
+43ae2841ad7a: Pull complete 
+f6c9c6de4190: Pull complete 
+a61cd737bbd1: Pull complete 
+ac97d7d8db30: Pull complete 
+3a0ca981ecd0: Pull complete 
+c86aba9b8fa9: Pull complete 
+3e371ced6d55: Pull complete 
+4bf76e1c61b6: Pull complete 
+c2eb95c9023a: Pull complete 
+c522da1d705e: Pull complete 
+21be6aae4515: Pull complete 
+Digest: sha256:d5705f01cd1e5821e9d2f847b031426795d39ac5140f6bee5c680ea530669f82
+Status: Downloaded newer image for oadams/persephone:latest
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ docker run -it oadams/persephone
+root@62f18002c4b6:/persephone# python3 -m virtualenv -p python3 persephone-venv
+/usr/bin/python3: No module named virtualenv
+root@62f18002c4b6:/persephone# python3 -m virtualenv -p python3 persephone-venv
+/usr/bin/python3: No module named virtualenv
+root@62f18002c4b6:/persephone# ./ubuntu_bootstrap.sh
+bash: ./ubuntu_bootstrap.sh: No such file or directory
+root@62f18002c4b6:/persephone# cd ..
+root@62f18002c4b6:/# ./ubuntu_bootstrap.sh
+bash: ./ubuntu_bootstrap.sh: No such file or directory
+root@62f18002c4b6:/# apt install virtualenv
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  python3-virtualenv
+The following NEW packages will be installed:
+  python3-virtualenv virtualenv
+0 upgraded, 2 newly installed, 0 to remove and 26 not upgraded.
+Need to get 47.6 kB of archives.
+After this operation, 171 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 python3-virtualenv all 15.0.1+ds-3ubuntu1 [43.2 kB]
+Get:2 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 virtualenv all 15.0.1+ds-3ubuntu1 [4342 B]
+Fetched 47.6 kB in 11s (4187 B/s)    
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package python3-virtualenv.
+(Reading database ... 19365 files and directories currently installed.)
+Preparing to unpack .../python3-virtualenv_15.0.1+ds-3ubuntu1_all.deb ...
+Unpacking python3-virtualenv (15.0.1+ds-3ubuntu1) ...
+Selecting previously unselected package virtualenv.
+Preparing to unpack .../virtualenv_15.0.1+ds-3ubuntu1_all.deb ...
+Unpacking virtualenv (15.0.1+ds-3ubuntu1) ...
+Setting up python3-virtualenv (15.0.1+ds-3ubuntu1) ...
+Setting up virtualenv (15.0.1+ds-3ubuntu1) ...
+root@62f18002c4b6:/# python3 -m virtualenv -p python3 persephone-venv
+Already using interpreter /usr/bin/python3
+Using base prefix '/usr'
+New python executable in /persephone-venv/bin/python3
+Also creating executable in /persephone-venv/bin/python
+Installing setuptools, pkg_resources, pip, wheel...done.
+root@62f18002c4b6:/# source persephone-venv/bin/activate
+(persephone-venv) root@62f18002c4b6:/# pip install -U pip
+Requirement already up-to-date: pip in /persephone-venv/lib/python3.5/site-packages (19.1.1)
+(persephone-venv) root@62f18002c4b6:/# pip install persephone
+Collecting persephone
+  Using cached https://files.pythonhosted.org/packages/9a/c6/88ae03c150edad28006095890d0661f7cfb312d38d70250552a44c414fa0/persephone-0.3.2-py3-none-any.whl
+Collecting tensorflow==1.4.1 (from persephone)
+  Using cached https://files.pythonhosted.org/packages/dc/de/640ff90d9555d21400abac5bebd2cec8c30015d5247159708291206cef52/tensorflow-1.4.1-cp35-cp35m-manylinux1_x86_64.whl
+Collecting scikit-learn==0.19.1 (from persephone)
+  Using cached https://files.pythonhosted.org/packages/bf/53/8c9c950a3cfaec16069df196c0b76ab05b3d1f0527f6bb97a30f4dda5240/scikit_learn-0.19.1-cp35-cp35m-manylinux1_x86_64.whl
+Collecting python-speech-features==0.6 (from persephone)
+Collecting scipy==1.0.0 (from persephone)
+  Using cached https://files.pythonhosted.org/packages/1a/83/6aed4f564f3f5d338fd3c642f33d5ded0fc577da5f9a7d85ed6ba23c5d51/scipy-1.0.0-cp35-cp35m-manylinux1_x86_64.whl
+Collecting GitPython==2.1.8 (from persephone)
+  Using cached https://files.pythonhosted.org/packages/5b/38/0433c06feebbfbb51d644129dbe334031c33d55af0524326266f847ae907/GitPython-2.1.8-py2.py3-none-any.whl
+Collecting pympi-ling==1.69 (from persephone)
+Collecting pint==0.8.1 (from persephone)
+Collecting pydub==0.20.0 (from persephone)
+  Using cached https://files.pythonhosted.org/packages/6b/a5/8a863766dca1a1334a0b0219442a7af0947860ffb8a8266a1d7a43126702/pydub-0.20.0-py2.py3-none-any.whl
+Collecting nltk==3.2.5 (from persephone)
+Collecting numpy==1.14.0 (from persephone)
+  Using cached https://files.pythonhosted.org/packages/55/7f/50d7b4e9f3493779edb3cec0a6ccf68090bf95f0a3b8a093fc0d467cc6d5/numpy-1.14.0-cp35-cp35m-manylinux1_x86_64.whl
+Collecting ipython==6.2.1 (from persephone)
+  Using cached https://files.pythonhosted.org/packages/e1/87/294b718125085559b56453be87d90777863173470167e5f1d5de20b9eea3/ipython-6.2.1-py3-none-any.whl
+Collecting enum34>=1.1.6 (from tensorflow==1.4.1->persephone)
+  Using cached https://files.pythonhosted.org/packages/af/42/cb9355df32c69b553e72a2e28daee25d1611d2c0d9c272aa1d34204205b2/enum34-1.1.6-py3-none-any.whl
+Collecting tensorflow-tensorboard<0.5.0,>=0.4.0rc1 (from tensorflow==1.4.1->persephone)
+  Using cached https://files.pythonhosted.org/packages/e9/9f/5845c18f9df5e7ea638ecf3a272238f0e7671e454faa396b5188c6e6fc0a/tensorflow_tensorboard-0.4.0-py3-none-any.whl
+Collecting six>=1.10.0 (from tensorflow==1.4.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/73/fb/00a976f728d0d1fecfe898238ce23f502a721c0ac0ecfedb80e0d88c64e9/six-1.12.0-py2.py3-none-any.whl
+Requirement already satisfied: wheel>=0.26 in /persephone-venv/lib/python3.5/site-packages (from tensorflow==1.4.1->persephone) (0.33.4)
+Collecting protobuf>=3.3.0 (from tensorflow==1.4.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/7c/d2/581ebc3c41879aca2c4fce5c37cdb8d779c4ea79109b6da7f640735ea0a2/protobuf-3.8.0-cp35-cp35m-manylinux1_x86_64.whl (1.2MB)
+     |████████████████████████████████| 1.2MB 747kB/s 
+Collecting gitdb2>=2.0.0 (from GitPython==2.1.8->persephone)
+  Downloading https://files.pythonhosted.org/packages/da/30/a407568aa8d8f25db817cf50121a958722f3fc5f87e3a6fba1f40c0633e3/gitdb2-2.0.5-py2.py3-none-any.whl (62kB)
+     |████████████████████████████████| 71kB 8.2MB/s 
+Collecting jedi>=0.10 (from ipython==6.2.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/68/42/6309f3871b2f8361764ac5b2fe6719f9c6e6561d9307d8cecda319cf5843/jedi-0.14.0-py2.py3-none-any.whl (1.0MB)
+     |████████████████████████████████| 1.0MB 10.2MB/s 
+Collecting decorator (from ipython==6.2.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/5f/88/0075e461560a1e750a0dcbf77f1d9de775028c37a19a346a6c565a257399/decorator-4.4.0-py2.py3-none-any.whl
+Collecting pickleshare (from ipython==6.2.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/9a/41/220f49aaea88bc6fa6cba8d05ecf24676326156c23b991e80b3f2fc24c77/pickleshare-0.7.5-py2.py3-none-any.whl
+Collecting prompt-toolkit<2.0.0,>=1.0.4 (from ipython==6.2.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/57/a8/a151b6c61718eabe6b4672b6aa760b734989316d62ec1ba4996765e602d4/prompt_toolkit-1.0.16-py3-none-any.whl (244kB)
+     |████████████████████████████████| 245kB 9.4MB/s 
+Collecting pexpect; sys_platform != "win32" (from ipython==6.2.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/0e/3e/377007e3f36ec42f1b84ec322ee12141a9e10d808312e5738f52f80a232c/pexpect-4.7.0-py2.py3-none-any.whl (58kB)
+     |████████████████████████████████| 61kB 7.5MB/s 
+Collecting simplegeneric>0.8 (from ipython==6.2.1->persephone)
+Collecting traitlets>=4.2 (from ipython==6.2.1->persephone)
+  Using cached https://files.pythonhosted.org/packages/93/d6/abcb22de61d78e2fc3959c964628a5771e47e7cc60d53e9342e21ed6cc9a/traitlets-4.3.2-py2.py3-none-any.whl
+Collecting pygments (from ipython==6.2.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/5c/73/1dfa428150e3ccb0fa3e68db406e5be48698f2a979ccbcec795f28f44048/Pygments-2.4.2-py2.py3-none-any.whl (883kB)
+     |████████████████████████████████| 890kB 10.2MB/s 
+Requirement already satisfied: setuptools>=18.5 in /persephone-venv/lib/python3.5/site-packages (from ipython==6.2.1->persephone) (41.0.1)
+Collecting html5lib==0.9999999 (from tensorflow-tensorboard<0.5.0,>=0.4.0rc1->tensorflow==1.4.1->persephone)
+Collecting markdown>=2.6.8 (from tensorflow-tensorboard<0.5.0,>=0.4.0rc1->tensorflow==1.4.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/c0/4e/fd492e91abdc2d2fcb70ef453064d980688762079397f779758e055f6575/Markdown-3.1.1-py2.py3-none-any.whl (87kB)
+     |████████████████████████████████| 92kB 6.7MB/s 
+Collecting bleach==1.5.0 (from tensorflow-tensorboard<0.5.0,>=0.4.0rc1->tensorflow==1.4.1->persephone)
+  Using cached https://files.pythonhosted.org/packages/33/70/86c5fec937ea4964184d4d6c4f0b9551564f821e1c3575907639036d9b90/bleach-1.5.0-py2.py3-none-any.whl
+Collecting werkzeug>=0.11.10 (from tensorflow-tensorboard<0.5.0,>=0.4.0rc1->tensorflow==1.4.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/9f/57/92a497e38161ce40606c27a86759c6b92dd34fcdb33f64171ec559257c02/Werkzeug-0.15.4-py2.py3-none-any.whl (327kB)
+     |████████████████████████████████| 327kB 11.0MB/s 
+Collecting smmap2>=2.0.0 (from gitdb2>=2.0.0->GitPython==2.1.8->persephone)
+  Downloading https://files.pythonhosted.org/packages/55/d2/866d45e3a121ee15a1dc013824d58072fd5c7799c9c34d01378eb262ca8f/smmap2-2.0.5-py2.py3-none-any.whl
+Collecting parso>=0.3.0 (from jedi>=0.10->ipython==6.2.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/68/59/482f5a00fe3da7f0aaeedf61c2a25c445b68c9124437195f6e8b2beddbc0/parso-0.5.0-py2.py3-none-any.whl (94kB)
+     |████████████████████████████████| 102kB 8.4MB/s 
+Collecting wcwidth (from prompt-toolkit<2.0.0,>=1.0.4->ipython==6.2.1->persephone)
+  Using cached https://files.pythonhosted.org/packages/7e/9f/526a6947247599b084ee5232e4f9190a38f398d7300d866af3ab571a5bfe/wcwidth-0.1.7-py2.py3-none-any.whl
+Collecting ptyprocess>=0.5 (from pexpect; sys_platform != "win32"->ipython==6.2.1->persephone)
+  Using cached https://files.pythonhosted.org/packages/d1/29/605c2cc68a9992d18dada28206eeada56ea4bd07a239669da41674648b6f/ptyprocess-0.6.0-py2.py3-none-any.whl
+Collecting ipython-genutils (from traitlets>=4.2->ipython==6.2.1->persephone)
+  Using cached https://files.pythonhosted.org/packages/fa/bc/9bd3b5c2b4774d5f33b2d544f1460be9df7df2fe42f352135381c347c69a/ipython_genutils-0.2.0-py2.py3-none-any.whl
+Installing collected packages: enum34, six, html5lib, markdown, bleach, protobuf, werkzeug, numpy, tensorflow-tensorboard, tensorflow, scikit-learn, python-speech-features, scipy, smmap2, gitdb2, GitPython, pympi-ling, pint, pydub, nltk, parso, jedi, decorator, pickleshare, wcwidth, prompt-toolkit, ptyprocess, pexpect, simplegeneric, ipython-genutils, traitlets, pygments, ipython, persephone
+Successfully installed GitPython-2.1.8 bleach-1.5.0 decorator-4.4.0 enum34-1.1.6 gitdb2-2.0.5 html5lib-0.9999999 ipython-6.2.1 ipython-genutils-0.2.0 jedi-0.14.0 markdown-3.1.1 nltk-3.2.5 numpy-1.14.0 parso-0.5.0 persephone-0.3.2 pexpect-4.7.0 pickleshare-0.7.5 pint-0.8.1 prompt-toolkit-1.0.16 protobuf-3.8.0 ptyprocess-0.6.0 pydub-0.20.0 pygments-2.4.2 pympi-ling-1.69 python-speech-features-0.6 scikit-learn-0.19.1 scipy-1.0.0 simplegeneric-0.8.1 six-1.12.0 smmap2-2.0.5 tensorflow-1.4.1 tensorflow-tensorboard-0.4.0 traitlets-4.3.2 wcwidth-0.1.7 werkzeug-0.15.4
+(persephone-venv) root@62f18002c4b6:/# pip install ipython
+Requirement already satisfied: ipython in /persephone-venv/lib/python3.5/site-packages (6.2.1)
+Requirement already satisfied: pickleshare in /persephone-venv/lib/python3.5/site-packages (from ipython) (0.7.5)
+Requirement already satisfied: jedi>=0.10 in /persephone-venv/lib/python3.5/site-packages (from ipython) (0.14.0)
+Requirement already satisfied: simplegeneric>0.8 in /persephone-venv/lib/python3.5/site-packages (from ipython) (0.8.1)
+Requirement already satisfied: prompt-toolkit<2.0.0,>=1.0.4 in /persephone-venv/lib/python3.5/site-packages (from ipython) (1.0.16)
+Requirement already satisfied: pygments in /persephone-venv/lib/python3.5/site-packages (from ipython) (2.4.2)
+Requirement already satisfied: pexpect; sys_platform != "win32" in /persephone-venv/lib/python3.5/site-packages (from ipython) (4.7.0)
+Requirement already satisfied: decorator in /persephone-venv/lib/python3.5/site-packages (from ipython) (4.4.0)
+Requirement already satisfied: traitlets>=4.2 in /persephone-venv/lib/python3.5/site-packages (from ipython) (4.3.2)
+Requirement already satisfied: setuptools>=18.5 in /persephone-venv/lib/python3.5/site-packages (from ipython) (41.0.1)
+Requirement already satisfied: parso>=0.3.0 in /persephone-venv/lib/python3.5/site-packages (from jedi>=0.10->ipython) (0.5.0)
+Requirement already satisfied: six>=1.9.0 in /persephone-venv/lib/python3.5/site-packages (from prompt-toolkit<2.0.0,>=1.0.4->ipython) (1.12.0)
+Requirement already satisfied: wcwidth in /persephone-venv/lib/python3.5/site-packages (from prompt-toolkit<2.0.0,>=1.0.4->ipython) (0.1.7)
+Requirement already satisfied: ptyprocess>=0.5 in /persephone-venv/lib/python3.5/site-packages (from pexpect; sys_platform != "win32"->ipython) (0.6.0)
+Requirement already satisfied: ipython-genutils in /persephone-venv/lib/python3.5/site-packages (from traitlets>=4.2->ipython) (0.2.0)
+(persephone-venv) root@62f18002c4b6:/# mkdir persephone-tutorial/
+(persephone-venv) root@62f18002c4b6:/# cd persephone-tutorial/
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial# mkdir data
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial# ls
+data
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial# find / -xdev 2>/dev/null -name "persephone-tutorial"
+/persephone-tutorial
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial# cd ..
+(persephone-venv) root@62f18002c4b6:/# ls
+bin  boot  dev  essentia  etc  home  lib  lib64  media  mnt  opt  persephone  persephone-tutorial  persephone-venv  proc  root  run  sbin  srv  sys  tmp  usr  var
+(persephone-venv) root@62f18002c4b6:/# cd home/
+(persephone-venv) root@62f18002c4b6:/home# ls
+(persephone-venv) root@62f18002c4b6:/home# mkdir data
+(persephone-venv) root@62f18002c4b6:/home# cd data/
+(persephone-venv) root@62f18002c4b6:/home/data# ls
+(persephone-venv) root@62f18002c4b6:/home/data# cd ..
+(persephone-venv) root@62f18002c4b6:/home# cd ..
+(persephone-venv) root@62f18002c4b6:/# cd persephone-tutorial/
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial# mkdir data
+mkdir: cannot create directory ‘data’: File exists
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial# cd data/
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial/data# ls
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial/data# unzip  /home/iiit-dharwad/Downloads/na_example_small.zip
+unzip:  cannot find or open /home/iiit-dharwad/Downloads/na_example_small.zip, /home/iiit-dharwad/Downloads/na_example_small.zip.zip or /home/iiit-dharwad/Downloads/na_example_small.zip.ZIP.
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial/data# apt installl unzip
+E: Invalid operation installl
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial/data# apt install unzip
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+unzip is already the newest version (6.0-20ubuntu1).
+0 upgraded, 0 newly installed, 0 to remove and 26 not upgraded.
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial/data# unzip  /home/iiit-dharwad/Downloads/na_example_small.zip
+unzip:  cannot find or open /home/iiit-dharwad/Downloads/na_example_small.zip, /home/iiit-dharwad/Downloads/na_example_small.zip.zip or /home/iiit-dharwad/Downloads/na_example_small.zip.ZIP.
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial/data# 7z x  /home/iiit-dharwad/Downloads/na_example_small.zip
+bash: 7z: command not found
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial/data# pwd
+/persephone-tutorial/data
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial/data# cp /home/iiit-dharwad/Downloads/na_example_small/na_example ^C
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial/data# cp /home/iiit-dharwad/Downloads/na_example_small/na_example /persephone-tutorial/data
+cp: cannot stat '/home/iiit-dharwad/Downloads/na_example_small/na_example': No such file or directory
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial/data# docker login
+bash: docker: command not found
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ sudo apt upgrade
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Calculating upgrade... Done
+The following NEW packages will be installed:
+  linux-headers-4.18.0-25 linux-headers-4.18.0-25-generic linux-image-4.18.0-25-generic linux-modules-4.18.0-25-generic linux-modules-extra-4.18.0-25-generic
+The following packages will be upgraded:
+  initramfs-tools initramfs-tools-bin initramfs-tools-core linux-generic linux-headers-generic linux-image-generic linux-libc-dev
+7 upgraded, 5 newly installed, 0 to remove and 0 not upgraded.
+Need to get 66.7 MB of archives.
+After this operation, 327 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 initramfs-tools all 0.131ubuntu15.2 [9,676 B]
+Get:2 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 initramfs-tools-core all 0.131ubuntu15.2 [45.8 kB]
+Get:3 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 initramfs-tools-bin amd64 0.131ubuntu15.2 [10.3 kB]
+Get:4 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 linux-modules-4.18.0-25-generic amd64 4.18.0-25.26 [13.4 MB]
+Get:5 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 linux-image-4.18.0-25-generic amd64 4.18.0-25.26 [8,162 kB]                                                                                   
+Get:6 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 linux-modules-extra-4.18.0-25-generic amd64 4.18.0-25.26 [32.5 MB]                                                                            
+Get:7 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 linux-generic amd64 4.18.0.25.26 [1,860 B]                                                                                                    
+Get:8 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 linux-image-generic amd64 4.18.0.25.26 [2,388 B]                                                                                              
+Get:9 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 linux-headers-4.18.0-25 all 4.18.0-25.26 [10.4 MB]                                                                                            
+Get:10 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 linux-headers-4.18.0-25-generic amd64 4.18.0-25.26 [1,132 kB]                                                                                
+Get:11 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 linux-headers-generic amd64 4.18.0.25.26 [2,344 B]                                                                                           
+Get:12 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 linux-libc-dev amd64 4.18.0-25.26 [1,009 kB]                                                                                                 
+Fetched 66.7 MB in 1min 35s (705 kB/s)                                                                                                                                                                            
+(Reading database ... 188145 files and directories currently installed.)
+Preparing to unpack .../00-initramfs-tools_0.131ubuntu15.2_all.deb ...
+Unpacking initramfs-tools (0.131ubuntu15.2) over (0.131ubuntu15.1) ...
+Preparing to unpack .../01-initramfs-tools-core_0.131ubuntu15.2_all.deb ...
+Unpacking initramfs-tools-core (0.131ubuntu15.2) over (0.131ubuntu15.1) ...
+Preparing to unpack .../02-initramfs-tools-bin_0.131ubuntu15.2_amd64.deb ...
+Unpacking initramfs-tools-bin (0.131ubuntu15.2) over (0.131ubuntu15.1) ...
+Selecting previously unselected package linux-modules-4.18.0-25-generic.
+Preparing to unpack .../03-linux-modules-4.18.0-25-generic_4.18.0-25.26_amd64.deb ...
+Unpacking linux-modules-4.18.0-25-generic (4.18.0-25.26) ...
+Selecting previously unselected package linux-image-4.18.0-25-generic.
+Preparing to unpack .../04-linux-image-4.18.0-25-generic_4.18.0-25.26_amd64.deb ...
+Unpacking linux-image-4.18.0-25-generic (4.18.0-25.26) ...
+Selecting previously unselected package linux-modules-extra-4.18.0-25-generic.
+Preparing to unpack .../05-linux-modules-extra-4.18.0-25-generic_4.18.0-25.26_amd64.deb ...
+Unpacking linux-modules-extra-4.18.0-25-generic (4.18.0-25.26) ...
+Preparing to unpack .../06-linux-generic_4.18.0.25.26_amd64.deb ...
+Unpacking linux-generic (4.18.0.25.26) over (4.18.0.24.25) ...
+Preparing to unpack .../07-linux-image-generic_4.18.0.25.26_amd64.deb ...
+Unpacking linux-image-generic (4.18.0.25.26) over (4.18.0.24.25) ...
+Selecting previously unselected package linux-headers-4.18.0-25.
+Preparing to unpack .../08-linux-headers-4.18.0-25_4.18.0-25.26_all.deb ...
+Unpacking linux-headers-4.18.0-25 (4.18.0-25.26) ...
+Selecting previously unselected package linux-headers-4.18.0-25-generic.
+Preparing to unpack .../09-linux-headers-4.18.0-25-generic_4.18.0-25.26_amd64.deb ...
+Unpacking linux-headers-4.18.0-25-generic (4.18.0-25.26) ...
+Preparing to unpack .../10-linux-headers-generic_4.18.0.25.26_amd64.deb ...
+Unpacking linux-headers-generic (4.18.0.25.26) over (4.18.0.24.25) ...
+Preparing to unpack .../11-linux-libc-dev_4.18.0-25.26_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (4.18.0-25.26) over (4.18.0-24.25) ...
+Setting up linux-libc-dev:amd64 (4.18.0-25.26) ...
+Processing triggers for man-db (2.8.4-2) ...
+Setting up linux-modules-4.18.0-25-generic (4.18.0-25.26) ...
+Setting up initramfs-tools-bin (0.131ubuntu15.2) ...
+Setting up linux-headers-4.18.0-25 (4.18.0-25.26) ...
+Setting up initramfs-tools-core (0.131ubuntu15.2) ...
+Setting up initramfs-tools (0.131ubuntu15.2) ...
+update-initramfs: deferring update (trigger activated)
+Setting up linux-headers-4.18.0-25-generic (4.18.0-25.26) ...
+Setting up linux-image-4.18.0-25-generic (4.18.0-25.26) ...
+I: /vmlinuz.old is now a symlink to boot/vmlinuz-4.18.0-24-generic
+I: /initrd.img.old is now a symlink to boot/initrd.img-4.18.0-24-generic
+I: /vmlinuz is now a symlink to boot/vmlinuz-4.18.0-25-generic
+I: /initrd.img is now a symlink to boot/initrd.img-4.18.0-25-generic
+Setting up linux-headers-generic (4.18.0.25.26) ...
+Setting up linux-modules-extra-4.18.0-25-generic (4.18.0-25.26) ...
+Setting up linux-image-generic (4.18.0.25.26) ...
+Setting up linux-generic (4.18.0.25.26) ...
+Processing triggers for initramfs-tools (0.131ubuntu15.2) ...
+update-initramfs: Generating /boot/initrd.img-4.18.0-24-generic
+Processing triggers for linux-image-4.18.0-25-generic (4.18.0-25.26) ...
+/etc/kernel/postinst.d/initramfs-tools:
+update-initramfs: Generating /boot/initrd.img-4.18.0-25-generic
+/etc/kernel/postinst.d/zz-update-grub:
+Sourcing file `/etc/default/grub'
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-4.18.0-25-generic
+Found initrd image: /boot/initrd.img-4.18.0-25-generic
+Found linux image: /boot/vmlinuz-4.18.0-24-generic
+Found initrd image: /boot/initrd.img-4.18.0-24-generic
+Found linux image: /boot/vmlinuz-4.18.0-22-generic
+Found initrd image: /boot/initrd.img-4.18.0-22-generic
+Adding boot menu entry for EFI firmware configuration
+done
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ sudo apt-get update
+Ign:1 http://dl.google.com/linux/chrome/deb stable InRelease
+Hit:2 https://download.docker.com/linux/ubuntu cosmic InRelease                                                                                    
+Hit:3 http://dl.google.com/linux/chrome/deb stable Release                                                                                         
+Hit:4 http://in.archive.ubuntu.com/ubuntu cosmic InRelease                                                                                       
+Hit:5 https://apt.repos.intel.com/mkl all InRelease                                                                        
+Get:7 http://in.archive.ubuntu.com/ubuntu cosmic-updates InRelease [88.7 kB]                 
+Get:8 http://security.ubuntu.com/ubuntu cosmic-security InRelease [88.7 kB]          
+Get:9 http://in.archive.ubuntu.com/ubuntu cosmic-backports InRelease [74.6 kB]      
+Fetched 252 kB in 2s (155 kB/s)                               
+Reading package lists... Done
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ sudo apt-get install \
+>     apt-transport-https \
+>     ca-certificates \
+>     curl \
+>     software-properties-common
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+ca-certificates is already the newest version (20180409).
+curl is already the newest version (7.61.0-1ubuntu2.4).
+software-properties-common is already the newest version (0.96.27.1).
+apt-transport-https is already the newest version (1.7.5).
+The following packages were automatically installed and are no longer required:
+  linux-headers-4.18.0-22 linux-headers-4.18.0-22-generic linux-image-4.18.0-22-generic linux-modules-4.18.0-22-generic linux-modules-extra-4.18.0-22-generic
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+OK
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ sudo apt-key fingerprint 0EBFCD88
+pub   rsa4096 2017-02-22 [SCEA]
+      9DC8 5822 9FC7 DD38 854A  E2D8 8D81 803C 0EBF CD88
+uid           [ unknown] Docker Release (CE deb) <docker@docker.com>
+sub   rsa4096 2017-02-22 [S]
+
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ sudo add-apt-repository \
+>    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+>    $(lsb_release -cs) \
+>    stable"sudo add-apt-repository \
+>    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+>    $(lsb_release -cs) \
+>    stable"
+Error: need a single repository as argument
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+Error: need a single repository as argument
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ docker
+
+Usage:	docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Options:
+      --config string      Location of client config files (default "/home/iiit-dharwad/.docker")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket(s) to connect to
+  -l, --log-level string   Set the logging level ("debug"|"info"|"warn"|"error"|"fatal") (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default "/home/iiit-dharwad/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default "/home/iiit-dharwad/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default "/home/iiit-dharwad/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Management Commands:
+  builder     Manage builds
+  config      Manage Docker configs
+  container   Manage containers
+  engine      Manage the docker engine
+  image       Manage images
+  network     Manage networks
+  node        Manage Swarm nodes
+  plugin      Manage plugins
+  secret      Manage Docker secrets
+  service     Manage services
+  stack       Manage Docker stacks
+  swarm       Manage Swarm
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  build       Build an image from a Dockerfile
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  deploy      Deploy a new stack or update an existing stack
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  exec        Run a command in a running container
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  images      List images
+  import      Import the contents from a tarball to create a filesystem image
+  info        Display system-wide information
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  login       Log in to a Docker registry
+  logout      Log out from a Docker registry
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  ps          List containers
+  pull        Pull an image or a repository from a registry
+  push        Push an image or a repository to a registry
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  run         Run a command in a new container
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  search      Search the Docker Hub for images
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  version     Show the Docker version information
+  wait        Block until one or more containers stop, then print their exit codes
+
+Run 'docker COMMAND --help' for more information on a command.
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ apt-cache policy docker-ce
+
+
+
+
+docker-ce:
+  Installed: 5:18.09.7~3-0~ubuntu-cosmic
+  Candidate: 5:18.09.7~3-0~ubuntu-cosmic
+  Version table:
+ *** 5:18.09.7~3-0~ubuntu-cosmic 500
+        500 https://download.docker.com/linux/ubuntu cosmic/stable amd64 Packages
+        100 /var/lib/dpkg/status
+     5:18.09.6~3-0~ubuntu-cosmic 500
+        500 https://download.docker.com/linux/ubuntu cosmic/stable amd64 Packages
+     5:18.09.5~3-0~ubuntu-cosmic 500
+        500 https://download.docker.com/linux/ubuntu cosmic/stable amd64 Packages
+     5:18.09.4~3-0~ubuntu-cosmic 500
+        500 https://download.docker.com/linux/ubuntu cosmic/stable amd64 Packages
+     5:18.09.3~3-0~ubuntu-cosmic 500
+        500 https://download.docker.com/linux/ubuntu cosmic/stable amd64 Packages
+     5:18.09.2~3-0~ubuntu-cosmic 500
+        500 https://download.docker.com/linux/ubuntu cosmic/stable amd64 Packages
+     5:18.09.1~3-0~ubuntu-cosmic 500
+        500 https://download.docker.com/linux/ubuntu cosmic/stable amd64 Packages
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ 
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ 
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ 
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ 
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ docker start
+"docker start" requires at least 1 argument.
+See 'docker start --help'.
+
+Usage:  docker start [OPTIONS] CONTAINER [CONTAINER...]
+
+Start one or more stopped containers
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ docker ps
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.39/containers/json: dial unix /var/run/docker.sock: connect: permission denied
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ sudo docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ sudo docker run hello-world
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+1b930d010525: Pull complete 
+Digest: sha256:41a65640635299bab090f783209c1e3a3f11934cf7756b09cb2f1e02147c6ed8
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ sudo usermod -aG docker iiitdharwad
+usermod: user 'iiitdharwad' does not exist
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ echo $USER
+iiit-dharwad
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ sudo usermod -aG docker iiit-dharwad
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ docker pull oadams/persephone
+Using default tag: latest
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.39/images/create?fromImage=oadams%2Fpersephone&tag=latest: dial unix /var/run/docker.sock: connect: permission denied
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ docker run hello-world
+docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.39/containers/create: dial unix /var/run/docker.sock: connect: permission denied.
+See 'docker run --help'.
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ sudo usermod -aG docker iiit-dharwad
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ su - iiit-dharwad
+Password: 
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ id -nG
+iiit-dharwad adm cdrom sudo dip plugdev lpadmin sambashare docker
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ sudo usermod -aG docker iiit-dharwad
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ docker run hello-world
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ docker pull oadams/persephone
+Using default tag: latest
+latest: Pulling from oadams/persephone
+b234f539f7a1: Pull complete 
+55172d420b43: Pull complete 
+5ba5bbeb6b91: Pull complete 
+43ae2841ad7a: Pull complete 
+f6c9c6de4190: Pull complete 
+a61cd737bbd1: Pull complete 
+ac97d7d8db30: Pull complete 
+3a0ca981ecd0: Pull complete 
+c86aba9b8fa9: Pull complete 
+3e371ced6d55: Pull complete 
+4bf76e1c61b6: Pull complete 
+c2eb95c9023a: Pull complete 
+c522da1d705e: Pull complete 
+21be6aae4515: Pull complete 
+Digest: sha256:d5705f01cd1e5821e9d2f847b031426795d39ac5140f6bee5c680ea530669f82
+Status: Downloaded newer image for oadams/persephone:latest
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ docker run -it oadams/persephone
+root@62f18002c4b6:/persephone# python3 -m virtualenv -p python3 persephone-venv
+/usr/bin/python3: No module named virtualenv
+root@62f18002c4b6:/persephone# python3 -m virtualenv -p python3 persephone-venv
+/usr/bin/python3: No module named virtualenv
+root@62f18002c4b6:/persephone# ./ubuntu_bootstrap.sh
+bash: ./ubuntu_bootstrap.sh: No such file or directory
+root@62f18002c4b6:/persephone# cd ..
+root@62f18002c4b6:/# ./ubuntu_bootstrap.sh
+bash: ./ubuntu_bootstrap.sh: No such file or directory
+root@62f18002c4b6:/# apt install virtualenv
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  python3-virtualenv
+The following NEW packages will be installed:
+  python3-virtualenv virtualenv
+0 upgraded, 2 newly installed, 0 to remove and 26 not upgraded.
+Need to get 47.6 kB of archives.
+After this operation, 171 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 python3-virtualenv all 15.0.1+ds-3ubuntu1 [43.2 kB]
+Get:2 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 virtualenv all 15.0.1+ds-3ubuntu1 [4342 B]
+Fetched 47.6 kB in 11s (4187 B/s)    
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package python3-virtualenv.
+(Reading database ... 19365 files and directories currently installed.)
+Preparing to unpack .../python3-virtualenv_15.0.1+ds-3ubuntu1_all.deb ...
+Unpacking python3-virtualenv (15.0.1+ds-3ubuntu1) ...
+Selecting previously unselected package virtualenv.
+Preparing to unpack .../virtualenv_15.0.1+ds-3ubuntu1_all.deb ...
+Unpacking virtualenv (15.0.1+ds-3ubuntu1) ...
+Setting up python3-virtualenv (15.0.1+ds-3ubuntu1) ...
+Setting up virtualenv (15.0.1+ds-3ubuntu1) ...
+root@62f18002c4b6:/# python3 -m virtualenv -p python3 persephone-venv
+Already using interpreter /usr/bin/python3
+Using base prefix '/usr'
+New python executable in /persephone-venv/bin/python3
+Also creating executable in /persephone-venv/bin/python
+Installing setuptools, pkg_resources, pip, wheel...done.
+root@62f18002c4b6:/# source persephone-venv/bin/activate
+(persephone-venv) root@62f18002c4b6:/# pip install -U pip
+Requirement already up-to-date: pip in /persephone-venv/lib/python3.5/site-packages (19.1.1)
+(persephone-venv) root@62f18002c4b6:/# pip install persephone
+Collecting persephone
+  Using cached https://files.pythonhosted.org/packages/9a/c6/88ae03c150edad28006095890d0661f7cfb312d38d70250552a44c414fa0/persephone-0.3.2-py3-none-any.whl
+Collecting tensorflow==1.4.1 (from persephone)
+  Using cached https://files.pythonhosted.org/packages/dc/de/640ff90d9555d21400abac5bebd2cec8c30015d5247159708291206cef52/tensorflow-1.4.1-cp35-cp35m-manylinux1_x86_64.whl
+Collecting scikit-learn==0.19.1 (from persephone)
+  Using cached https://files.pythonhosted.org/packages/bf/53/8c9c950a3cfaec16069df196c0b76ab05b3d1f0527f6bb97a30f4dda5240/scikit_learn-0.19.1-cp35-cp35m-manylinux1_x86_64.whl
+Collecting python-speech-features==0.6 (from persephone)
+Collecting scipy==1.0.0 (from persephone)
+  Using cached https://files.pythonhosted.org/packages/1a/83/6aed4f564f3f5d338fd3c642f33d5ded0fc577da5f9a7d85ed6ba23c5d51/scipy-1.0.0-cp35-cp35m-manylinux1_x86_64.whl
+Collecting GitPython==2.1.8 (from persephone)
+  Using cached https://files.pythonhosted.org/packages/5b/38/0433c06feebbfbb51d644129dbe334031c33d55af0524326266f847ae907/GitPython-2.1.8-py2.py3-none-any.whl
+Collecting pympi-ling==1.69 (from persephone)
+Collecting pint==0.8.1 (from persephone)
+Collecting pydub==0.20.0 (from persephone)
+  Using cached https://files.pythonhosted.org/packages/6b/a5/8a863766dca1a1334a0b0219442a7af0947860ffb8a8266a1d7a43126702/pydub-0.20.0-py2.py3-none-any.whl
+Collecting nltk==3.2.5 (from persephone)
+Collecting numpy==1.14.0 (from persephone)
+  Using cached https://files.pythonhosted.org/packages/55/7f/50d7b4e9f3493779edb3cec0a6ccf68090bf95f0a3b8a093fc0d467cc6d5/numpy-1.14.0-cp35-cp35m-manylinux1_x86_64.whl
+Collecting ipython==6.2.1 (from persephone)
+  Using cached https://files.pythonhosted.org/packages/e1/87/294b718125085559b56453be87d90777863173470167e5f1d5de20b9eea3/ipython-6.2.1-py3-none-any.whl
+Collecting enum34>=1.1.6 (from tensorflow==1.4.1->persephone)
+  Using cached https://files.pythonhosted.org/packages/af/42/cb9355df32c69b553e72a2e28daee25d1611d2c0d9c272aa1d34204205b2/enum34-1.1.6-py3-none-any.whl
+Collecting tensorflow-tensorboard<0.5.0,>=0.4.0rc1 (from tensorflow==1.4.1->persephone)
+  Using cached https://files.pythonhosted.org/packages/e9/9f/5845c18f9df5e7ea638ecf3a272238f0e7671e454faa396b5188c6e6fc0a/tensorflow_tensorboard-0.4.0-py3-none-any.whl
+Collecting six>=1.10.0 (from tensorflow==1.4.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/73/fb/00a976f728d0d1fecfe898238ce23f502a721c0ac0ecfedb80e0d88c64e9/six-1.12.0-py2.py3-none-any.whl
+Requirement already satisfied: wheel>=0.26 in /persephone-venv/lib/python3.5/site-packages (from tensorflow==1.4.1->persephone) (0.33.4)
+Collecting protobuf>=3.3.0 (from tensorflow==1.4.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/7c/d2/581ebc3c41879aca2c4fce5c37cdb8d779c4ea79109b6da7f640735ea0a2/protobuf-3.8.0-cp35-cp35m-manylinux1_x86_64.whl (1.2MB)
+     |████████████████████████████████| 1.2MB 747kB/s 
+Collecting gitdb2>=2.0.0 (from GitPython==2.1.8->persephone)
+  Downloading https://files.pythonhosted.org/packages/da/30/a407568aa8d8f25db817cf50121a958722f3fc5f87e3a6fba1f40c0633e3/gitdb2-2.0.5-py2.py3-none-any.whl (62kB)
+     |████████████████████████████████| 71kB 8.2MB/s 
+Collecting jedi>=0.10 (from ipython==6.2.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/68/42/6309f3871b2f8361764ac5b2fe6719f9c6e6561d9307d8cecda319cf5843/jedi-0.14.0-py2.py3-none-any.whl (1.0MB)
+     |████████████████████████████████| 1.0MB 10.2MB/s 
+Collecting decorator (from ipython==6.2.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/5f/88/0075e461560a1e750a0dcbf77f1d9de775028c37a19a346a6c565a257399/decorator-4.4.0-py2.py3-none-any.whl
+Collecting pickleshare (from ipython==6.2.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/9a/41/220f49aaea88bc6fa6cba8d05ecf24676326156c23b991e80b3f2fc24c77/pickleshare-0.7.5-py2.py3-none-any.whl
+Collecting prompt-toolkit<2.0.0,>=1.0.4 (from ipython==6.2.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/57/a8/a151b6c61718eabe6b4672b6aa760b734989316d62ec1ba4996765e602d4/prompt_toolkit-1.0.16-py3-none-any.whl (244kB)
+     |████████████████████████████████| 245kB 9.4MB/s 
+Collecting pexpect; sys_platform != "win32" (from ipython==6.2.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/0e/3e/377007e3f36ec42f1b84ec322ee12141a9e10d808312e5738f52f80a232c/pexpect-4.7.0-py2.py3-none-any.whl (58kB)
+     |████████████████████████████████| 61kB 7.5MB/s 
+Collecting simplegeneric>0.8 (from ipython==6.2.1->persephone)
+Collecting traitlets>=4.2 (from ipython==6.2.1->persephone)
+  Using cached https://files.pythonhosted.org/packages/93/d6/abcb22de61d78e2fc3959c964628a5771e47e7cc60d53e9342e21ed6cc9a/traitlets-4.3.2-py2.py3-none-any.whl
+Collecting pygments (from ipython==6.2.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/5c/73/1dfa428150e3ccb0fa3e68db406e5be48698f2a979ccbcec795f28f44048/Pygments-2.4.2-py2.py3-none-any.whl (883kB)
+     |████████████████████████████████| 890kB 10.2MB/s 
+Requirement already satisfied: setuptools>=18.5 in /persephone-venv/lib/python3.5/site-packages (from ipython==6.2.1->persephone) (41.0.1)
+Collecting html5lib==0.9999999 (from tensorflow-tensorboard<0.5.0,>=0.4.0rc1->tensorflow==1.4.1->persephone)
+Collecting markdown>=2.6.8 (from tensorflow-tensorboard<0.5.0,>=0.4.0rc1->tensorflow==1.4.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/c0/4e/fd492e91abdc2d2fcb70ef453064d980688762079397f779758e055f6575/Markdown-3.1.1-py2.py3-none-any.whl (87kB)
+     |████████████████████████████████| 92kB 6.7MB/s 
+Collecting bleach==1.5.0 (from tensorflow-tensorboard<0.5.0,>=0.4.0rc1->tensorflow==1.4.1->persephone)
+  Using cached https://files.pythonhosted.org/packages/33/70/86c5fec937ea4964184d4d6c4f0b9551564f821e1c3575907639036d9b90/bleach-1.5.0-py2.py3-none-any.whl
+Collecting werkzeug>=0.11.10 (from tensorflow-tensorboard<0.5.0,>=0.4.0rc1->tensorflow==1.4.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/9f/57/92a497e38161ce40606c27a86759c6b92dd34fcdb33f64171ec559257c02/Werkzeug-0.15.4-py2.py3-none-any.whl (327kB)
+     |████████████████████████████████| 327kB 11.0MB/s 
+Collecting smmap2>=2.0.0 (from gitdb2>=2.0.0->GitPython==2.1.8->persephone)
+  Downloading https://files.pythonhosted.org/packages/55/d2/866d45e3a121ee15a1dc013824d58072fd5c7799c9c34d01378eb262ca8f/smmap2-2.0.5-py2.py3-none-any.whl
+Collecting parso>=0.3.0 (from jedi>=0.10->ipython==6.2.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/68/59/482f5a00fe3da7f0aaeedf61c2a25c445b68c9124437195f6e8b2beddbc0/parso-0.5.0-py2.py3-none-any.whl (94kB)
+     |████████████████████████████████| 102kB 8.4MB/s 
+Collecting wcwidth (from prompt-toolkit<2.0.0,>=1.0.4->ipython==6.2.1->persephone)
+  Using cached https://files.pythonhosted.org/packages/7e/9f/526a6947247599b084ee5232e4f9190a38f398d7300d866af3ab571a5bfe/wcwidth-0.1.7-py2.py3-none-any.whl
+Collecting ptyprocess>=0.5 (from pexpect; sys_platform != "win32"->ipython==6.2.1->persephone)
+  Using cached https://files.pythonhosted.org/packages/d1/29/605c2cc68a9992d18dada28206eeada56ea4bd07a239669da41674648b6f/ptyprocess-0.6.0-py2.py3-none-any.whl
+Collecting ipython-genutils (from traitlets>=4.2->ipython==6.2.1->persephone)
+  Using cached https://files.pythonhosted.org/packages/fa/bc/9bd3b5c2b4774d5f33b2d544f1460be9df7df2fe42f352135381c347c69a/ipython_genutils-0.2.0-py2.py3-none-any.whl
+Installing collected packages: enum34, six, html5lib, markdown, bleach, protobuf, werkzeug, numpy, tensorflow-tensorboard, tensorflow, scikit-learn, python-speech-features, scipy, smmap2, gitdb2, GitPython, pympi-ling, pint, pydub, nltk, parso, jedi, decorator, pickleshare, wcwidth, prompt-toolkit, ptyprocess, pexpect, simplegeneric, ipython-genutils, traitlets, pygments, ipython, persephone
+Successfully installed GitPython-2.1.8 bleach-1.5.0 decorator-4.4.0 enum34-1.1.6 gitdb2-2.0.5 html5lib-0.9999999 ipython-6.2.1 ipython-genutils-0.2.0 jedi-0.14.0 markdown-3.1.1 nltk-3.2.5 numpy-1.14.0 parso-0.5.0 persephone-0.3.2 pexpect-4.7.0 pickleshare-0.7.5 pint-0.8.1 prompt-toolkit-1.0.16 protobuf-3.8.0 ptyprocess-0.6.0 pydub-0.20.0 pygments-2.4.2 pympi-ling-1.69 python-speech-features-0.6 scikit-learn-0.19.1 scipy-1.0.0 simplegeneric-0.8.1 six-1.12.0 smmap2-2.0.5 tensorflow-1.4.1 tensorflow-tensorboard-0.4.0 traitlets-4.3.2 wcwidth-0.1.7 werkzeug-0.15.4
+(persephone-venv) root@62f18002c4b6:/# pip install ipython
+Requirement already satisfied: ipython in /persephone-venv/lib/python3.5/site-packages (6.2.1)
+Requirement already satisfied: pickleshare in /persephone-venv/lib/python3.5/site-packages (from ipython) (0.7.5)
+Requirement already satisfied: jedi>=0.10 in /persephone-venv/lib/python3.5/site-packages (from ipython) (0.14.0)
+Requirement already satisfied: simplegeneric>0.8 in /persephone-venv/lib/python3.5/site-packages (from ipython) (0.8.1)
+Requirement already satisfied: prompt-toolkit<2.0.0,>=1.0.4 in /persephone-venv/lib/python3.5/site-packages (from ipython) (1.0.16)
+Requirement already satisfied: pygments in /persephone-venv/lib/python3.5/site-packages (from ipython) (2.4.2)
+Requirement already satisfied: pexpect; sys_platform != "win32" in /persephone-venv/lib/python3.5/site-packages (from ipython) (4.7.0)
+Requirement already satisfied: decorator in /persephone-venv/lib/python3.5/site-packages (from ipython) (4.4.0)
+Requirement already satisfied: traitlets>=4.2 in /persephone-venv/lib/python3.5/site-packages (from ipython) (4.3.2)
+Requirement already satisfied: setuptools>=18.5 in /persephone-venv/lib/python3.5/site-packages (from ipython) (41.0.1)
+Requirement already satisfied: parso>=0.3.0 in /persephone-venv/lib/python3.5/site-packages (from jedi>=0.10->ipython) (0.5.0)
+Requirement already satisfied: six>=1.9.0 in /persephone-venv/lib/python3.5/site-packages (from prompt-toolkit<2.0.0,>=1.0.4->ipython) (1.12.0)
+Requirement already satisfied: wcwidth in /persephone-venv/lib/python3.5/site-packages (from prompt-toolkit<2.0.0,>=1.0.4->ipython) (0.1.7)
+Requirement already satisfied: ptyprocess>=0.5 in /persephone-venv/lib/python3.5/site-packages (from pexpect; sys_platform != "win32"->ipython) (0.6.0)
+Requirement already satisfied: ipython-genutils in /persephone-venv/lib/python3.5/site-packages (from traitlets>=4.2->ipython) (0.2.0)
+(persephone-venv) root@62f18002c4b6:/# mkdir persephone-tutorial/
+(persephone-venv) root@62f18002c4b6:/# cd persephone-tutorial/
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial# mkdir data
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial# ls
+data
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial# find / -xdev 2>/dev/null -name "persephone-tutorial"
+/persephone-tutorial
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial# cd ..
+(persephone-venv) root@62f18002c4b6:/# ls
+bin  boot  dev  essentia  etc  home  lib  lib64  media  mnt  opt  persephone  persephone-tutorial  persephone-venv  proc  root  run  sbin  srv  sys  tmp  usr  var
+(persephone-venv) root@62f18002c4b6:/# cd home/
+(persephone-venv) root@62f18002c4b6:/home# ls
+(persephone-venv) root@62f18002c4b6:/home# mkdir data
+(persephone-venv) root@62f18002c4b6:/home# cd data/
+(persephone-venv) root@62f18002c4b6:/home/data# ls
+(persephone-venv) root@62f18002c4b6:/home/data# cd ..
+(persephone-venv) root@62f18002c4b6:/home# cd ..
+(persephone-venv) root@62f18002c4b6:/# cd persephone-tutorial/
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial# mkdir data
+mkdir: cannot create directory ‘data’: File exists
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial# cd data/
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial/data# ls
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial/data# unzip  /home/iiit-dharwad/Downloads/na_example_small.zip
+unzip:  cannot find or open /home/iiit-dharwad/Downloads/na_example_small.zip, /home/iiit-dharwad/Downloads/na_example_small.zip.zip or /home/iiit-dharwad/Downloads/na_example_small.zip.ZIP.
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial/data# apt installl unzip
+E: Invalid operation installl
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial/data# apt install unzip
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+unzip is already the newest version (6.0-20ubuntu1).
+0 upgraded, 0 newly installed, 0 to remove and 26 not upgraded.
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial/data# unzip  /home/iiit-dharwad/Downloads/na_example_small.zip
+unzip:  cannot find or open /home/iiit-dharwad/Downloads/na_example_small.zip, /home/iiit-dharwad/Downloads/na_example_small.zip.zip or /home/iiit-dharwad/Downloads/na_example_small.zip.ZIP.
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial/data# 7z x  /home/iiit-dharwad/Downloads/na_example_small.zip
+bash: 7z: command not found
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial/data# pwd
+/persephone-tutorial/data
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial/data# cp /home/iiit-dharwad/Downloads/na_example_small/na_example ^C
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial/data# cp /home/iiit-dharwad/Downloads/na_example_small/na_example /persephone-tutorial/data
+cp: cannot stat '/home/iiit-dharwad/Downloads/na_example_small/na_example': No such file or directory
+(persephone-venv) root@62f18002c4b6:/persephone-tutorial/data# docker login
+bash: docker: command not found
+
