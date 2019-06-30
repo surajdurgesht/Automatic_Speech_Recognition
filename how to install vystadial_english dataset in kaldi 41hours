@@ -2120,3 +2120,5 @@ tri2b_mmi      	test	build2	18 	10.27	29.95
 tri2b_mmi_b0.05	test	build2	14 	10.02	29.35
 tri2b_mpe      	test	build2	17 	10.63	30.6 
 --- Exporting models to trained_models ...
+
+
