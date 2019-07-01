@@ -1,0 +1,218 @@
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~/Documents$ cd timit/
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~/Documents/timit$ cd ..
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~/Documents$ cat timit/
+cat: timit/: Is a directory
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~/Documents$ docker pull oadams/persephoneWARNING: Error loading config file: /home/iiit-dharwad/.docker/config.json: stat /home/iiit-dharwad/.docker/config.json: permission denied
+Using default tag: latest
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.39/images/create?fromImage=oadams%2Fpersephone&tag=latest: dial unix /var/run/docker.sock: connect: permission denied
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~/Documents$ sudo docker pull oadams/persephone
+[sudo] password for iiit-dharwad: 
+Using default tag: latest
+latest: Pulling from oadams/persephone
+Digest: sha256:d5705f01cd1e5821e9d2f847b031426795d39ac5140f6bee5c680ea530669f82
+Status: Image is up to date for oadams/persephone:latest
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~/Documents$ cat ./timit/
+cat: ./timit/: Is a directory
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~/Documents$ sudo docker run -it -v "$(pwd)":/home/iiit-dharwad/Documents oadams/persephone
+root@5ac380b5ce12:/persephone# ls
+data
+root@5ac380b5ce12:/persephone# python3 -m virtualenv -p python3 persephone-venv\
+> 
+/usr/bin/python3: No module named virtualenv
+root@5ac380b5ce12:/persephone# apt install virtualenv\
+> 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  python3-virtualenv
+The following NEW packages will be installed:
+  python3-virtualenv virtualenv
+0 upgraded, 2 newly installed, 0 to remove and 26 not upgraded.
+Need to get 47.6 kB of archives.
+After this operation, 171 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 python3-virtualenv all 15.0.1+ds-3ubuntu1 [43.2 kB]
+Get:2 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 virtualenv all 15.0.1+ds-3ubuntu1 [4342 B]
+Fetched 47.6 kB in 1s (39.4 kB/s)    
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package python3-virtualenv.
+(Reading database ... 19365 files and directories currently installed.)
+Preparing to unpack .../python3-virtualenv_15.0.1+ds-3ubuntu1_all.deb ...
+Unpacking python3-virtualenv (15.0.1+ds-3ubuntu1) ...
+Selecting previously unselected package virtualenv.
+Preparing to unpack .../virtualenv_15.0.1+ds-3ubuntu1_all.deb ...
+Unpacking virtualenv (15.0.1+ds-3ubuntu1) ...
+Setting up python3-virtualenv (15.0.1+ds-3ubuntu1) ...
+Setting up virtualenv (15.0.1+ds-3ubuntu1) ...
+root@5ac380b5ce12:/persephone# python3 -m virtualenv -p python3 persephone-venv
+Already using interpreter /usr/bin/python3
+Using base prefix '/usr'
+New python executable in /persephone/persephone-venv/bin/python3
+Also creating executable in /persephone/persephone-venv/bin/python
+Installing setuptools, pkg_resources, pip, wheel...done.
+root@5ac380b5ce12:/persephone# source persephone-venv/bin/activate
+(persephone-venv) root@5ac380b5ce12:/persephone# pip install -U pip
+Requirement already up-to-date: pip in ./persephone-venv/lib/python3.5/site-packages (19.1.1)
+(persephone-venv) root@5ac380b5ce12:/persephone# pip install persephone
+Collecting persephone
+  Using cached https://files.pythonhosted.org/packages/9a/c6/88ae03c150edad28006095890d0661f7cfb312d38d70250552a44c414fa0/persephone-0.3.2-py3-none-any.whl
+Collecting pympi-ling==1.69 (from persephone)
+Collecting nltk==3.2.5 (from persephone)
+Collecting GitPython==2.1.8 (from persephone)
+  Using cached https://files.pythonhosted.org/packages/5b/38/0433c06feebbfbb51d644129dbe334031c33d55af0524326266f847ae907/GitPython-2.1.8-py2.py3-none-any.whl
+Collecting pydub==0.20.0 (from persephone)
+  Using cached https://files.pythonhosted.org/packages/6b/a5/8a863766dca1a1334a0b0219442a7af0947860ffb8a8266a1d7a43126702/pydub-0.20.0-py2.py3-none-any.whl
+Collecting python-speech-features==0.6 (from persephone)
+Collecting ipython==6.2.1 (from persephone)
+  Using cached https://files.pythonhosted.org/packages/e1/87/294b718125085559b56453be87d90777863173470167e5f1d5de20b9eea3/ipython-6.2.1-py3-none-any.whl
+Collecting tensorflow==1.4.1 (from persephone)
+  Using cached https://files.pythonhosted.org/packages/dc/de/640ff90d9555d21400abac5bebd2cec8c30015d5247159708291206cef52/tensorflow-1.4.1-cp35-cp35m-manylinux1_x86_64.whl
+Collecting numpy==1.14.0 (from persephone)
+  Using cached https://files.pythonhosted.org/packages/55/7f/50d7b4e9f3493779edb3cec0a6ccf68090bf95f0a3b8a093fc0d467cc6d5/numpy-1.14.0-cp35-cp35m-manylinux1_x86_64.whl
+Collecting scipy==1.0.0 (from persephone)
+  Using cached https://files.pythonhosted.org/packages/1a/83/6aed4f564f3f5d338fd3c642f33d5ded0fc577da5f9a7d85ed6ba23c5d51/scipy-1.0.0-cp35-cp35m-manylinux1_x86_64.whl
+Collecting pint==0.8.1 (from persephone)
+Collecting scikit-learn==0.19.1 (from persephone)
+  Using cached https://files.pythonhosted.org/packages/bf/53/8c9c950a3cfaec16069df196c0b76ab05b3d1f0527f6bb97a30f4dda5240/scikit_learn-0.19.1-cp35-cp35m-manylinux1_x86_64.whl
+Collecting six (from nltk==3.2.5->persephone)
+  Downloading https://files.pythonhosted.org/packages/73/fb/00a976f728d0d1fecfe898238ce23f502a721c0ac0ecfedb80e0d88c64e9/six-1.12.0-py2.py3-none-any.whl
+Collecting gitdb2>=2.0.0 (from GitPython==2.1.8->persephone)
+  Downloading https://files.pythonhosted.org/packages/da/30/a407568aa8d8f25db817cf50121a958722f3fc5f87e3a6fba1f40c0633e3/gitdb2-2.0.5-py2.py3-none-any.whl (62kB)
+     |████████████████████████████████| 71kB 718kB/s 
+Collecting jedi>=0.10 (from ipython==6.2.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/68/42/6309f3871b2f8361764ac5b2fe6719f9c6e6561d9307d8cecda319cf5843/jedi-0.14.0-py2.py3-none-any.whl (1.0MB)
+     |████████████████████████████████| 1.0MB 2.7MB/s 
+Collecting pickleshare (from ipython==6.2.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/9a/41/220f49aaea88bc6fa6cba8d05ecf24676326156c23b991e80b3f2fc24c77/pickleshare-0.7.5-py2.py3-none-any.whl
+Collecting simplegeneric>0.8 (from ipython==6.2.1->persephone)
+Collecting pexpect; sys_platform != "win32" (from ipython==6.2.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/0e/3e/377007e3f36ec42f1b84ec322ee12141a9e10d808312e5738f52f80a232c/pexpect-4.7.0-py2.py3-none-any.whl (58kB)
+     |████████████████████████████████| 61kB 7.9MB/s 
+Requirement already satisfied: setuptools>=18.5 in ./persephone-venv/lib/python3.5/site-packages (from ipython==6.2.1->persephone) (41.0.1)
+Collecting prompt-toolkit<2.0.0,>=1.0.4 (from ipython==6.2.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/57/a8/a151b6c61718eabe6b4672b6aa760b734989316d62ec1ba4996765e602d4/prompt_toolkit-1.0.16-py3-none-any.whl (244kB)
+     |████████████████████████████████| 245kB 9.2MB/s 
+Collecting decorator (from ipython==6.2.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/5f/88/0075e461560a1e750a0dcbf77f1d9de775028c37a19a346a6c565a257399/decorator-4.4.0-py2.py3-none-any.whl
+Collecting traitlets>=4.2 (from ipython==6.2.1->persephone)
+  Using cached https://files.pythonhosted.org/packages/93/d6/abcb22de61d78e2fc3959c964628a5771e47e7cc60d53e9342e21ed6cc9a/traitlets-4.3.2-py2.py3-none-any.whl
+Collecting pygments (from ipython==6.2.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/5c/73/1dfa428150e3ccb0fa3e68db406e5be48698f2a979ccbcec795f28f44048/Pygments-2.4.2-py2.py3-none-any.whl (883kB)
+     |████████████████████████████████| 890kB 6.5MB/s 
+Collecting tensorflow-tensorboard<0.5.0,>=0.4.0rc1 (from tensorflow==1.4.1->persephone)
+  Using cached https://files.pythonhosted.org/packages/e9/9f/5845c18f9df5e7ea638ecf3a272238f0e7671e454faa396b5188c6e6fc0a/tensorflow_tensorboard-0.4.0-py3-none-any.whl
+Requirement already satisfied: wheel>=0.26 in ./persephone-venv/lib/python3.5/site-packages (from tensorflow==1.4.1->persephone) (0.33.4)
+Collecting enum34>=1.1.6 (from tensorflow==1.4.1->persephone)
+  Using cached https://files.pythonhosted.org/packages/af/42/cb9355df32c69b553e72a2e28daee25d1611d2c0d9c272aa1d34204205b2/enum34-1.1.6-py3-none-any.whl
+Collecting protobuf>=3.3.0 (from tensorflow==1.4.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/7c/d2/581ebc3c41879aca2c4fce5c37cdb8d779c4ea79109b6da7f640735ea0a2/protobuf-3.8.0-cp35-cp35m-manylinux1_x86_64.whl (1.2MB)
+     |████████████████████████████████| 1.2MB 2.1MB/s 
+Collecting smmap2>=2.0.0 (from gitdb2>=2.0.0->GitPython==2.1.8->persephone)
+  Downloading https://files.pythonhosted.org/packages/55/d2/866d45e3a121ee15a1dc013824d58072fd5c7799c9c34d01378eb262ca8f/smmap2-2.0.5-py2.py3-none-any.whl
+Collecting parso>=0.3.0 (from jedi>=0.10->ipython==6.2.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/68/59/482f5a00fe3da7f0aaeedf61c2a25c445b68c9124437195f6e8b2beddbc0/parso-0.5.0-py2.py3-none-any.whl (94kB)
+     |████████████████████████████████| 102kB 6.0MB/s 
+Collecting ptyprocess>=0.5 (from pexpect; sys_platform != "win32"->ipython==6.2.1->persephone)
+  Using cached https://files.pythonhosted.org/packages/d1/29/605c2cc68a9992d18dada28206eeada56ea4bd07a239669da41674648b6f/ptyprocess-0.6.0-py2.py3-none-any.whl
+Collecting wcwidth (from prompt-toolkit<2.0.0,>=1.0.4->ipython==6.2.1->persephone)
+  Using cached https://files.pythonhosted.org/packages/7e/9f/526a6947247599b084ee5232e4f9190a38f398d7300d866af3ab571a5bfe/wcwidth-0.1.7-py2.py3-none-any.whl
+Collecting ipython-genutils (from traitlets>=4.2->ipython==6.2.1->persephone)
+  Using cached https://files.pythonhosted.org/packages/fa/bc/9bd3b5c2b4774d5f33b2d544f1460be9df7df2fe42f352135381c347c69a/ipython_genutils-0.2.0-py2.py3-none-any.whl
+Collecting html5lib==0.9999999 (from tensorflow-tensorboard<0.5.0,>=0.4.0rc1->tensorflow==1.4.1->persephone)
+Collecting markdown>=2.6.8 (from tensorflow-tensorboard<0.5.0,>=0.4.0rc1->tensorflow==1.4.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/c0/4e/fd492e91abdc2d2fcb70ef453064d980688762079397f779758e055f6575/Markdown-3.1.1-py2.py3-none-any.whl (87kB)
+     |████████████████████████████████| 92kB 5.2MB/s 
+Collecting werkzeug>=0.11.10 (from tensorflow-tensorboard<0.5.0,>=0.4.0rc1->tensorflow==1.4.1->persephone)
+  Downloading https://files.pythonhosted.org/packages/9f/57/92a497e38161ce40606c27a86759c6b92dd34fcdb33f64171ec559257c02/Werkzeug-0.15.4-py2.py3-none-any.whl (327kB)
+     |████████████████████████████████| 327kB 7.2MB/s 
+Collecting bleach==1.5.0 (from tensorflow-tensorboard<0.5.0,>=0.4.0rc1->tensorflow==1.4.1->persephone)
+  Using cached https://files.pythonhosted.org/packages/33/70/86c5fec937ea4964184d4d6c4f0b9551564f821e1c3575907639036d9b90/bleach-1.5.0-py2.py3-none-any.whl
+Installing collected packages: pympi-ling, six, nltk, smmap2, gitdb2, GitPython, pydub, python-speech-features, parso, jedi, pickleshare, simplegeneric, ptyprocess, pexpect, wcwidth, prompt-toolkit, decorator, ipython-genutils, traitlets, pygments, ipython, html5lib, markdown, werkzeug, numpy, protobuf, bleach, tensorflow-tensorboard, enum34, tensorflow, scipy, pint, scikit-learn, persephone
+Successfully installed GitPython-2.1.8 bleach-1.5.0 decorator-4.4.0 enum34-1.1.6 gitdb2-2.0.5 html5lib-0.9999999 ipython-6.2.1 ipython-genutils-0.2.0 jedi-0.14.0 markdown-3.1.1 nltk-3.2.5 numpy-1.14.0 parso-0.5.0 persephone-0.3.2 pexpect-4.7.0 pickleshare-0.7.5 pint-0.8.1 prompt-toolkit-1.0.16 protobuf-3.8.0 ptyprocess-0.6.0 pydub-0.20.0 pygments-2.4.2 pympi-ling-1.69 python-speech-features-0.6 scikit-learn-0.19.1 scipy-1.0.0 simplegeneric-0.8.1 six-1.12.0 smmap2-2.0.5 tensorflow-1.4.1 tensorflow-tensorboard-0.4.0 traitlets-4.3.2 wcwidth-0.1.7 werkzeug-0.15.4
+(persephone-venv) root@5ac380b5ce12:/persephone# pip install ipython
+Requirement already satisfied: ipython in ./persephone-venv/lib/python3.5/site-packages (6.2.1)
+Requirement already satisfied: pickleshare in ./persephone-venv/lib/python3.5/site-packages (from ipython) (0.7.5)
+Requirement already satisfied: decorator in ./persephone-venv/lib/python3.5/site-packages (from ipython) (4.4.0)
+Requirement already satisfied: setuptools>=18.5 in ./persephone-venv/lib/python3.5/site-packages (from ipython) (41.0.1)
+Requirement already satisfied: prompt-toolkit<2.0.0,>=1.0.4 in ./persephone-venv/lib/python3.5/site-packages (from ipython) (1.0.16)
+Requirement already satisfied: simplegeneric>0.8 in ./persephone-venv/lib/python3.5/site-packages (from ipython) (0.8.1)
+Requirement already satisfied: traitlets>=4.2 in ./persephone-venv/lib/python3.5/site-packages (from ipython) (4.3.2)
+Requirement already satisfied: pexpect; sys_platform != "win32" in ./persephone-venv/lib/python3.5/site-packages (from ipython) (4.7.0)
+Requirement already satisfied: jedi>=0.10 in ./persephone-venv/lib/python3.5/site-packages (from ipython) (0.14.0)
+Requirement already satisfied: pygments in ./persephone-venv/lib/python3.5/site-packages (from ipython) (2.4.2)
+Requirement already satisfied: wcwidth in ./persephone-venv/lib/python3.5/site-packages (from prompt-toolkit<2.0.0,>=1.0.4->ipython) (0.1.7)
+Requirement already satisfied: six>=1.9.0 in ./persephone-venv/lib/python3.5/site-packages (from prompt-toolkit<2.0.0,>=1.0.4->ipython) (1.12.0)
+Requirement already satisfied: ipython-genutils in ./persephone-venv/lib/python3.5/site-packages (from traitlets>=4.2->ipython) (0.2.0)
+Requirement already satisfied: ptyprocess>=0.5 in ./persephone-venv/lib/python3.5/site-packages (from pexpect; sys_platform != "win32"->ipython) (0.6.0)
+Requirement already satisfied: parso>=0.3.0 in ./persephone-venv/lib/python3.5/site-packages (from jedi>=0.10->ipython) (0.5.0)
+(persephone-venv) root@5ac380b5ce12:/persephone# mkdir persephone-tutorial/
+(persephone-venv) root@5ac380b5ce12:/persephone# cd persephone-tutorial/
+(persephone-venv) root@5ac380b5ce12:/persephone/persephone-tutorial# mkdir data
+(persephone-venv) root@5ac380b5ce12:/persephone/persephone-tutorial# cd data/
+(persephone-venv) root@5ac380b5ce12:/persephone/persephone-tutorial/data# ls
+(persephone-venv) root@5ac380b5ce12:/persephone/persephone-tutorial/data# sudo docker run -it -v "$(pwd)":/home/iiit-dharwad/Documents oadams/persephone
+bash: sudo: command not found
+(persephone-venv) root@5ac380b5ce12:/persephone/persephone-tutorial/data# docker run -it -v "$(pwd)":/home/iiit-dharwad/Documents oadams/persephone
+bash: docker: command not found
+(persephone-venv) root@5ac380b5ce12:/persephone/persephone-tutorial/data#  run -it -v "$(pwd)":/home/iiit-dharwad/Documents oadams/persephone
+bash: run: command not found
+(persephone-venv) root@5ac380b5ce12:/persephone/persephone-tutorial/data# exit
+exit
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~/Documents$ cat ./timit
+cat: ./timit: Is a directory
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~/Documents$ sudo docker run -it -v "$(pwd)":/home/iiit-dharwad/Documents oadams/persephone
+root@9cc40d1c6bae:/persephone# ls
+data
+root@9cc40d1c6bae:/persephone# cd data/\
+> 
+root@9cc40d1c6bae:/persephone/data# ls
+na_example
+root@9cc40d1c6bae:/persephone/data# ls
+na_example
+root@9cc40d1c6bae:/persephone/data# exit
+exit
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~/Documents$ sudo docker run -it -v "$(pwd)":/home/iiit-dharwad/Documents/timit oadams/persephone
+root@5aecb584db9b:/persephone# ls
+data
+root@5aecb584db9b:/persephone# cd data/
+root@5aecb584db9b:/persephone/data# ls
+na_example
+root@5aecb584db9b:/persephone/data# cd na_example/
+root@5aecb584db9b:/persephone/data/na_example# ls
+feat  label  wav
+root@5aecb584db9b:/persephone/data/na_example# exit
+exit
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~/Documents$ cat timit
+cat: timit: No such file or directory
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~/Documents$ cd ..
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~$ cd Downloads/
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~/Downloads$ ls
+espnet-master.zip  na_example_small.zip                       timit
+exp                signofthecross_1309_librivox               timitcorpus
+kaldi-master.zip   signofthecross_1309_librivox.zip           timitcorpus.zip
+na_example         TheMVDRBeamformerforSpeechEnhancement.pdf
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~/Downloads$ cd timit
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~/Downloads/timit$ ls
+allfilelist.txt   dr1-mcpm0  dr5-ftlg0  dr8-mbcg0     sentences.pos   timitdic.txt
+allphonedur.txt   dr2-faem0  dr5-mbgt0  l             sentences.ppp   wrdalign.timit
+allphonelist.txt  dr2-marc0  dr6-fapb0  phoncode.doc  sentences.tags
+allphonetime.txt  dr3-falk0  dr6-mbma1  prompts.txt   spkrinfo.txt
+allsenlist.txt    dr3-madc0  dr7-fblv0  README        spkrsent.txt
+allsentime.txt    dr4-falr0  dr7-madd0  readme.doc    testset.doc
+dr1-fvmh0         dr4-maeb0  dr8-fbcg1  sentences     timitdic.doc
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~/Downloads/timit$ cd ..
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~/Downloads$ cat ./timit
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~/Downloads$ sudo docker run -it -v "$(pwd)":/home/iiit-dharwad/Downloads/timit/ oadams/persephone
+root@30ccde386187:/persephone# pwd
+/persephone
+root@30ccde386187:/persephone# ls
+data
+root@30ccde386187:/persephone# cd data/
+root@30ccde386187:/persephone/data# ls
+na_example
+root@30ccde386187:/persephone/data# exit
+exit
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~/Downloads$ cat timit
+cat: timit: Is a directory
+iiit-dharwad@iiitdharwad-ThinkCentre-M920t:~/Downloads$  
