@@ -14,9 +14,9 @@ https://kaldi-asr.org/
 _Author : Suraj Durgesht_
 
 1. Install Subversion
-
-    > sudo apt-get install subversion
-
+```
+    > - sudo apt-get install subversion
+```
 2. Install Dependent Libraries
     > sudo apt-get install libblas-*
     > sudo apt-get install automake
