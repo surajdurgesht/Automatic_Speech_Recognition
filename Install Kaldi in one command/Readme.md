@@ -1,6 +1,4 @@
-Set Path to install and make sure Install_Kaldi and Requirement.txt same kaldi_home folder
+Set Path to install
 ```
-mkdir kaldi_home
-cd kaldi_home
 make
 ```
