@@ -1,4 +1,4 @@
-Set Path to install
+download Makefile and Set Path to install
 ```
 make
 ```
