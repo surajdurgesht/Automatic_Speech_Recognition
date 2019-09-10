@@ -1,6 +1,6 @@
 # Use a prebuild Kaldi to omit the installation
 KALDI :=
-
+wget https://raw.githubusercontent.com/surajdurgesht/Automatic_Speech_Recognition/master/Install%20Kaldi%20in%20one%20command/Requirements.txt
 
 pipi() {
     REQ_FILE=Requirements.txt
