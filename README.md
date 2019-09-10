@@ -36,16 +36,16 @@ _Author : Suraj Durgesht_
      cat INSTALL
      make
  ```  
-5. Ceck out dependencies
+5. Check out dependencies
  ```
      extras/check_dependencies.sh
      nproc
  ```   
-6. Istall a language modeling toolkit IRSTLM
+6. Install a language modeling toolkit IRSTLM
 ```
      extras/install_irstlm.sh
 ```
-7. Istructions in kaldi/src/INSTALL.
+7. Instructions in kaldi/src/INSTALL.
  ```
      cat INSTALL
      ./configure
