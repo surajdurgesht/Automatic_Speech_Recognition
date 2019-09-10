@@ -1,0 +1,7 @@
+libblas-*
+automake
+libtool-*
+libatlas-*
+zlib1g-dev
+g++-multilib
+flac
